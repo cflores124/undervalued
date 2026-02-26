@@ -1,26 +1,237 @@
 @import "tailwindcss";
 
+/* ---------- Core tokens ---------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #f6f7f8;         /* light base */
+  --foreground: #0f1115;         /* light text */
+  --accent: #d8ff3e;             /* neon yellow-green highlight */
+  --surface: #ffffff;            /* cards/nav */
+  --muted: #6b7280;              /* secondary text */
+  --border: rgba(15, 17, 21, 0.12);
+  --ring: rgba(216, 255, 62, 0.55); /* focus/hover ring */
+  --shadow: 0 10px 25px rgba(0,0,0,.08), 0 2px 8px rgba(0,0,0,.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --surface: #121212;
+    --muted: #9aa3ad;
+    --border: rgba(237, 237, 237, 0.12);
+    --ring: rgba(216, 255, 62, 0.45);
+    --shadow: 0 12px 28px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.35);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- Expose tokens to Tailwind ---------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --ring-color: var(--ring);
+  --font-sans: var(--font-geist-sans, ui-sans-serif);
+  --font-mono: var(--font-geist-mono, ui-monospace);
+  --radius-md: 16px;
+  --radius-lg: 24px;
 }
+
+/* ---------- Page chrome (material feel) ---------- */
+/* (Removed min-height/overflow clamp so body can size with dvh/svh reliably) */
+
+body {
+  background: radial-gradient(1200px 600px at 15% 0%, rgba(216,255,62,0.08), transparent 55%),
+              radial-gradient(900px 500px at 85% 10%, rgba(216,255,62,0.06), transparent 55%),
+              linear-gradient(180deg, rgba(255,255,255,0.02), transparent),
+              var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* subtle vertical divider “chrome” line you can drop into headers */
+.chromeline {
+  background: linear-gradient(to bottom, transparent, var(--border) 20%, var(--border) 80%, transparent);
+  width: 1px;
+}
+
+/* ---------- Global element polish ---------- */
+::selection {
+  background: color-mix(in oklab, var(--accent) 35%, transparent);
+  color: var(--foreground);
+}
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Scrollbar (Chromium/WebKit) */
+*::-webkit-scrollbar        { height: 10px; width: 10px; }
+*::-webkit-scrollbar-track  { background: transparent; }
+*::-webkit-scrollbar-thumb  { background: color-mix(in oklab, var(--accent) 35%, #555); border-radius: 999px; }
+
+/* ---------- Reusable UI patterns ---------- */
+.card {
+  background: color-mix(in oklab, var(--surface) 92%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.nav-link {
+  color: color-mix(in oklab, var(--foreground) 80%, var(--muted));
+  transition: color .2s ease, text-shadow .2s ease;
+}
+.nav-link:hover {
+  color: var(--foreground);
+  text-shadow: 0 0 12px color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: .5rem; padding: .65rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg,
+              color-mix(in oklab, var(--surface) 92%, transparent),
+              color-mix(in oklab, var(--surface) 80%, transparent));
+  color: var(--foreground);
+  transition: transform .08s ease, box-shadow .2s ease, border-color .2s ease;
+  box-shadow: var(--shadow);
+}
+.btn:hover {
+  border-color: color-mix(in oklab, var(--accent) 55%, var(--border));
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 20%, transparent), var(--shadow);
+}
+.btn:active { transform: translateY(1px); }
+.btn-accent {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 92%, #fff),
+                                        color-mix(in oklab, var(--accent) 75%, #000));
+  border-color: color-mix(in oklab, var(--accent) 70%, #000);
+  color: #0a0a0a;
+}
+
+/* Chips / badges */
+.badge {
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+  border: 1px solid color-mix(in oklab, var(--accent) 50%, var(--border));
+  color: color-mix(in oklab, #000 70%, var(--foreground));
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  font-size: .75rem;
+}
+
+/* Headings for the glossy feel */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.04), 0 8px 32px rgba(0,0,0,.35);
+}
+
+/* Optional glass panel utility */
+.glass {
+  background: color-mix(in oklab, var(--surface) 75%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+/* --- Vignette + grain layer for that “depthy” dark look --- */
+body::before {
+  content: "";
+  position: fixed; inset: -20vmax;
+  pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(216,255,62,0.05), transparent 55%),
+    radial-gradient(900px 500px at 85% 0%, rgba(216,255,62,0.04), transparent 60%),
+    radial-gradient(60% 80% at 50% 120%, rgba(0,0,0,.75), transparent 70%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncA type='table' tableValues='0 0 .04 .08 .1 .12 .14'/></feComponentTransfer></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+  opacity: .7;
+}
+
+/* make cards feel clickable */
+.card { transition: transform .18s ease, box-shadow .25s ease, border-color .2s; }
+.card:hover { transform: translateY(-2px); border-color: color-mix(in oklab, var(--accent) 40%, var(--border)); box-shadow: var(--shadow), 0 0 0 3px color-mix(in oklab, var(--accent) 14%, transparent); }
+
+/* nicer links anywhere */
+a { text-underline-offset: 3px; }
+
+/* performance hint for motion-heavy elements */
+.will-change-transform { will-change: transform; }
+
+.btn-accent-hover:hover,
+.btn-accent-hover:focus-visible {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--accent) 92%, #fff),
+    color-mix(in oklab, var(--accent) 75%, #000)
+  );
+  border-color: color-mix(in oklab, var(--accent) 70%, #000);
+  color: #0a0a0a;
+  box-shadow:
+    0 0 0 3px color-mix(in oklab, var(--accent) 20%, transparent),
+    var(--shadow);
+}
+
+/* ---- Brand greens (tweak if you already have vars) ---- */
+:root {
+  --uv-green: #9adf7a;        /* your current green */
+  --uv-green-darker: #536d29; /* ~15–25% darker */
+}
+
+/* ---- WebKit (Chrome / Edge / Safari) ---- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* or rgba(0,0,0,.05) */
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--uv-green-darker);
+  border-radius: 9999px;
+  border: 2px solid transparent;     /* gives a little inset look */
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5fa14e; /* one step darker on hover */
+}
+
+/* ---- Firefox ---- */
+* {
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--uv-green-darker) transparent;
+}
+
+/* Optional: keep layout from shifting when scrollbars appear */
+html { scrollbar-gutter: stable both-edges; }
+
+@media (hover: none) {
+  [data-magnetic] {
+    transform: none !important;
+  }
+}
+
+/* optional: reduces 300ms tap delay in some cases */
+[data-magnetic] {
+  touch-action: manipulation;
+}
+
+/* ---------- Core tokens ---------- */
+/* Make DARK the default */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #d8ff3e;
+  --surface: #121212;
+  --muted: #9aa3ad;
+  --border: rgba(237, 237, 237, 0.12);
+  --ring: rgba(216, 255, 62, 0.45);
+  --shadow: 0 12px 28px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.35);
+}
+
