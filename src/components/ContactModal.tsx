@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 type Props = { open: boolean; onClose: () => void };
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/cristian-flores-7830392b2/';
-const EMAIL = 'cflo0124@gmail.com';
+const GITHUB_URL = 'https://github.com/cflores124';
 
 export default function ContactModal({ open, onClose }: Props) {
   if (!open) return null;
@@ -39,6 +39,7 @@ export default function ContactModal({ open, onClose }: Props) {
         exit={{ opacity: 0 }}
         onClick={onClose}
       >
+        {/* Dim */}
         <div className="absolute inset-0 bg-black/50" />
 
         {/* Bottom on mobile, centered on ≥sm */}
@@ -50,15 +51,36 @@ export default function ContactModal({ open, onClose }: Props) {
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', stiffness: 380, damping: 32 }}
-            className="w-full max-w-lg rounded-t-2xl sm:rounded-2xl border border-white/10 bg-neutral-900/90 backdrop-blur-md shadow-xl"
-            onClick={(e) => e.stopPropagation()} // don't close when clicking inside
+            className="
+              relative w-full max-w-lg
+              rounded-t-2xl sm:rounded-2xl
+              border border-[color-mix(in_oklab,var(--foreground)_12%,transparent)]
+              bg-[color-mix(in_oklab,var(--surface)_82%,transparent)]
+              backdrop-blur-md shadow-xl overflow-hidden
+            "
+            onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal="true"
             aria-labelledby="contact-title"
           >
-            <div className="p-6 sm:p-8 flex flex-col items-center text-center gap-5">
+            {/* Subtle accent glow wash */}
+            <div
+              aria-hidden="true"
+              className="
+                pointer-events-none absolute -inset-24 opacity-80
+                bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--accent)_22%,transparent),transparent_65%)]
+              "
+            />
+
+            <div className="relative p-6 sm:p-8 flex flex-col items-center text-center gap-5">
               {/* Photo */}
-              <div className="h-24 w-24 rounded-full overflow-hidden ring-2 ring-white/10">
+              <div
+                className="
+                  h-24 w-24 rounded-full overflow-hidden
+                  ring-2 ring-[color-mix(in_oklab,var(--accent)_35%,transparent)]
+                  shadow-[0_0_18px_color-mix(in_oklab,var(--accent)_18%,transparent)]
+                "
+              >
                 <Image
                   src="/profile.jpg"
                   alt="Cristian Flores"
@@ -70,8 +92,10 @@ export default function ContactModal({ open, onClose }: Props) {
 
               {/* Title + bio */}
               <div>
-                <h2 id="contact-title" className="text-xl font-semibold">About & Contact</h2>
-                <p className="mt-2 text-sm text-white/75 leading-relaxed max-w-md">
+                <h2 id="contact-title" className="text-xl font-semibold text-foreground">
+                  About &amp; Contact
+                </h2>
+                <p className="mt-2 text-sm text-foreground/75 leading-relaxed max-w-md">
                   I’m Cristian — an analyst and software developer who builds clean visuals
                   and data-driven narratives that make sports easier to understand and more
                   fun to argue about. I also create analytical tools that help teams and fans
@@ -85,53 +109,87 @@ export default function ContactModal({ open, onClose }: Props) {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/about"
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
+                  className="
+                    rounded-xl px-4 py-2 text-sm
+                    border border-[color-mix(in_oklab,var(--foreground)_12%,transparent)]
+                    bg-[color-mix(in_oklab,var(--surface)_70%,transparent)]
+                    hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
+                    hover:border-[color-mix(in_oklab,var(--accent)_40%,transparent)]
+                    transition-colors
+                  "
                   onClick={onClose}
                 >
                   Read full About page
                 </Link>
-                <a
-                  href="/Cristian_Flores_Analytics_Resume.pdf"
-                  download="Cristian_Flores_Resume.pdf"
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
-                >
-                  Download resume
-                </a>
               </div>
 
-              <div className="w-full h-px bg-white/10 my-1" />
+              <div className="w-full h-px bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)] my-1" />
 
               {/* Contact block */}
               <div className="flex flex-col items-stretch w-full max-w-xs self-center gap-2">
-                <div className="flex items-center justify-between gap-2 rounded-xl border border-white/10 bg-black/30 px-3 py-2">
-                  <a href={`mailto:${EMAIL}`} className="text-sm font-medium hover:underline truncate">
-                    {EMAIL}
-                  </a>
-                  <button
-                    onClick={async () => { try { await navigator.clipboard.writeText(EMAIL); } catch {} }}
-                    className="text-xs rounded-lg border border-white/10 px-2 py-1 hover:bg-white/5 whitespace-nowrap"
-                  >
-                    Copy
-                  </button>
-                </div>
-
-                {/* Open LinkedIn in a new tab to avoid iOS app handoff */}
+                {/* LinkedIn */}
                 <button
                   type="button"
                   aria-label="Open LinkedIn profile"
                   onClick={() => window.open(LINKEDIN_URL, '_blank', 'noopener,noreferrer')}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm hover:bg-white/5"
+                  className="
+                    inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm
+                    border border-[color-mix(in_oklab,var(--foreground)_12%,transparent)]
+                    bg-[color-mix(in_oklab,var(--background)_70%,transparent)]
+                    hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
+                    hover:border-[color-mix(in_oklab,var(--accent)_40%,transparent)]
+                    transition-colors
+                    text-foreground
+                  "
                 >
-                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
-                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.84v2.05h.05c.53-.95 1.84-2.05 3.8-2.05C20.62 8 23 10.24 23 14.26V23h-4v-7.6c0-1.81-.03-4.13-2.52-4.13-2.52 0-2.91 1.97-2.91 4v7.73h-4V8z"/>
+                  {/* LinkedIn icon */}
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4 fill-current"
+                  >
+                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.84v2.05h.05c.53-.95 1.84-2.05 3.8-2.05C20.62 8 23 10.24 23 14.26V23h-4v-7.6c0-1.81-.03-4.13-2.52-4.13-2.52 0-2.91 1.97-2.91 4v7.73h-4V8z" />
                   </svg>
                   <span className="font-medium">LinkedIn</span>
+                </button>
+
+                {/* GitHub */}
+                <button
+                  type="button"
+                  aria-label="Open GitHub profile"
+                  onClick={() => window.open(GITHUB_URL, '_blank', 'noopener,noreferrer')}
+                  className="
+                    inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm
+                    border border-[color-mix(in_oklab,var(--foreground)_12%,transparent)]
+                    bg-[color-mix(in_oklab,var(--background)_70%,transparent)]
+                    hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
+                    hover:border-[color-mix(in_oklab,var(--accent)_40%,transparent)]
+                    transition-colors
+                    text-foreground
+                  "
+                >
+                  {/* GitHub icon */}
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4 fill-current"
+                  >
+                    <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.87 3.16 9 7.55 10.46.55.1.75-.24.75-.53v-1.87c-3.07.67-3.72-1.48-3.72-1.48-.5-1.27-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.67 2.55 1.19 3.17.91.1-.7.38-1.19.69-1.46-2.45-.28-5.02-1.23-5.02-5.47 0-1.21.43-2.2 1.13-2.97-.11-.28-.49-1.41.11-2.94 0 0 .92-.3 3.01 1.13a10.4 10.4 0 0 1 5.48 0c2.09-1.43 3.01-1.13 3.01-1.13.6 1.53.22 2.66.11 2.94.7.77 1.12 1.76 1.12 2.97 0 4.25-2.58 5.18-5.04 5.45.39.34.74 1.01.74 2.03v3.01c0 .29.2.64.76.53A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5z" />
+                  </svg>
+                  <span className="font-medium">GitHub</span>
                 </button>
               </div>
 
               <button
                 onClick={onClose}
-                className="mt-1 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
+                className="
+                  mt-1 rounded-xl px-4 py-2 text-sm
+                  border border-[color-mix(in_oklab,var(--foreground)_12%,transparent)]
+                  bg-[color-mix(in_oklab,var(--surface)_70%,transparent)]
+                  hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
+                  hover:border-[color-mix(in_oklab,var(--accent)_40%,transparent)]
+                  transition-colors
+                "
               >
                 Close
               </button>

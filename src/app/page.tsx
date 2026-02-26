@@ -1,7 +1,6 @@
 // /app/page.tsx
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Magnetic from "@/components/Magnetic";
@@ -89,10 +88,10 @@ export default function Home() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Magnetic href="/articles" className="btn-accent-hover">Read articles</Magnetic>
-              <Magnetic href="/gallery" className="btn-accent-hover">View gallery</Magnetic>
+              <Magnetic href="/gallery" className="btn-accent-hover">View athlete highlights</Magnetic>
               <Magnetic href="/about" className="btn-accent-hover">What is Undervalued?</Magnetic>
               <Magnetic
-                href="/Cristian_Flores_Analytics_Resume.pdf"
+                href="/CristianFloresResume.pdf"
                 download="Cristian_Flores_Resume.pdf"
                 className="btn-accent-hover"
               >

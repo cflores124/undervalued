@@ -18,7 +18,9 @@ export default function SiteHeader() {
         role="banner"
         className="
           fixed inset-x-0 top-0 z-50
-          bg-background/80 backdrop-blur-sm border-b border-foreground/10
+          bg-[color-mix(in_oklab,var(--background)_78%,transparent)]
+          backdrop-blur-sm
+          border-b border-[color-mix(in_oklab,var(--foreground)_10%,transparent)]
           [padding-top:env(safe-area-inset-top)]
         "
       >
@@ -36,25 +38,48 @@ export default function SiteHeader() {
             <span className="sr-only">Undervalued</span>
           </Link>
 
-          {/* Nav — visible on mobile with tighter spacing/sizing */}
+          {/* Nav */}
           <nav className="flex items-center gap-3 text-xs sm:gap-6 sm:text-sm">
             <Link
               href="/articles"
-              className="nav-link rounded-xl px-2.5 py-1 hover:bg-white/5 sm:px-3 sm:py-1.5"
+              className="
+                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
+                transition-colors
+                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                focus-visible:outline-none
+                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
+                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
+              "
             >
               Articles
             </Link>
+
             <Link
               href="/gallery"
-              className="nav-link rounded-xl px-2.5 py-1 hover:bg-white/5 sm:px-3 sm:py-1.5"
+              className="
+                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
+                transition-colors
+                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                focus-visible:outline-none
+                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
+                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
+              "
             >
-              Gallery
+              Athlete Highlights
             </Link>
+
             <button
               onClick={() => setContactOpen(true)}
-              className="nav-link rounded-xl px-2.5 py-1 hover:bg-white/5 sm:px-3 sm:py-1.5"
+              className="
+                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
+                transition-colors
+                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                focus-visible:outline-none
+                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
+                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
+              "
             >
-              Contact
+              About & Contact
             </button>
           </nav>
         </div>

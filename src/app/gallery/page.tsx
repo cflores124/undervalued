@@ -4,22 +4,22 @@ import CinematicReveal from "@/components/CinematicReveal";
 import GalleryTile from "@/components/GalleryTile";
 
 export const metadata: Metadata = {
-  title: "Gallery — Undervalued",
-  description: "Gallery from Undervalued",
+  title: "Athlete Highlights — Undervalued",
+  description: "Athlete highlights from Undervalued",
 };
 
-export default function GalleryPage() {
-  // Row 1 reveal timing
-  const GRID_REVEAL_DELAY = 1.55;           // existing first-row reveal
-  const SECOND_ROW_DELAY = GRID_REVEAL_DELAY + 0.5; // row 2 reveals 0.5s later
+export default function AthleteHighlightsPage() {
+  // Row reveal timing
+  const GRID_REVEAL_DELAY = 1.55;
+  const SECOND_ROW_DELAY = GRID_REVEAL_DELAY + 0.5;
 
   return (
     <section className="w-full">
       <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-        Gallery
+        Athlete Highlights
       </h1>
 
-      {/* Cinematic excerpt with 0.5s delayed reveal */}
+      {/* Cinematic excerpt */}
       <div className="relative mt-4 max-w-3xl">
         <CinematicReveal
           className="relative"
@@ -29,20 +29,20 @@ export default function GalleryPage() {
           stagger={0.12}
         >
           <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-            <strong>Welcome to the Gallery.</strong> This is where moments meet
-            meaning. Discover snapshots of iconic athletes, trophies, and arenas
-            — each capturing the emotion, atmosphere, and legacy that statistics
-            can't fully explain.
+            <strong>Welcome to Athlete Highlights.</strong> This is where iconic careers
+            meet their defining moments. Explore snapshots of athletes across sports —
+            each capturing the intensity, atmosphere, and legacy that numbers can’t fully
+            explain.
           </p>
         </CinematicReveal>
       </div>
 
-      {/* centered thin divider (90% width) */}
+      {/* centered thin divider */}
       <div className="mt-8 sm:mt-10">
-        <div className="mx-auto h-px w-[90%] bg-white/10" />
+        <div className="mx-auto h-px w-[90%] bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
       </div>
 
-      {/* ROW 1 — Brady / Messi / Álvarez */}
+      {/* ROW 1 */}
       <CinematicReveal
         className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         delay={GRID_REVEAL_DELAY}
@@ -71,7 +71,7 @@ export default function GalleryPage() {
         </>
       </CinematicReveal>
 
-      {/* ROW 2 — left→right: khabib, wbcbelt, kobe (reveals 0.5s after row 1) */}
+      {/* ROW 2 */}
       <CinematicReveal
         className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         delay={SECOND_ROW_DELAY}

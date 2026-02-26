@@ -12,11 +12,10 @@ const ALL_WORDS = [
   'Performance','Efficiency','Precision','Momentum','Strategy',
   'Playbook','Metrics','Tempo','Trajectory','Analytics',
   'Optimization','Prediction','Sequence','Probability','Model',
-  'Simulation','Tracking','Visualization','Correlation','Playcalling', // ← here
+  'Simulation','Tracking','Visualization','Correlation','Playcalling',
   'Pattern','Evaluation','Execution','Adjustment','Variance',
   'Possession','Projection','Pressure','Benchmark','Dominance',
 ];
-
 
 // simple chunk helper
 function chunk<T>(arr: T[], size: number): T[][] {
@@ -41,12 +40,17 @@ function RowMarquee({
       words.map((w, i) => (
         <span
           key={`${w}-${i}`}
-          className="px-3 py-1 mx-[2px] rounded-full border border-foreground/15
-           text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.05em]
-           text-foreground/60 bg-background/30
-           transition-colors duration-200
-           hover:text-[var(--accent)]
-           hover:shadow-[0_0_6px_rgba(216,255,62,0.45)]"
+          className="
+            px-3 py-1 mx-[2px] rounded-full
+            border border-foreground/15
+            text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.05em]
+            text-foreground/60 bg-background/30
+            transition-colors duration-200
+            hover:text-[var(--accent)]
+            hover:border-[color-mix(in_oklab,var(--accent)_55%,transparent)]
+            hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
+            hover:shadow-[0_0_10px_color-mix(in_oklab,var(--accent)_55%,transparent)]
+          "
         >
           {w}
         </span>
@@ -81,15 +85,18 @@ function RowMarquee({
     const fontsReady =
       (document as any).fonts?.ready?.then?.(() => {}) ?? Promise.resolve();
 
+    let ro: ResizeObserver | null = null;
+
     fontsReady.then(() => {
       measure();
 
-      const ro = new ResizeObserver(() => {
+      ro = new ResizeObserver(() => {
         // keep continuity when widths change
         const frac = segWidth ? x / segWidth : 0;
         measure();
         x = frac * segWidth;
       });
+
       ro.observe(a);
       ro.observe(wrap);
 
@@ -115,11 +122,12 @@ function RowMarquee({
       };
 
       raf = requestAnimationFrame(tick);
-
-      return () => ro.disconnect();
     });
 
-    return () => cancelAnimationFrame(raf);
+    return () => {
+      if (ro) ro.disconnect();
+      cancelAnimationFrame(raf);
+    };
   }, [pxPerSec, reverse, words]);
 
   return (
@@ -128,15 +136,16 @@ function RowMarquee({
       <div
         ref={aRef}
         className="absolute inset-y-0 left-0 flex items-center gap-3 sm:gap-4 pr-[4px]
-           will-change-transform opacity-80"
+          will-change-transform opacity-80"
       >
         {chips}
       </div>
+
       {/* Segment B (positioned to the correct side of A) */}
       <div
         ref={bRef}
         className="absolute inset-y-0 left-0 flex items-center gap-3 sm:gap-4 pr-[4px]
-           will-change-transform opacity-80"
+          will-change-transform opacity-80"
       >
         {chips}
       </div>
@@ -146,7 +155,9 @@ function RowMarquee({
       <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent" />
 
       {/* reserve height so absolute children don't collapse */}
-      <div className="invisible flex items-center gap-2 sm:gap-3 py-2">{chips}</div>
+      <div className="invisible flex items-center gap-2 sm:gap-3 py-2">
+        {chips}
+      </div>
     </div>
   );
 }
@@ -159,11 +170,10 @@ export default function WordBanner({ className = '' }: { className?: string }) {
       aria-label="Undervalued word banner"
       className={`relative overflow-hidden rounded-2xl border border-foreground/10 ${className}`}
     >
-      <div className="absolute inset-y-0 left-0 flex items-center gap-3 sm:gap-4 will-change-transform" />
       <div className="relative py-3 sm:py-4 space-y-2 sm:space-y-3">
-        <RowMarquee words={top}    pxPerSec={48} />
+        <RowMarquee words={top} pxPerSec={48} />
         <RowMarquee words={middle} pxPerSec={52} reverse />
-        <RowMarquee words={bottom} pxPerSec={50} /> 
+        <RowMarquee words={bottom} pxPerSec={50} />
       </div>
     </section>
   );
