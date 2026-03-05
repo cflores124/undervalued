@@ -3,23 +3,46 @@ import type { Metadata } from "next";
 import CinematicReveal from "@/components/CinematicReveal";
 
 export const metadata: Metadata = {
-  title: "What's Undervalued — Undervalued",
+  title: "About Undervalued — Undervalued",
   description:
     "What Undervalued is and why it exists: analytics-driven sports stories told with clarity.",
 };
 
 export default function AboutPage() {
   return (
-    <div className="w-full">
+    <section className="w-full">
       <div className="w-full max-w-6xl mx-auto">
         <main className="mt-10">
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
-            What’s Undervalued?
+          {/* Main title */}
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+            About Undervalued
           </h1>
 
+          {/* Description (mirrors Athlete Highlights style) */}
+          <div className="relative mt-4 max-w-3xl">
+            <CinematicReveal
+              className="relative"
+              delay={0.5}
+              y={10}
+              duration={0.55}
+              stagger={0.12}
+            >
+              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
+                <strong>What Undervalued is and why it exists.</strong>{" "}
+                Analytics-driven sports stories told with clarity.
+              </p>
+            </CinematicReveal>
+          </div>
+
+          {/* Divider */}
+          <div className="mt-8 sm:mt-10">
+            <div className="mx-auto h-px w-[90%] bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
+          </div>
+
+          {/* Body */}
           <CinematicReveal
             delay={0.15}
-            stagger={0.75} 
+            stagger={0.12}
             duration={0.7}
             y={18}
             className="
@@ -31,6 +54,16 @@ export default function AboutPage() {
               prose-strong:font-semibold
             "
           >
+            <h2
+              className="
+                not-prose text-2xl sm:text-3xl
+                font-extrabold tracking-tight text-foreground
+                mb-4
+              "
+            >
+              What’s Undervalued?
+            </h2>
+
             <p>
               <strong>Undervalued</strong> is a sports media platform dedicated to telling the
               stories that data often whispers but rarely shouts.
@@ -69,7 +102,9 @@ export default function AboutPage() {
               </li>
             </ol>
 
-            <p><em>Competition unites us.</em></p>
+            <p>
+              <em>Competition unites us.</em>
+            </p>
 
             <p>
               Across every field, court, pitch, and ring, it reminds us that numbers don’t just
@@ -82,13 +117,13 @@ export default function AboutPage() {
             </p>
           </CinematicReveal>
 
-          {/* Optional faint vignette behind the page body */}
+          {/* Background vignette */}
           <div
             className="pointer-events-none fixed inset-0 -z-10
                        bg-[radial-gradient(60%_40%_at_50%_0%,rgba(255,255,255,0.04),transparent_60%)]"
           />
         </main>
       </div>
-    </div>
+    </section>
   );
 }
