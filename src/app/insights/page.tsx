@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CinematicReveal from "@/components/CinematicReveal";
 import InsightFlipCard from "@/components/InsightFlipCard";
+import { insights } from "@/data/insights";
 import merabInsight from "@/data/merab_control_suppression.json";
 
 export const metadata: Metadata = {
@@ -43,30 +44,46 @@ export default function InsightsPage() {
         y={12}
         duration={0.6}
       >
-        <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12">
-          <div className="w-full max-w-[495px]">
-            <InsightFlipCard insight={merabInsight} />
-          </div>
+        <div className="grid gap-8" aria-label="Insights list">
+          {insights.map((insight) => (
+            <div
+              key={insight.slug}
+              className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12"
+            >
+              <div className="w-full max-w-[495px]">
+                <InsightFlipCard insight={merabInsight} />
+              </div>
 
-          <div className="max-w-2xl self-center">
-            <p className="text-base sm:text-lg leading-relaxed text-foreground/78">
-              This insight isolates a broader pattern from the Yan–Merab matchup: control is not
-              just about holding position, but about shaping what the opponent is able to do next.
-              As the control gap grows, striking freedom tends to narrow, turning grappling pressure
-              into a form of offensive suppression rather than just a scoring category.
-            </p>
+              <div className="max-w-2xl self-center">
+                <h2 className="text-2xl font-semibold tracking-tight">
+                  {insight.title}
+                </h2>
 
-            <p className="mt-4 text-sm sm:text-base text-foreground/65">
-              Read the full article{" "}
-              <Link
-                href="/articles/yan-vs-merab"
-                className="underline underline-offset-4 transition-opacity hover:opacity-70"
-              >
-                here
-              </Link>
-              .
-            </p>
-          </div>
+                <p className="mt-2 text-base sm:text-lg leading-relaxed text-foreground/78">
+                  This insight isolates a broader pattern from the Yan–Merab matchup:
+                  control is not just about holding position, but about shaping what the
+                  opponent is able to do next. As the control gap grows, striking freedom
+                  tends to narrow, turning grappling pressure into a form of offensive
+                  suppression rather than just a scoring category.
+                </p>
+
+                <p className="mt-4 text-sm text-foreground/60">
+                  {insight.category}
+                </p>
+
+                <p className="mt-4 text-sm sm:text-base text-foreground/65">
+                  Open the full insight{" "}
+                  <Link
+                    href={`/insights/${insight.slug}`}
+                    className="underline underline-offset-4 transition-opacity hover:opacity-70"
+                  >
+                    here
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </CinematicReveal>
     </section>

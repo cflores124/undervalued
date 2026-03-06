@@ -35,6 +35,7 @@ function getRegressionLine(points: Point[]) {
 
   const sumX = points.reduce((acc, p) => acc + p.x, 0);
   const sumY = points.reduce((acc, p) => acc + p.y, 0);
+
   const meanX = sumX / n;
   const meanY = sumY / n;
 
@@ -116,9 +117,11 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
         : null;
 
     let regressionLine = null;
+
     if (regression) {
       const x1 = xMin;
       const y1 = regression.slope * x1 + regression.intercept;
+
       const x2 = xMax;
       const y2 = regression.slope * x2 + regression.intercept;
 
@@ -150,15 +153,15 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
     <button
       type="button"
       onClick={() => setFlipped((prev) => !prev)}
-      className="w-full text-left [perspective:1400px]"
       aria-label={`Flip insight card for ${insight.athlete}`}
+      className="w-full text-left [perspective:1400px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 rounded-[2rem]"
     >
       <div
         className={`relative aspect-square w-full rounded-[2rem] transition-transform duration-700 [transform-style:preserve-3d] ${
           flipped ? "[transform:rotateY(180deg)]" : ""
         }`}
       >
-        {/* Front */}
+        {/* FRONT */}
         <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-black/10 bg-card shadow-[0_20px_60px_rgba(0,0,0,0.10)] dark:border-white/10 dark:shadow-[0_20px_60px_rgba(0,0,0,0.35)] [backface-visibility:hidden]">
           <div className="relative h-full w-full">
             <Image
@@ -168,37 +171,43 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 560px"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent dark:from-black/85 dark:via-black/25 dark:to-transparent" />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
               <p className="text-[11px] uppercase tracking-[0.22em] text-white/65">
                 Insight
               </p>
+
               <h3 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
                 {insight.athlete}
               </h3>
+
               <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 sm:text-base">
                 {insight.title}
               </p>
+
               <p className="mt-4 text-xs text-white/55">Tap to flip</p>
             </div>
           </div>
         </div>
 
-        {/* Back */}
+        {/* BACK */}
         <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-black/10 bg-card text-card-foreground shadow-[0_20px_60px_rgba(0,0,0,0.10)] dark:border-white/10 dark:shadow-[0_20px_60px_rgba(0,0,0,0.35)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
           <div className="grid h-full grid-rows-[auto,1fr,auto] gap-4 p-5 sm:p-6">
-            <div className="min-h-0">
+            <div>
               <p className="text-[11px] uppercase tracking-[0.22em] text-foreground/45">
                 Insight
               </p>
+
               <h3 className="mt-2 text-xl font-bold tracking-tight text-foreground sm:text-2xl">
                 {insight.athlete}
               </h3>
+
               <p className="mt-1 text-sm text-foreground/70">{insight.title}</p>
             </div>
 
-            <div className="min-h-0 overflow-hidden rounded-[1.5rem] border border-black/8 bg-black/[0.02] p-3 dark:border-white/10 dark:bg-white/[0.03]">
+            <div className="overflow-hidden rounded-[1.5rem] border border-black/8 bg-black/[0.02] p-3 dark:border-white/10 dark:bg-white/[0.03]">
               <svg
                 viewBox={`0 0 ${chart.width} ${chart.height}`}
                 className="h-full w-full"
@@ -206,9 +215,9 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                 aria-label={`${insight.title} scatter plot`}
                 preserveAspectRatio="xMidYMid meet"
               >
-                {/* Horizontal grid */}
                 {chart.yTickValues.map((tick, i) => {
                   const y = chart.scaleY(tick);
+
                   return (
                     <g key={`y-${i}`}>
                       <line
@@ -234,9 +243,9 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   );
                 })}
 
-                {/* Vertical grid */}
                 {chart.xTickValues.map((tick, i) => {
                   const x = chart.scaleX(tick);
+
                   return (
                     <g key={`x-${i}`}>
                       <line
@@ -262,7 +271,6 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   );
                 })}
 
-                {/* Axes */}
                 <line
                   x1={chart.paddingLeft}
                   x2={chart.paddingLeft}
@@ -272,6 +280,7 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   strokeOpacity="0.42"
                   strokeWidth="1.25"
                 />
+
                 <line
                   x1={chart.paddingLeft}
                   x2={chart.width - chart.paddingRight}
@@ -282,7 +291,6 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   strokeWidth="1.25"
                 />
 
-                {/* Regression line */}
                 {insight.showRegression && chart.regressionLine && (
                   <line
                     x1={chart.regressionLine.x1}
@@ -295,7 +303,6 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   />
                 )}
 
-                {/* Points */}
                 {chart.plottedPoints.map((point) => (
                   <circle
                     key={point.key}
@@ -307,7 +314,6 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   />
                 ))}
 
-                {/* X label */}
                 <text
                   x={chart.width / 2}
                   y={chart.height - 10}
@@ -320,7 +326,6 @@ export default function InsightFlipCard({ insight }: InsightFlipCardProps) {
                   {insight.xLabel}
                 </text>
 
-                {/* Y label */}
                 <text
                   x={8}
                   y={chart.height / 2}

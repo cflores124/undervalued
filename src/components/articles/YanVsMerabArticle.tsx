@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import CinematicReveal from "@/components/CinematicReveal";
 import YanMerabInteractive from "@/components/YanMerabInteractive";
-
-const descriptionText =
-  "A structural breakdown of how control differential compresses or restores Petr Yan’s offense against Merab Dvalishvili.";
 
 const description = (
   <>
@@ -13,22 +9,15 @@ const description = (
   </>
 );
 
-export const metadata: Metadata = {
-  title: "What Actually Decides Yan vs. Merab? — Undervalued",
-  description: descriptionText,
-};
-
-export default function YanVsMerabArticlePage() {
+export default function YanVsMerabArticle() {
   return (
     <section className="w-full">
       <div className="mx-auto w-full max-w-6xl">
         <main className="mt-10">
-          {/* Title */}
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
             What Actually Decides Yan vs. Merab?
           </h1>
 
-          {/* Article description */}
           <div className="relative mt-4 max-w-3xl">
             <CinematicReveal
               className="relative"
@@ -43,14 +32,11 @@ export default function YanVsMerabArticlePage() {
             </CinematicReveal>
           </div>
 
-          {/* Divider */}
           <div className="mt-8 sm:mt-10">
             <div className="mx-auto h-px w-[90%] bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
           </div>
 
-          {/* Article + Image layout */}
           <div className="mt-8 grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,1fr)_420px]">
-            {/* Image (TOP on mobile, RIGHT on desktop) */}
             <CinematicReveal
               delay={0.75}
               y={12}
@@ -77,7 +63,6 @@ export default function YanVsMerabArticlePage() {
               </aside>
             </CinematicReveal>
 
-            {/* Article body */}
             <CinematicReveal
               delay={0.15}
               stagger={0.08}
@@ -194,7 +179,6 @@ export default function YanVsMerabArticlePage() {
             </CinematicReveal>
           </div>
 
-          {/* Interactive Model Header */}
           <CinematicReveal
             className="mt-16 text-center"
             delay={0.2}
@@ -206,7 +190,6 @@ export default function YanVsMerabArticlePage() {
             </h2>
           </CinematicReveal>
 
-          {/* Interactive Model */}
           <CinematicReveal
             className="mt-16"
             delay={0.3}
@@ -216,7 +199,6 @@ export default function YanVsMerabArticlePage() {
             <YanMerabInteractive />
           </CinematicReveal>
 
-          {/* Model Explanation + PDF Download */}
           <CinematicReveal
             className="mx-auto mt-6 max-w-3xl space-y-4 text-center"
             delay={0.4}
@@ -257,7 +239,6 @@ export default function YanVsMerabArticlePage() {
             </div>
           </CinematicReveal>
 
-          {/* Background vignette */}
           <div
             className="pointer-events-none fixed inset-0 -z-10
                        bg-[radial-gradient(60%_40%_at_50%_0%,rgba(255,255,255,0.04),transparent_60%)]"

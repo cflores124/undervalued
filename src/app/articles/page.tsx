@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import CinematicReveal from "@/components/CinematicReveal";
 import TiltCard from "@/components/TiltCard";
+import { articles } from "@/data/articles";
 
 export const metadata: Metadata = {
   title: "Articles — Undervalued",
-  description: "Articles from Undervalued",
+  description:
+  "Long-form analytics stories from Undervalued examining performance, tactics, and the structures behind winning.",
 };
 
 export default function ArticlesPage() {
@@ -44,18 +46,25 @@ export default function ArticlesPage() {
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           aria-label="Articles list"
         >
-          <TiltCard href="/articles/yan-vs-merab" className="p-6">
-            <h2 className="text-xl font-semibold tracking-tight group-hover:underline">
-              What Actually Decides Yan vs. Merab?
-            </h2>
+          {articles.map((article) => (
+            <TiltCard
+              key={article.slug}
+              href={`/articles/${article.slug}`}
+              className="p-6"
+            >
+              <h2 className="text-xl font-semibold tracking-tight group-hover:underline">
+                {article.title}
+              </h2>
 
-            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
-              A structural breakdown of how control differential compresses or
-              restores Petr Yan’s striking offense against Merab Dvalishvili.
-            </p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+                {article.description}
+              </p>
 
-            <div className="mt-4 text-xs text-foreground/60">UFC Analysis</div>
-          </TiltCard>
+              <div className="mt-4 text-xs text-foreground/60">
+                {article.readTime} • {article.category}
+              </div>
+            </TiltCard>
+          ))}
         </div>
       </CinematicReveal>
     </section>
