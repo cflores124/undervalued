@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CinematicReveal from "@/components/CinematicReveal";
-import InsightFlipCard from "@/components/InsightFlipCard";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import InsightFlipCard from "@/components/insights/InsightFlipCard";
 import { insights } from "@/data/insights";
 import merabInsight from "@/data/merab_control_suppression.json";
 
@@ -74,7 +74,7 @@ export default function InsightsPage() {
                 <p className="mt-4 text-sm sm:text-base text-foreground/65">
                   Open the full insight{" "}
                   <Link
-                    href={`/insights/${insight.slug}`}
+                    href={`/articles/${insight.relatedArticleSlug}`}
                     className="underline underline-offset-4 transition-opacity hover:opacity-70"
                   >
                     here

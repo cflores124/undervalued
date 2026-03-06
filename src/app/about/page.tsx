@@ -1,6 +1,6 @@
 // /app/about/page.tsx
 import type { Metadata } from "next";
-import CinematicReveal from "@/components/CinematicReveal";
+import CinematicReveal from "@/components/ui/CinematicReveal";
 
 export const metadata: Metadata = {
   title: "About Undervalued — Undervalued",

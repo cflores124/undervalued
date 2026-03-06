@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
-import FooterBand from "@/components/FooterBand";
-import HeaderBand from "@/components/HeaderBand";
-import BFCacheReset from "@/components/BFCacheReset";
+import SiteHeader from "@/components/layout/SiteHeader";
+import SiteFooter from "@/components/layout/SiteFooter";
+import FooterBand from "@/components/layout/FooterBand";
+import HeaderBand from "@/components/layout/HeaderBand";
+import BFCacheReset from "@/components/layout/BFCacheReset";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });

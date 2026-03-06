@@ -1,6 +1,6 @@
 import Link from "next/link";
-import CinematicReveal from "@/components/CinematicReveal";
-import InsightFlipCard from "@/components/InsightFlipCard";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import InsightFlipCard from "@/components/insights/InsightFlipCard";
 import merabInsight from "@/data/merab_control_suppression.json";
 
 export default function MerabControlSuppressionInsight() {

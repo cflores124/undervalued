@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const ContactModal = dynamic(() => import("@/components/ContactModal"), { ssr: false });
+const ContactModal = dynamic(() => import("@/components/layout/ContactModal"), { ssr: false });
 
 export default function SiteHeader() {
   const [contactOpen, setContactOpen] = useState(false);

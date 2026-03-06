@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import CinematicReveal from "@/components/CinematicReveal";
-import TiltCard from "@/components/TiltCard";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import TiltCard from "@/components/ui/TiltCard";
 import { articles } from "@/data/articles";
 
 export const metadata: Metadata = {

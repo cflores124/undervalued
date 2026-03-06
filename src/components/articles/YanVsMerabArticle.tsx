@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CinematicReveal from "@/components/CinematicReveal";
-import YanMerabInteractive from "@/components/YanMerabInteractive";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import YanMerabInteractive from "@/components/features/YanMerabInteractive";
 
 const description = (
   <>

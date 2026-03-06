@@ -1,10 +1,10 @@
 'use client';
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import CinematicReveal from "@/components/CinematicReveal";
-import Magnetic from "@/components/Magnetic";
-import WordBanner from "@/components/WordBanner";
-import TiltCard from "@/components/TiltCard";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import Magnetic from "@/components/ui/Magnetic";
+import WordBanner from "@/components/ui/WordBanner";
+import TiltCard from "@/components/ui/TiltCard";
 
 /* ---------- Spotlight helper ---------- */
 function Spotlight({ children }: { children: React.ReactNode }) {
@@ -74,7 +74,7 @@ export default function Home() {
                   Read articles
                 </Magnetic>
 
-                <Magnetic href="/gallery" className="btn-accent-hover">
+                <Magnetic href="/insights" className="btn-accent-hover">
                   View insights
                 </Magnetic>
 
