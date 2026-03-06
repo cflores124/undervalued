@@ -83,7 +83,7 @@ export default function SiteHeader() {
             </Link>
 
             <Link
-              href="/gallery"
+              href="/insights"
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -197,7 +197,7 @@ export default function SiteHeader() {
               </Link>
 
               <Link
-                href="/gallery"
+                href="/insights"
                 onClick={closeMobileMenu}
                 className="
                   nav-link rounded-xl px-3 py-3 text-sm
