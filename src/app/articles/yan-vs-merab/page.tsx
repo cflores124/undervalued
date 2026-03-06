@@ -3,18 +3,25 @@ import Image from "next/image";
 import CinematicReveal from "@/components/CinematicReveal";
 import YanMerabInteractive from "@/components/YanMerabInteractive";
 
-const description =
+const descriptionText =
   "A structural breakdown of how control differential compresses or restores Petr Yan’s offense against Merab Dvalishvili.";
+
+const description = (
+  <>
+    A <strong>structural breakdown</strong> of how control differential compresses
+    or restores Petr Yan’s offense against Merab Dvalishvili.
+  </>
+);
 
 export const metadata: Metadata = {
   title: "What Actually Decides Yan vs. Merab? — Undervalued",
-  description,
+  description: descriptionText,
 };
 
 export default function YanVsMerabArticlePage() {
   return (
     <section className="w-full">
-      <div className="w-full max-w-6xl mx-auto">
+      <div className="mx-auto w-full max-w-6xl">
         <main className="mt-10">
           {/* Title */}
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
@@ -30,7 +37,7 @@ export default function YanVsMerabArticlePage() {
               duration={0.55}
               stagger={0.12}
             >
-              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
+              <p className="text-base sm:text-lg leading-relaxed text-foreground/80">
                 {description}
               </p>
             </CinematicReveal>
@@ -42,28 +49,35 @@ export default function YanVsMerabArticlePage() {
           </div>
 
           {/* Article + Image layout */}
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_420px] gap-12 items-start">
+          <div className="mt-8 grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,1fr)_420px]">
             {/* Image (TOP on mobile, RIGHT on desktop) */}
-            <aside className="order-1 lg:order-2 lg:sticky lg:top-24">
-              <figure className="space-y-3">
-                <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
-                  <Image
-                    src="/yan-merab-1.jpg"
-                    alt="Petr Yan vs Merab Dvalishvili grappling exchange"
-                    width={900}
-                    height={1100}
-                    className="h-auto w-full object-cover"
-                    priority
-                  />
-                </div>
+            <CinematicReveal
+              delay={0.75}
+              y={12}
+              duration={0.6}
+              className="order-1 lg:order-2 lg:sticky lg:top-24"
+            >
+              <aside>
+                <figure className="space-y-3">
+                  <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                    <Image
+                      src="/yan-merab-1.jpg"
+                      alt="Petr Yan vs Merab Dvalishvili grappling exchange"
+                      width={900}
+                      height={1100}
+                      className="h-auto w-full object-cover"
+                      priority
+                    />
+                  </div>
 
-                <figcaption className="text-xs text-foreground/60 leading-relaxed">
-                  Image from Petr Yan vs Merab Dvalishvili I | Zuffa LLC via Getty Images
-                </figcaption>
-              </figure>
-            </aside>
+                  <figcaption className="text-xs leading-relaxed text-foreground/60">
+                    Image from Petr Yan vs Merab Dvalishvili I | Zuffa LLC via Getty Images
+                  </figcaption>
+                </figure>
+              </aside>
+            </CinematicReveal>
 
-            {/* Article body (bold added sparingly) */}
+            {/* Article body */}
             <CinematicReveal
               delay={0.15}
               stagger={0.08}
@@ -130,7 +144,7 @@ export default function YanVsMerabArticlePage() {
               <p>
                 Control time alone, however, doesn’t fully explain the dynamic. Merab’s system works
                 because it creates a <strong>constant energy battle</strong>. His takedown attempts are layered,
-                shots from stance, entries off the jab, and chain wrestling along the fence, 
+                shots from stance, entries off the jab, and chain wrestling along the fence,
                 forcing opponents into repeated defensive cycles even when attempts are defended.
               </p>
 
@@ -181,19 +195,35 @@ export default function YanVsMerabArticlePage() {
           </div>
 
           {/* Interactive Model Header */}
-          <div className="mt-16 text-center">
+          <CinematicReveal
+            className="mt-16 text-center"
+            delay={0.2}
+            y={10}
+            duration={0.55}
+          >
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
               Control Differential Simulator: Wrestling Pressure vs. Yan’s Offense
             </h2>
-          </div>
+          </CinematicReveal>
 
           {/* Interactive Model */}
-          <div className="mt-16">
+          <CinematicReveal
+            className="mt-16"
+            delay={0.3}
+            y={12}
+            duration={0.6}
+          >
             <YanMerabInteractive />
-          </div>
+          </CinematicReveal>
 
           {/* Model Explanation + PDF Download */}
-          <div className="mt-6 max-w-3xl mx-auto text-center space-y-4">
+          <CinematicReveal
+            className="mx-auto mt-6 max-w-3xl space-y-4 text-center"
+            delay={0.4}
+            y={10}
+            duration={0.55}
+            stagger={0.12}
+          >
             <p className="text-sm sm:text-base leading-relaxed text-foreground/75">
               This model estimates how wrestling pressure affects Petr Yan’s offense. Expected
               control time is calculated from takedown attempts, success rate, and average control
@@ -204,7 +234,7 @@ export default function YanVsMerabArticlePage() {
             </p>
 
             <div className="flex flex-col items-center gap-4">
-              <p className="text-sm text-foreground/70 text-center">
+              <p className="text-center text-sm text-foreground/70">
                 Take a look at the full mathematical breakdown here.
               </p>
 
@@ -214,18 +244,18 @@ export default function YanVsMerabArticlePage() {
                 className="
                   inline-flex items-center justify-center
                   rounded-full
-                  px-4 py-2
-                  text-sm font-medium
                   border border-white/15
                   bg-white/10
-                  hover:bg-white/15
+                  px-4 py-2
+                  text-sm font-medium
                   transition
+                  hover:bg-white/15
                 "
               >
                 Download Modeling PDF
               </a>
             </div>
-          </div>
+          </CinematicReveal>
 
           {/* Background vignette */}
           <div

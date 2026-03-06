@@ -1,7 +1,7 @@
-// /app/page.tsx
 'use client';
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import CinematicReveal from "@/components/CinematicReveal";
 import Magnetic from "@/components/Magnetic";
 import WordBanner from "@/components/WordBanner";
 import TiltCard from "@/components/TiltCard";
@@ -13,10 +13,12 @@ function Spotlight({ children }: { children: React.ReactNode }) {
   const sx = useSpring(mx, { stiffness: 120, damping: 20 });
   const sy = useSpring(my, { stiffness: 120, damping: 20 });
 
-  const bg = useTransform([sx, sy], ([x, y]) =>
-    `radial-gradient(300px 300px at ${x}px ${y}px,
-      color-mix(in oklab, var(--accent) 12%, transparent),
-      transparent 60%)`
+  const bg = useTransform(
+    [sx, sy],
+    ([x, y]) =>
+      `radial-gradient(300px 300px at ${x}px ${y}px,
+        color-mix(in oklab, var(--accent) 12%, transparent),
+        transparent 60%)`
   );
 
   return (
@@ -41,54 +43,72 @@ function Spotlight({ children }: { children: React.ReactNode }) {
 export default function Home() {
   return (
     <div className="w-full">
-      <div className="w-full max-w-6xl mx-auto space-y-10">
-        <WordBanner className="mb-2 sm:mb-4" />
+      <div className="mx-auto w-full max-w-6xl space-y-10">
+        <CinematicReveal
+          className="mb-2 sm:mb-4"
+          delay={0.15}
+          y={10}
+          duration={0.55}
+        >
+          <WordBanner />
+        </CinematicReveal>
 
         <Spotlight>
-          <motion.section
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+          <CinematicReveal
+            delay={0.35}
+            y={12}
+            duration={0.6}
+            stagger={0.12}
           >
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-              Sports stories backed by data.
-            </h1>
+            <section>
+              <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                Sports stories backed by data.
+              </h1>
 
-            <p className="mt-4 text-base sm:text-lg text-foreground/70 max-w-2xl">
-              Clean visuals. Sharp analysis. Zero fluff.
-            </p>
+              <p className="mt-4 max-w-2xl text-base text-foreground/70 sm:text-lg">
+                Clean visuals. Sharp analysis. Zero fluff.
+              </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Magnetic href="/articles" className="btn-accent-hover">
-                Read articles
-              </Magnetic>
-              <Magnetic href="/gallery" className="btn-accent-hover">
-                View athlete highlights
-              </Magnetic>
-              <Magnetic href="/about" className="btn-accent-hover">
-                What is Undervalued?
-              </Magnetic>
-              <Magnetic
-                href="/CristianFloresResume.pdf"
-                download="Cristian_Flores_Resume.pdf"
-                className="btn-accent-hover"
-              >
-                Download resume
-              </Magnetic>
-            </div>
-          </motion.section>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Magnetic href="/articles" className="btn-accent-hover">
+                  Read articles
+                </Magnetic>
+
+                <Magnetic href="/gallery" className="btn-accent-hover">
+                  View insights
+                </Magnetic>
+
+                <Magnetic href="/about" className="btn-accent-hover">
+                  What is Undervalued?
+                </Magnetic>
+
+                <Magnetic
+                  href="/CristianFloresResume.pdf"
+                  download="Cristian_Flores_Resume.pdf"
+                  className="btn-accent-hover"
+                >
+                  Download resume
+                </Magnetic>
+              </div>
+            </section>
+          </CinematicReveal>
         </Spotlight>
 
         {/* LATEST */}
         <section className="mt-2">
-          <h2 className="text-lg font-semibold tracking-tight">Latest</h2>
+          <CinematicReveal
+            delay={0.45}
+            y={10}
+            duration={0.55}
+          >
+            <h2 className="text-lg font-semibold tracking-tight">Latest</h2>
+          </CinematicReveal>
 
           <div className="mt-5 grid gap-6 sm:grid-cols-2">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+            <CinematicReveal
+              delay={0.55}
+              y={12}
+              duration={0.55}
             >
               <TiltCard href="/articles/yan-vs-merab">
                 <h3 className="font-semibold tracking-tight group-hover:underline">
@@ -102,13 +122,12 @@ export default function Home() {
                   6 min read · MMA
                 </span>
               </TiltCard>
-            </motion.div>
+            </CinematicReveal>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
+            <CinematicReveal
+              delay={0.65}
+              y={12}
+              duration={0.55}
             >
               <TiltCard>
                 <h3 className="font-semibold tracking-tight text-foreground/60">
@@ -121,7 +140,7 @@ export default function Home() {
                   — Undervalued
                 </span>
               </TiltCard>
-            </motion.div>
+            </CinematicReveal>
           </div>
         </section>
       </div>

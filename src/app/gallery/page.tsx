@@ -1,25 +1,21 @@
-// /app/gallery/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import CinematicReveal from "@/components/CinematicReveal";
-import GalleryTile from "@/components/GalleryTile";
+import InsightFlipCard from "@/components/InsightFlipCard";
+import merabInsight from "@/data/merab_control_suppression.json";
 
 export const metadata: Metadata = {
-  title: "Athlete Highlights — Undervalued",
-  description: "Athlete highlights from Undervalued",
+  title: "Insights — Undervalued",
+  description: "Short analytical notes and visual insights from Undervalued.",
 };
 
-export default function AthleteHighlightsPage() {
-  // Row reveal timing
-  const GRID_REVEAL_DELAY = 1.55;
-  const SECOND_ROW_DELAY = GRID_REVEAL_DELAY + 0.5;
-
+export default function InsightsPage() {
   return (
     <section className="w-full">
       <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-        Athlete Highlights
+        Insights
       </h1>
 
-      {/* Cinematic excerpt */}
       <div className="relative mt-4 max-w-3xl">
         <CinematicReveal
           className="relative"
@@ -29,75 +25,49 @@ export default function AthleteHighlightsPage() {
           stagger={0.12}
         >
           <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-            <strong>Welcome to Athlete Highlights.</strong> This is where iconic careers
-            meet their defining moments. Explore snapshots of athletes across sports —
-            each capturing the intensity, atmosphere, and legacy that numbers can’t fully
-            explain.
+            <strong>Welcome to Insights.</strong> This is where Undervalued distills
+            deeper analysis into concise visual notes. Each entry is built to highlight
+            a specific performance pattern, tactical mechanism, or analytical idea drawn
+            from the broader logic behind sport.
           </p>
         </CinematicReveal>
       </div>
 
-      {/* centered thin divider */}
       <div className="mt-8 sm:mt-10">
         <div className="mx-auto h-px w-[90%] bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
       </div>
 
-      {/* ROW 1 */}
       <CinematicReveal
-        className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        delay={GRID_REVEAL_DELAY}
+        className="mt-10"
+        delay={0.9}
         y={12}
         duration={0.6}
       >
-        <>
-          <GalleryTile
-            src="/brady.jpeg"
-            alt="Tom Brady celebrating after a touchdown"
-            credit="Photo from Boston.com"
-            paragraph={`Tom Brady turned a sixth-round pick into a two-decade lesson in consistency. Seven rings, 89,000 yards, and 649 touchdowns tell part of the story — the rest is discipline. He mastered control: of tempo, emotion, and preparation. Every rep, every read, every offseason adjustment reflected obsession. Brady’s greatness wasn’t speed or flash — it was endurance. In an era of moments, he built a career on mastery. Greatness, he proved, isn’t about burning bright — it’s about never burning out.`}
-          />
-          <GalleryTile
-            src="/messi.jpeg"
-            alt="Lionel Messi in an Inter Miami jersey"
-            credit="Photo by Megan Briggs / Getty"
-            paragraph={`Lionel Messi plays football like it’s instinct. Every glide, pass, and strike feels inevitable — effortless precision born from years of control. He never overpowers; he orchestrates. Over 800 goals and countless trophies later, his brilliance remains quiet but undeniable. Where others chase chaos, Messi finds calm. His legacy isn’t just dominance — it’s balance, proof that greatness can whisper and still echo forever.`}
-          />
-          <GalleryTile
-            src="/alvarez.jpeg"
-            alt="Canelo Álvarez training in a boxing gym"
-            credit="Photo from The Guardian"
-            paragraph={`Canelo Álvarez turned raw aggression into refined control. From teenage prodigy to undisputed champion, his power evolved with patience. Each counter and body shot reflects study, rhythm, and composure. He doesn’t rush — he dissects. Canelo’s greatness lies not in knockout speed but in surgical precision. Years of craft turned power into poetry, proving that dominance is an equation of timing, discipline, and evolution.`}
-          />
-        </>
-      </CinematicReveal>
+        <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12">
+          <div className="w-full max-w-[495px]">
+            <InsightFlipCard insight={merabInsight} />
+          </div>
 
-      {/* ROW 2 */}
-      <CinematicReveal
-        className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        delay={SECOND_ROW_DELAY}
-        y={12}
-        duration={0.6}
-      >
-        <>
-          <GalleryTile
-            src="/khabib.jpg"
-            alt="Khabib Nurmagomedov pointing after a UFC fight"
-            credit="Photo by Stephen R. Sylvanie / USA TODAY Sports"
-            paragraph={`Khabib Nurmagomedov redefined dominance in mixed martial arts. Undefeated across his career, he combined relentless grappling, control, and discipline to dismantle every opponent. Beyond the octagon, he embodied humility — retiring at his peak to honor his late father. His greatness came from mastery over chaos, both in combat and in life. Khabib left the sport untouched, undefeated in body, mind, and spirit — a symbol of discipline, respect, and absolute control.`}
-          />
-          <GalleryTile
-            src="/wbcbelt.jpg"
-            alt="Close-up of the green WBC world championship belt"
-            credit="Photo from wbcboxing / Instagram"
-            paragraph={`The WBC Championship belt stands as boxing’s ultimate symbol of greatness — a crown worn by legends. Since 1963, it has embodied excellence, discipline, and honor, its green leather and gold design carrying the legacy of champions like Ali, Tyson, Mayweather, and Álvarez. More than a title, it represents mastery earned through resilience and respect. The WBC belt isn’t just a prize — it’s the embodiment of boxing’s most prestigious tradition.`}
-          />
-          <GalleryTile
-            src="/kobe.jpg"
-            alt="Kobe Bryant celebrating amid confetti after a Lakers championship"
-            credit="Photo from Sports Illustrated"
-            paragraph={`Kobe Bryant embodied obsession turned into mastery. His “Mamba Mentality” became a blueprint for greatness — built on discipline, resilience, and an unrelenting will to win. Five championships, an MVP, and countless iconic moments defined his career, but his impact reached far beyond basketball. Kobe inspired generations to chase excellence with purpose and passion, proving that true greatness is earned through sacrifice, focus, and relentless belief in one’s craft.`}
-          />
-        </>
+          <div className="max-w-2xl self-center">
+            <p className="text-base sm:text-lg leading-relaxed text-foreground/78">
+              This insight isolates a broader pattern from the Yan–Merab matchup: control is not
+              just about holding position, but about shaping what the opponent is able to do next.
+              As the control gap grows, striking freedom tends to narrow, turning grappling pressure
+              into a form of offensive suppression rather than just a scoring category.
+            </p>
+
+            <p className="mt-4 text-sm sm:text-base text-foreground/65">
+              Read the full article{" "}
+              <Link
+                href="/articles/yan-vs-merab"
+                className="underline underline-offset-4 transition-opacity hover:opacity-70"
+              >
+                here
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
       </CinematicReveal>
     </section>
   );

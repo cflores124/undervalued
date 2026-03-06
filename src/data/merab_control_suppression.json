@@ -1,0 +1,78 @@
+{
+  "athlete": "Merab Dvalishvili",
+  "title": "Control Differential vs Strike Suppression",
+  "image": "/merab.jpg",
+  "xLabel": "Net Control Differential (minutes)",
+  "yLabel": "Strike Suppression (%)",
+  "showRegression": true,
+  "points": [
+    {
+      "x": 7.45,
+      "y": 1.86
+    },
+    {
+      "x": -0.03,
+      "y": 0
+    },
+    {
+      "x": 11.53,
+      "y": 86.73
+    },
+    {
+      "x": 7.92,
+      "y": 55.65
+    },
+    {
+      "x": 5.62,
+      "y": 38.14
+    },
+    {
+      "x": 9.22,
+      "y": 62.37
+    },
+    {
+      "x": 3.67,
+      "y": 43.75
+    },
+    {
+      "x": 1.25,
+      "y": 25.93
+    },
+    {
+      "x": 5.5,
+      "y": 8.6
+    },
+    {
+      "x": 5.1,
+      "y": 30.59
+    },
+    {
+      "x": 5.05,
+      "y": 41.86
+    },
+    {
+      "x": 2.3,
+      "y": 49.52
+    },
+    {
+      "x": 10.05,
+      "y": 68.93
+    },
+    {
+      "x": 0.75,
+      "y": 0
+    },
+    {
+      "x": 6.48,
+      "y": 65.15
+    },
+    {
+      "x": 10.03,
+      "y": 34.16
+    },
+    {
+      "x": 2.28,
+      "y": 0
+    }
+  ]
+}

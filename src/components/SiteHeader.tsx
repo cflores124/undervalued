@@ -1,4 +1,3 @@
-// /components/SiteHeader.tsx
 'use client';
 
 import Image from "next/image";
@@ -6,11 +5,13 @@ import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-// Lazy-load the modal; no SSR markup
 const ContactModal = dynamic(() => import("@/components/ContactModal"), { ssr: false });
 
 export default function SiteHeader() {
   const [contactOpen, setContactOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
     <>
@@ -24,32 +25,35 @@ export default function SiteHeader() {
           [padding-top:env(safe-area-inset-top)]
         "
       >
-        <div className="mx-auto w-full max-w-6xl h-[10svh] px-6 sm:px-12 flex items-center justify-between">
+        <div className="mx-auto flex h-[10svh] w-full max-w-6xl items-center justify-between px-5 sm:px-12">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3" aria-label="Undervalued">
+          <Link
+            href="/"
+            className="flex items-center"
+            aria-label="Undervalued"
+            onClick={closeMobileMenu}
+          >
             <Image
               src="/undervaluedlogo-light.png"
               alt="Undervalued"
-              width={130}
-              height={130}
-              className="w-28 h-auto sm:w-[130px] logo-light"
+              width={170}
+              height={170}
+              className="logo-light h-auto w-[120px] sm:w-[150px]"
               priority
             />
             <Image
               src="/undervaluedlogo-dark.png"
               alt="Undervalued"
-              width={130}
-              height={130}
-              className="w-28 h-auto sm:w-[130px] logo-dark"
+              width={170}
+              height={170}
+              className="logo-dark h-auto w-[120px] sm:w-[150px]"
               priority
             />
             <span className="sr-only">Undervalued</span>
           </Link>
 
-          {/* Nav */}
-          <nav className="flex items-center gap-3 text-xs sm:gap-6 sm:text-sm">
-            
-            {/* Home */}
+          {/* Desktop Nav */}
+          <nav className="hidden items-center gap-3 text-xs sm:flex sm:gap-6 sm:text-sm">
             <Link
               href="/"
               className="
@@ -64,7 +68,6 @@ export default function SiteHeader() {
               Home
             </Link>
 
-            {/* Articles */}
             <Link
               href="/articles"
               className="
@@ -79,7 +82,6 @@ export default function SiteHeader() {
               Articles
             </Link>
 
-            {/* Gallery */}
             <Link
               href="/gallery"
               className="
@@ -91,10 +93,9 @@ export default function SiteHeader() {
                 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
               "
             >
-              Athlete Highlights
+              Insights
             </Link>
 
-            {/* About */}
             <Link
               href="/about"
               className="
@@ -109,7 +110,6 @@ export default function SiteHeader() {
               About
             </Link>
 
-            {/* Contact */}
             <button
               onClick={() => setContactOpen(true)}
               className="
@@ -124,10 +124,120 @@ export default function SiteHeader() {
               Contact
             </button>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            className="
+              sm:hidden inline-flex items-center justify-center rounded-xl px-3 py-2
+              transition-colors
+              hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+              focus-visible:outline-none
+              focus-visible:ring-2 focus-visible:ring-[var(--ring)]
+              focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
+            "
+          >
+            <span className="sr-only">Menu</span>
+            <div className="flex h-5 w-5 flex-col items-center justify-center gap-[3px]">
+              <span
+                className={`block h-[1.5px] w-5 bg-current transition-transform duration-200 ${
+                  mobileMenuOpen ? "translate-y-[4.5px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`block h-[1.5px] w-5 bg-current transition-opacity duration-200 ${
+                  mobileMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
+                className={`block h-[1.5px] w-5 bg-current transition-transform duration-200 ${
+                  mobileMenuOpen ? "-translate-y-[4.5px] -rotate-45" : ""
+                }`}
+              />
+            </div>
+          </button>
         </div>
+
+        {/* Mobile Dropdown */}
+        {mobileMenuOpen && (
+          <div
+            className="
+              sm:hidden border-t
+              border-[color-mix(in_oklab,var(--foreground)_10%,transparent)]
+              bg-[color-mix(in_oklab,var(--background)_92%,transparent)]
+              backdrop-blur-sm
+            "
+          >
+            <nav className="mx-auto flex w-full max-w-6xl flex-col px-5 py-3">
+              <Link
+                href="/"
+                onClick={closeMobileMenu}
+                className="
+                  nav-link rounded-xl px-3 py-3 text-sm
+                  transition-colors
+                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                "
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/articles"
+                onClick={closeMobileMenu}
+                className="
+                  nav-link rounded-xl px-3 py-3 text-sm
+                  transition-colors
+                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                "
+              >
+                Articles
+              </Link>
+
+              <Link
+                href="/gallery"
+                onClick={closeMobileMenu}
+                className="
+                  nav-link rounded-xl px-3 py-3 text-sm
+                  transition-colors
+                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                "
+              >
+                Insights
+              </Link>
+
+              <Link
+                href="/about"
+                onClick={closeMobileMenu}
+                className="
+                  nav-link rounded-xl px-3 py-3 text-sm
+                  transition-colors
+                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                "
+              >
+                About
+              </Link>
+
+              <button
+                onClick={() => {
+                  closeMobileMenu();
+                  setContactOpen(true);
+                }}
+                className="
+                  nav-link rounded-xl px-3 py-3 text-left text-sm
+                  transition-colors
+                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
+                "
+              >
+                Contact
+              </button>
+            </nav>
+          </div>
+        )}
       </header>
 
-      {/* Mount modal only when opened */}
       {contactOpen && (
         <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
       )}
