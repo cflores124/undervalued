@@ -1,5 +1,5 @@
 // /app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +15,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Undervalued",
   description: "Analytics-driven sports stories told with clarity.",
-  // Makes browser UI (address bar, etc.) use a dark color
+};
+
+export const viewport: Viewport = {
   themeColor: "#0b0b0b",
 };
 
@@ -25,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Forces dark color-scheme for built-in form controls & scrollbars */}
         <meta name="color-scheme" content="dark" />
-        <meta name="theme-color" content="#0b0b0b" />
       </head>
 
       {/* body is the scroll container; reserve space for fixed header & footer */}
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           geistMono.variable,
           // Dark base colors
           "antialiased bg-[#0b0b0b] text-neutral-200",
-          // Smooth selection color (optional)
+          // Smooth selection color
           "selection:bg-lime-300/20 selection:text-neutral-100",
           // Layout paddings for fixed header/footer
           "min-h-dvh overflow-y-scroll",

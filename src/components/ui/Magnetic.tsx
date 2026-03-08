@@ -12,7 +12,7 @@ type MagneticProps = {
   children: React.ReactNode;
 } & HTMLMotionProps<"a">;
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 const MotionA = motion.a;
 
 export default function Magnetic({
@@ -77,9 +77,7 @@ export default function Magnetic({
 
   const baseClass = `btn ${className}`;
 
-  // --- HYDRATION-SAFE STYLE ---
-  // Always include a baseline transform so server & client HTML match.
-  // Framer will override this on the client when motion values are present.
+  // Hydration-safe baseline transform
   const baseStyle: React.CSSProperties = { transform: "none" };
   const motionStyle = isDesktopHover
     ? ({ ...baseStyle, x: rx as any, y: ry as any } as any)
