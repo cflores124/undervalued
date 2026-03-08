@@ -70,11 +70,13 @@ export default function YanVsMerabArticle() {
               y={14}
               className="
                 order-2 lg:order-1
-                prose prose-invert prose-lg max-w-3xl
+                prose prose-lg max-w-3xl
+                dark:prose-invert
                 space-y-6 md:space-y-7
                 prose-p:my-0 prose-p:leading-[1.9]
                 prose-p:text-foreground/80
-                prose-strong:font-semibold
+                prose-headings:text-foreground
+                prose-strong:font-semibold prose-strong:text-foreground
               "
             >
               <p>
@@ -99,7 +101,7 @@ export default function YanVsMerabArticle() {
                 <strong>net control differential</strong>.
               </p>
 
-              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
                 What do the numbers tell us?
               </h2>
 
@@ -140,7 +142,7 @@ export default function YanVsMerabArticle() {
                 expands.
               </p>
 
-              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
                 Why does net control differential matter?
               </h2>
 
@@ -170,7 +172,7 @@ export default function YanVsMerabArticle() {
                 attempts to escape. Over time, the result is cumulative fatigue.
               </p>
 
-              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
                 How can fighters eliminate this threat?
               </h2>
 
@@ -195,7 +197,7 @@ export default function YanVsMerabArticle() {
                 the net control differential.
               </p>
 
-              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
                 Tying it all together:
               </h2>
 
@@ -227,7 +229,7 @@ export default function YanVsMerabArticle() {
             y={10}
             duration={0.55}
           >
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
               Control Differential Simulator: Wrestling Pressure vs. Yan’s Offense
             </h2>
           </CinematicReveal>
