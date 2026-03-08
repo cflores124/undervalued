@@ -97,7 +97,7 @@ export default function YanVsMerabArticle() {
               </p>
 
               <p>
-                The structural hinge of this matchup is{" "}
+                Through this lens, the structural hinge of this matchup is{" "}
                 <strong>net control differential</strong>.
               </p>
 
@@ -180,7 +180,7 @@ export default function YanVsMerabArticle() {
                 In the second fight, Yan addressed this problem through{" "}
                 <strong>defensive efficiency</strong>. Instead of attempting to
                 eliminate control pressure, he turned into it. This is because
-                Merab’s system is like quicksand; the more you fight it, the more
+                Merab’s system works like quicksand; the more you fight it, the more
                 it pulls you in. Rather than defending takedowns purely in open
                 space, Yan moved toward the fence, where he could leverage the
                 fence to stay upright and concentrate on posture, reversing weight

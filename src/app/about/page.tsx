@@ -5,7 +5,7 @@ import CinematicReveal from "@/components/ui/CinematicReveal";
 export const metadata: Metadata = {
   title: "About Undervalued — Undervalued",
   description:
-    "What Undervalued is and why it exists: analytics-driven sports stories told with clarity.",
+    "What Undervalued is and why it exists: a sports intelligence platform built to uncover what is truly driving results.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
             About Undervalued
           </h1>
 
-          {/* Description (mirrors Athlete Highlights style) */}
+          {/* Description */}
           <div className="relative mt-4 max-w-3xl">
             <CinematicReveal
               className="relative"
@@ -29,7 +29,8 @@ export default function AboutPage() {
             >
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
                 <strong>What Undervalued is and why it exists.</strong>{" "}
-                Analytics-driven sports stories told with clarity.
+                A sports intelligence platform built to uncover what is truly
+                driving results.
               </p>
             </CinematicReveal>
           </div>
@@ -61,23 +62,27 @@ export default function AboutPage() {
                 mb-4
               "
             >
-              What’s Undervalued?
+              What is Undervalued?
             </h2>
 
             <p>
-              <strong>Undervalued</strong> is a sports media platform dedicated to telling the
-              stories that data often whispers but rarely shouts.
+              <strong>Undervalued</strong> is a sports intelligence platform
+              dedicated to extracting insights and telling stories that data
+              often whispers but rarely shouts.
             </p>
 
             <p>
-              Through an analytical lens, we explore the moments, performances, and legacies that
-              define competition — whether it’s an individual’s breakthrough, a team’s championship
-              run, or an organization’s quiet evolution into greatness.
+              Through quantitative, strategic, and biomechanical analysis, we
+              examine the moments, performances, and systems that shape
+              competition. From individual breakthroughs to championship runs
+              and the quiet evolution of great organizations, Undervalued seeks
+              to uncover what is truly driving results.
             </p>
 
             <p>
-              No sport or story is off limits. Our mission is simple: use analytics to tell
-              powerful stories that change the way we see sports — and the people within them.
+              No sport or story is off limits. The mission is simple: use
+              analytics to better understand what is actually happening in
+              competition.
             </p>
 
             <h2
@@ -90,30 +95,23 @@ export default function AboutPage() {
               Why Undervalued?
             </h2>
 
-            <ol className="pl-5 list-decimal space-y-2">
-              <li>
-                The name pays homage to Moneyball — where the Oakland A’s, Billy Beane, and Paul
-                DePodesta revolutionized baseball by using analytics to uncover undervalued players
-                and outthink bigger budgets.
-              </li>
-              <li>
-                Because, truthfully, we’ve all felt undervalued at some point — underestimated,
-                overlooked, or doubted — until effort, vision, and belief proved otherwise.
-              </li>
-            </ol>
+            <p>
+              The name pays homage to <em>Moneyball</em>, where the Oakland A’s,
+              Billy Beane, and Paul DePodesta revolutionized baseball by using
+              analytics to uncover undervalued players and outthink bigger
+              budgets.
+            </p>
+
+            <p>But the idea goes deeper than baseball.</p>
 
             <p>
-              <em>Competition unites us.</em>
+              Determining whether something is truly undervalued requires
+              looking beyond surface results and asking harder questions about
+              performance, strategy, and the systems that drive success.
             </p>
 
             <p>
-              Across every field, court, pitch, and ring, it reminds us that numbers don’t just
-              measure performance — they tell stories of resilience, innovation, and triumph.
-            </p>
-
-            <p>
-              At its best, <strong>Undervalued</strong> is a celebration of those stories — where
-              analytics meets inspiration, and where the overlooked become unforgettable.
+              <strong>Undervalued</strong> exists to ask those questions.
             </p>
           </CinematicReveal>
 
