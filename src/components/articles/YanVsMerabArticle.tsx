@@ -78,103 +78,145 @@ export default function YanVsMerabArticle() {
               "
             >
               <p>
-                What decides a fight between Petr Yan and Merab Dvalishvili? Is it damage, volume,
-                or something more structural like <strong>pace-driven control pressure</strong>?
+                <span className="float-left mr-2 mt-1 text-6xl sm:text-7xl font-bold leading-[0.82]">
+                  W
+                </span>
+                hat decides a fight between Petr Yan and Merab Dvalishvili? Is it
+                damage, volume, or something more structural like{" "}
+                <strong>high-pace control pressure</strong>?
               </p>
 
               <p>
-                Across their two meetings, viewers saw two variations of the same fight. In the first,
-                <strong> Merab’s relentless wrestling pressure</strong> compressed Yan’s offensive freedom and led him
-                to a decision victory. In the second, <strong>Yan’s defensive adjustment</strong> disrupted that
-                pressure, allowing his striking to return and enabling him to capture the win.
+                Across their two meetings, viewers saw two variations of the same
+                fight. In the first fight, Merab’s relentless wrestling compressed
+                Yan’s offensive ability, leading Merab to a decision victory. Yan’s
+                defensive adjustment in the second fight disrupted that pressure,
+                allowing his striking to return and reversing the outcome.
               </p>
 
               <p>
-                The structural hinge of this matchup appears to be <strong>control differential</strong>. As that gap
-                expands in Merab’s favor, Yan’s offense contracts. When the gap narrows, Yan’s
-                striking returns.
+                The structural hinge of this matchup is{" "}
+                <strong>net control differential</strong>.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+                What do the numbers tell us?
+              </h2>
+
+              <p>
+                In the pair&apos;s first meeting, Merab attempted{" "}
+                <strong>49 takedowns</strong>, landing <strong>11</strong>, and over
+                five rounds he accumulated <strong>6:53 of control time</strong>{" "}
+                compared to Yan’s <strong>1:50</strong>. This resulted in a{" "}
+                <strong>net control differential of 5:03</strong>, which accounted
+                for roughly <strong>79%</strong> of the fight&apos;s overall control
+                time. Yan’s striking output reflected that level of sustained
+                pressure. Throughout the fight, Yan landed{" "}
+                <strong>75 significant strikes</strong>, just{" "}
+                <strong>3.0 per minute</strong>, which is well below his typical
+                pace, and the rounds in which Merab controlled the most time also
+                produced some of Yan’s lowest strike totals (rounds 3 &amp; 5).
               </p>
 
               <p>
-                In their first meeting, Merab attempted <strong>49 takedowns</strong>, landing <strong>11</strong>. Over five rounds,
-                he accumulated <strong>6:53 of control time</strong> compared to Yan’s <strong>1:50</strong>, that is a <strong>5:03 control
-                differential</strong> which accounted for roughly <strong>79%</strong> of the fight’s total control time.
+                Dynamics shifted in the second fight. Merab’s takedown attempts
+                dropped to <strong>29</strong>, and his success rate fell from{" "}
+                <strong>22%</strong> to just <strong>6%</strong>, producing only{" "}
+                <strong>two completed takedowns</strong>. The{" "}
+                <strong>net control differential</strong> shrank to just{" "}
+                <strong>2:17</strong>, less than half of the first fight’s gap.
+                Freed from this sustained control, Yan’s offense rebounded. This
+                time around, Yan was able to land{" "}
+                <strong>139 significant strikes</strong> and increased his output
+                from <strong>3.0 to 5.56 per minute</strong>, nearly doubling his
+                rate.
               </p>
 
               <p>
-                Yan’s offensive output reflected that level of pressure. He landed <strong>75 significant
-                strikes</strong>, just <strong>3.0 per minute</strong>, well below his typical pace. The rounds in which
-                Merab controlled the most time also produced some of Yan’s lowest strike totals (rounds 3 & 5).
-              </p>
-
-              <p>
-                In the second fight, that balance shifted. Merab’s takedown attempts dropped from
-                <strong> 49 to 29</strong>, and his success rate fell from <strong>22%</strong> to just <strong>6%</strong>, producing only <strong>two completed
-                takedowns</strong>. The control differential shrank to <strong>2:17</strong>, less than half of the first
-                fight’s gap.
-              </p>
-
-              <p>
-                Freed from sustained control pressure, Yan’s offense rebounded. He landed <strong>139
-                significant strikes</strong> and increased his output to <strong>5.56 per minute</strong>, nearly doubling
-                his rate from the first fight.
-              </p>
-
-              <p>
-                Across both bouts, the pattern is consistent: as the <strong>control differential expands</strong>,
-                Yan’s offense contracts, and as the <strong>control differential contracts</strong>, Yan’s offense
+                Across both bouts, the pattern is consistent: as the{" "}
+                <strong>net control differential expands</strong>, Yan’s offense
+                contracts, and as the{" "}
+                <strong>net control differential contracts</strong>, Yan’s offense
                 expands.
               </p>
 
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+                Why does net control differential matter?
+              </h2>
+
               <p>
-                Control time alone, however, doesn’t fully explain the dynamic. Merab’s system works
-                because it creates a <strong>constant energy battle</strong>. His takedown attempts are layered,
-                shots from stance, entries off the jab, and chain wrestling along the fence,
-                forcing opponents into repeated defensive cycles even when attempts are defended.
+                Control time alone doesn’t fully explain the dynamic of the fight.
+                The reason it matters is because Merab’s high-paced wrestling
+                pressure creates an environment where energy is constantly being
+                expended. During fights, Merab layers his takedown attempts with
+                shots from stance, entries off the jab, and chain wrestling along
+                the fence. This forces his opponents into repeated defensive cycles,
+                where offensive rhythm is never allowed to establish because
+                fighters are constantly defending an onslaught of takedown attempts.
               </p>
 
               <p>
-                Once control is established, Merab prioritizes <strong>exhausting his opponent</strong> rather than
-                chasing quick submissions. By placing his chest across the back of an opponent’s
-                head and shoulders, he forces them to <strong>carry his weight</strong> while fighting hands and
-                attempting to stand.
+                Once control is established, energy depletion is doubled as Merab
+                prioritizes exhausting his opponent rather than chasing quick
+                submissions. Merab accomplishes this by placing his upper body
+                across the back of an opponent&apos;s head and shoulders, forcing
+                them to carry his weight while attempting to stand, fighting hands,
+                and trying to escape.
               </p>
 
               <p>
-                This creates sustained <strong>isometric tension</strong> across the posterior chain (neck, back,
-                hips, and legs) while the defender attempts to escape. Over time, the result is
-                <strong> cumulative fatigue</strong>.
+                The result is sustained <strong>isometric tension</strong> across
+                the posterior chain (neck, back, hips, and legs) while the defender
+                attempts to escape. Over time, the result is cumulative fatigue.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+                How can fighters eliminate this threat?
+              </h2>
+
+              <p>
+                In the second fight, Yan addressed this problem through{" "}
+                <strong>defensive efficiency</strong>. Instead of attempting to
+                eliminate control pressure, he turned into it. This is because
+                Merab’s system is like quicksand; the more you fight it, the more
+                it pulls you in. Rather than defending takedowns purely in open
+                space, Yan moved toward the fence, where he could leverage the
+                fence to stay upright and concentrate on posture, reversing weight
+                distribution, and hand fighting. By doing this, Yan transferred
+                energy expenditure to Merab, as it then became the onus of Merab to
+                pull Yan down to the ground.
               </p>
 
               <p>
-                In the second fight, Yan addressed this problem through <strong>defensive efficiency</strong>. Rather
-                than defending takedowns purely in open space, he moved toward the fence, where he
-                could stay upright and concentrate on <strong>hand fighting, posture, and reversing weight
-                distribution</strong>.
+                This reduced the muscular load required to defend while allowing Yan
+                to re-establish his jab-to-overhand-right combination with full
+                kinetic sequencing. This forced Merab to respect damage upon entry,
+                further slowing down his pace of wrestling exchanges and narrowing
+                the net control differential.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-white">
+                Tying it all together:
+              </h2>
+
+              <p>
+                Viewed this way, Yan vs. Merab is not simply striker versus
+                wrestler. It is a contest over who controls the fight’s{" "}
+                <strong>energy economy</strong>.
               </p>
 
               <p>
-                This reduced the muscular load required to defend while allowing Yan to re-establish
-                his jab-to-straight-right combination with full kinetic sequencing. By forcing Merab
-                to respect damage upon entry, he slowed the pace of wrestling exchanges and narrowed
-                the control differential.
+                Merab wins when he expands the control gap and forces Yan into
+                repeated defensive cycles that accumulate fatigue. Yan wins when he
+                compresses that gap, reverses energy expenditure, and preserves
+                enough energy for his striking to dictate the fight.
               </p>
 
               <p>
-                Viewed this way, Yan vs. Merab is not simply striker versus wrestler. It is a contest
-                over who controls the fight’s <strong>energy economy</strong>.
-              </p>
-
-              <p>
-                Merab wins when he <strong>expands the control gap</strong> and forces Yan into repeated defensive
-                cycles that accumulate fatigue. Yan wins when he <strong>compresses that gap</strong> and preserves
-                enough energy for his striking to <strong>dictate the fight</strong>.
-              </p>
-
-              <p>
-                In this matchup, control time is more than a statistic, it is the <strong>physical
-                expression of pressure, fatigue, and positional dominance</strong>, and the fighter who
-                controls that differential ultimately controls the fight.
+                In this matchup, control time is more than a statistic; it is the
+                physical expression of pressure, fatigue, and positional dominance,
+                and the fighter who controls that differential ultimately controls
+                the fight.
               </p>
             </CinematicReveal>
           </div>
@@ -207,11 +249,12 @@ export default function YanVsMerabArticle() {
             stagger={0.12}
           >
             <p className="text-sm sm:text-base leading-relaxed text-foreground/75">
-              This model estimates how wrestling pressure affects Petr Yan’s offense. Expected
-              control time is calculated from takedown attempts, success rate, and average control
-              time per successful takedown over a 25-minute fight. As Merab’s control share
-              increases, Yan spends more time defending and less time striking. The model therefore
-              reduces Yan’s expected strike output as both wrestling threat and control
+              This model estimates how wrestling pressure affects Petr Yan’s
+              offense. Expected control time is calculated from takedown attempts,
+              success rate, and average control time per successful takedown over a
+              25-minute fight. As Merab’s control share increases, Yan spends more
+              time defending and less time striking. The model therefore reduces
+              Yan’s expected strike output as both wrestling threat and control
               differential grow.
             </p>
 

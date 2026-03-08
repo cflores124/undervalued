@@ -7,7 +7,7 @@ export default function MerabControlSuppressionInsight() {
   return (
     <section className="w-full">
       <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-        Merab Dvalishvili
+        High-Paced Control Pressure
       </h1>
 
       <div className="relative mt-4 max-w-3xl">
@@ -37,21 +37,24 @@ export default function MerabControlSuppressionInsight() {
         duration={0.6}
       >
         <div className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12">
+          
           <div className="w-full max-w-[495px]">
             <InsightFlipCard insight={merabInsight} />
           </div>
 
           <div className="max-w-2xl self-center">
             <p className="text-base sm:text-lg leading-relaxed text-foreground/78">
-              This insight isolates a broader pattern from the Yan–Merab matchup:
-              control is not just about holding position, but about shaping what the
-              opponent is able to do next. As the control gap grows, striking freedom
-              tends to narrow, turning grappling pressure into a form of offensive
-              suppression rather than just a scoring category.
+              Control in MMA is a broad statistic. It can demonstrate dominance,
+              targeted submission attempts, ground and pound opportunities, and
+              more. For Merab, control is not just about holding position, but
+              about shaping what the opponent is able to do next. As the control
+              gap grows in Merab’s favor, his opponents' striking freedom tends
+              to narrow, turning wrestling pressure into a form of offensive
+              suppression rather than a scoring category.
             </p>
 
             <p className="mt-4 text-sm sm:text-base text-foreground/65">
-              Read the full article{" "}
+              Read the full breakdown{" "}
               <Link
                 href="/articles/yan-vs-merab"
                 className="underline underline-offset-4 transition-opacity hover:opacity-70"
@@ -61,6 +64,7 @@ export default function MerabControlSuppressionInsight() {
               .
             </p>
           </div>
+
         </div>
       </CinematicReveal>
     </section>

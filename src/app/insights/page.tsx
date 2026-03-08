@@ -60,11 +60,7 @@ export default function InsightsPage() {
                 </h2>
 
                 <p className="mt-2 text-base sm:text-lg leading-relaxed text-foreground/78">
-                  This insight isolates a broader pattern from the Yan–Merab matchup:
-                  control is not just about holding position, but about shaping what the
-                  opponent is able to do next. As the control gap grows, striking freedom
-                  tends to narrow, turning grappling pressure into a form of offensive
-                  suppression rather than just a scoring category.
+                  {insight.excerpt}
                 </p>
 
                 <p className="mt-4 text-sm text-foreground/60">
@@ -72,7 +68,7 @@ export default function InsightsPage() {
                 </p>
 
                 <p className="mt-4 text-sm sm:text-base text-foreground/65">
-                  Open the full insight{" "}
+                  {insight.ctaText ?? "Open the full insight"}{" "}
                   <Link
                     href={`/articles/${insight.relatedArticleSlug}`}
                     className="underline underline-offset-4 transition-opacity hover:opacity-70"
