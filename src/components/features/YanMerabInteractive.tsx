@@ -25,11 +25,11 @@ const DEFAULTS: Constants = {
   s0: 5.96,
 };
 
-// Slider bounds + defaults (from your Shiny script)
+// Slider bounds + defaults
 const BOUNDS = {
   r: { min: 0.986, max: 2.254, step: 0.01, default: 1.56 },
   p: { min: 0.0586, max: 0.2582, step: 0.001, default: 0.176 },
-  c: { min: 31.914, max: 179.4, step: 0.5, default: 55.769 },
+  c: { min: 31.914, max: 179.4, step: 0.1, default: 55.8 },
 };
 
 function clamp01(x: number) {
@@ -123,6 +123,7 @@ function SliderRow({
   step,
   value,
   onChange,
+  formatValue,
 }: {
   label: string;
   min: number;
@@ -130,9 +131,10 @@ function SliderRow({
   step: number;
   value: number;
   onChange: (v: number) => void;
+  formatValue?: (v: number) => string;
 }) {
   const decimals =
-    step < 0.001 ? 4 : step < 0.01 ? 3 : step < 0.1 ? 2 : step < 1 ? 2 : 1;
+    step < 0.001 ? 4 : step < 0.01 ? 3 : step < 0.1 ? 2 : step < 1 ? 1 : 1;
 
   return (
     <div className="space-y-3">
@@ -140,7 +142,6 @@ function SliderRow({
         {label}
       </div>
 
-      {/* Theme-aware range input (accent via global tokens) */}
       <input
         type="range"
         min={min}
@@ -156,7 +157,7 @@ function SliderRow({
       />
 
       <div className="text-xs text-foreground/60 tabular-nums">
-        {value.toFixed(decimals)}
+        {formatValue ? formatValue(value) : value.toFixed(decimals)}
       </div>
     </div>
   );
@@ -225,6 +226,7 @@ export default function YanMerabInteractive() {
           step={BOUNDS.p.step}
           value={p}
           onChange={setP}
+          formatValue={(v) => `${(v * 100).toFixed(1)}%`}
         />
 
         <SliderRow
@@ -234,6 +236,7 @@ export default function YanMerabInteractive() {
           step={BOUNDS.c.step}
           value={c}
           onChange={setC}
+          formatValue={(v) => `${v.toFixed(1)}`}
         />
       </div>
 
