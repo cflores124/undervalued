@@ -111,7 +111,7 @@ export default function YanVsMerabArticle() {
                 five rounds he accumulated <strong>6:53 of control time</strong>{" "}
                 compared to Yan’s <strong>1:50</strong>. This resulted in a{" "}
                 <strong>net control differential of 5:03</strong>, which accounted
-                for roughly <strong>79%</strong> of the fight&apos;s overall control
+                for roughly <strong>79%</strong> of the fight&apos;s time under control
                 time. Yan’s striking output reflected that level of sustained
                 pressure. Throughout the fight, Yan landed{" "}
                 <strong>75 significant strikes</strong>, just{" "}
@@ -153,12 +153,12 @@ export default function YanVsMerabArticle() {
                 expended. During fights, Merab layers his takedown attempts with
                 shots from stance, entries off the jab, and chain wrestling along
                 the fence. This forces his opponents into repeated defensive cycles,
-                where offensive rhythm is never allowed to establish because
+                where offensive rhythm is never allowed to be established because
                 fighters are constantly defending an onslaught of takedown attempts.
               </p>
 
               <p>
-                Once control is established, energy depletion is doubled as Merab
+                Once control is gained, energy depletion is doubled as Merab
                 prioritizes exhausting his opponent rather than chasing quick
                 submissions. Merab accomplishes this by placing his upper body
                 across the back of an opponent&apos;s head and shoulders, forcing
@@ -185,7 +185,7 @@ export default function YanVsMerabArticle() {
                 space, Yan moved toward the fence, where he could leverage the
                 fence to stay upright and concentrate on posture, reversing weight
                 distribution, and hand fighting. By doing this, Yan transferred
-                energy expenditure to Merab, as it then became the onus of Merab to
+                energy expenditure back to Merab, as it then became the onus of Merab to
                 pull Yan down to the ground.
               </p>
 
@@ -230,7 +230,7 @@ export default function YanVsMerabArticle() {
             duration={0.55}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
-              Control Differential Simulator: Wrestling Pressure vs. Yan’s Offense
+              Control Differential Simulator: Merab's Wrestling Pressure vs. Yan’s Offense
             </h2>
           </CinematicReveal>
 
