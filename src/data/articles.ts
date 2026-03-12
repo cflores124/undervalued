@@ -16,7 +16,7 @@ export const articles: ArticleMeta[] = [
       "A structural breakdown of how control differential compresses or restores Petr Yan’s offense against Merab Dvalishvili.",
     category: "UFC Analysis",
     readTime: "6 min read",
-    publishedAt: "2026-03-01",
+    publishedAt: "2026-03-01T00:00:00.000Z",
     featured: true,
   },
 ];

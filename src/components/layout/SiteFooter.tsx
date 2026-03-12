@@ -16,9 +16,9 @@ export default function SiteFooter() {
         <p>© {new Date().getFullYear()} Undervalued</p>
         <nav aria-label="Footer">
           <ul className="flex items-center gap-4">
-            <li><Link href="/rss.xml" className="hover:underline">RSS</Link></li>
+            <li><Link href="/rss" className="hover:underline">RSS</Link></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:underline">X/Twitter</a></li>
-             <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
+             <li><a href="https://www.instagram.com/undervalued.analytics?igsh=MWhsczJkZnhiYjdnag%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
           </ul>
         </nav>
       </div>

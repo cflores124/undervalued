@@ -1,15 +1,10 @@
 import type { ComponentType } from "react";
+import type { ArticleMeta } from "@/data/articles";
+
 import YanVsMerabArticle from "@/components/articles/YanVsMerabArticle";
 import { articles } from "@/data/articles";
 
-export type ArticleEntry = {
-  slug: string;
-  title: string;
-  description: string;
-  category: string;
-  readTime: string;
-  publishedAt: string;
-  featured?: boolean;
+export type ArticleEntry = ArticleMeta & {
   Component: ComponentType;
 };
 
@@ -20,6 +15,7 @@ export const articleRegistry: ArticleEntry[] = articles.map((article) => {
         ...article,
         Component: YanVsMerabArticle,
       };
+
     default:
       throw new Error(`No component registered for slug: ${article.slug}`);
   }

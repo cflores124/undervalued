@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import FooterBand from "@/components/layout/FooterBand";
@@ -44,6 +45,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "pb-[calc(10svh+env(safe-area-inset-bottom))]",
         ].join(" ")}
       >
+        {/* Force scroll to top on route change */}
+        <ScrollToTop />
+
         {/* Reset transforms when returning from iOS/Safari back-forward cache */}
         <BFCacheReset />
 
