@@ -13,7 +13,7 @@ export default function YanVsMerabArticle() {
   return (
     <section className="w-full">
       <div className="mx-auto w-full max-w-6xl">
-        <main className="mt-10">
+        <main>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
             What Actually Decides Yan vs. Merab?
           </h1>
@@ -271,12 +271,17 @@ export default function YanVsMerabArticle() {
                 className="
                   inline-flex items-center justify-center
                   rounded-full
-                  border border-white/15
-                  bg-white/10
+                  border border-neutral-300
+                  bg-neutral-100
                   px-4 py-2
                   text-sm font-medium
                   transition
-                  hover:bg-white/15
+
+                  hover:bg-neutral-200
+
+                  dark:border-white/15
+                  dark:bg-white/10
+                  dark:hover:bg-white/15
                 "
               >
                 Download Modeling PDF

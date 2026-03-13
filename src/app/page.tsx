@@ -29,10 +29,15 @@ function Spotlight({ children }: { children: React.ReactNode }) {
         my.set(e.clientY - r.top);
       }}
       style={{ backgroundImage: bg }}
-      className="relative rounded-2xl p-8 sm:p-12 transition-colors
-                 before:pointer-events-none before:absolute before:inset-0 before:rounded-2xl
-                 before:bg-[radial-gradient(900px_460px_at_80%_-10%,color-mix(in_oklab,var(--accent)_16%,transparent),transparent_62%)]
-                 after:pointer-events-none after:absolute after:inset-0 after:rounded-2xl after:shadow-[inset_0_1px_0_rgba(255,255,255,.06)]"
+      className="
+        relative rounded-2xl p-8 sm:p-12 transition-colors
+        border border-black/5 dark:border-white/10
+        before:pointer-events-none before:absolute before:inset-0 before:rounded-2xl
+        before:bg-[radial-gradient(900px_460px_at_80%_-10%,color-mix(in_oklab,var(--accent)_16%,transparent),transparent_62%)]
+        after:pointer-events-none after:absolute after:inset-0 after:rounded-2xl
+        after:shadow-[inset_0_1px_0_rgba(0,0,0,.08)]
+        dark:after:shadow-[inset_0_1px_0_rgba(255,255,255,.06)]
+      "
     >
       {children}
     </motion.div>

@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <section className="w-full">
       <div className="w-full max-w-6xl mx-auto">
-        <main className="mt-10">
+        <main>
           {/* Main title */}
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
             About Undervalued
