@@ -13,6 +13,19 @@ export default function SiteHeader() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  };
+
+  const handleNavClick = () => {
+    closeMobileMenu();
+    scrollToTop();
+  };
+
   return (
     <>
       <header
@@ -31,7 +44,7 @@ export default function SiteHeader() {
             href="/"
             className="flex items-center"
             aria-label="Undervalued"
-            onClick={closeMobileMenu}
+            onClick={handleNavClick}
           >
             <Image
               src="/undervaluedlogo-light.png"
@@ -56,6 +69,7 @@ export default function SiteHeader() {
           <nav className="hidden items-center gap-3 text-xs sm:flex sm:gap-6 sm:text-sm">
             <Link
               href="/"
+              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -70,6 +84,7 @@ export default function SiteHeader() {
 
             <Link
               href="/articles"
+              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -84,6 +99,7 @@ export default function SiteHeader() {
 
             <Link
               href="/insights"
+              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -98,6 +114,7 @@ export default function SiteHeader() {
 
             <Link
               href="/about"
+              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -174,7 +191,7 @@ export default function SiteHeader() {
             <nav className="mx-auto flex w-full max-w-6xl flex-col px-5 py-3">
               <Link
                 href="/"
-                onClick={closeMobileMenu}
+                onClick={handleNavClick}
                 className="
                   nav-link rounded-xl px-3 py-3 text-sm
                   transition-colors
@@ -186,7 +203,7 @@ export default function SiteHeader() {
 
               <Link
                 href="/articles"
-                onClick={closeMobileMenu}
+                onClick={handleNavClick}
                 className="
                   nav-link rounded-xl px-3 py-3 text-sm
                   transition-colors
@@ -198,7 +215,7 @@ export default function SiteHeader() {
 
               <Link
                 href="/insights"
-                onClick={closeMobileMenu}
+                onClick={handleNavClick}
                 className="
                   nav-link rounded-xl px-3 py-3 text-sm
                   transition-colors
@@ -210,7 +227,7 @@ export default function SiteHeader() {
 
               <Link
                 href="/about"
-                onClick={closeMobileMenu}
+                onClick={handleNavClick}
                 className="
                   nav-link rounded-xl px-3 py-3 text-sm
                   transition-colors
