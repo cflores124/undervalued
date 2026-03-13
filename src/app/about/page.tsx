@@ -14,15 +14,17 @@ export default function AboutPage() {
       <div className="w-full max-w-6xl mx-auto">
         <main>
           {/* Main title */}
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-            About Undervalued
-          </h1>
+          <CinematicReveal delay={0} y={12} duration={0.55}>
+            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+              About Undervalued
+            </h1>
+          </CinematicReveal>
 
           {/* Description */}
           <div className="relative mt-4 max-w-3xl">
             <CinematicReveal
               className="relative"
-              delay={0.5}
+              delay={0.15}
               y={10}
               duration={0.55}
               stagger={0.12}
@@ -42,7 +44,7 @@ export default function AboutPage() {
 
           {/* Body */}
           <CinematicReveal
-            delay={0.15}
+            delay={0.35}
             stagger={0.12}
             duration={0.7}
             y={18}
