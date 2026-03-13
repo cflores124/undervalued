@@ -4,52 +4,74 @@ import { useEffect, useMemo, useRef } from 'react';
 
 type Row = {
   words: string[];
-  reverse?: boolean;   // middle row scrolls right
-  pxPerSec?: number;   // speed in pixels per second
+  reverse?: boolean;
+  pxPerSec?: number;
 };
 
 const ALL_WORDS = [
-  'Performance','Efficiency','Precision','Momentum','Strategy',
-  'Playbook','Metrics','Tempo','Trajectory','Analytics',
-  'Optimization','Prediction','Sequence','Probability','Model',
-  'Simulation','Tracking','Visualization','Correlation','Playcalling',
-  'Pattern','Evaluation','Execution','Adjustment','Variance',
-  'Possession','Projection','Pressure','Benchmark','Dominance',
+  'Performance',
+  'Efficiency',
+  'Precision',
+  'Momentum',
+  'Strategy',
+  'Playbook',
+  'Metrics',
+  'Tempo',
+  'Trajectory',
+  'Analytics',
+  'Optimization',
+  'Prediction',
+  'Sequence',
+  'Probability',
+  'Model',
+  'Simulation',
+  'Tracking',
+  'Visualization',
+  'Correlation',
+  'Playcalling',
+  'Pattern',
+  'Evaluation',
+  'Execution',
+  'Adjustment',
+  'Variance',
+  'Possession',
+  'Projection',
+  'Pressure',
+  'Benchmark',
+  'Dominance',
 ];
 
-// simple chunk helper
 function chunk<T>(arr: T[], size: number): T[][] {
   return Array.from({ length: Math.ceil(arr.length / size) }, (_, i) =>
     arr.slice(i * size, i * size + size)
   );
 }
 
-// A single continuously-scrolling row driven by requestAnimationFrame (no keyframe resets)
 function RowMarquee({
   words,
   reverse = false,
-  pxPerSec = 60, // pixels per second
+  pxPerSec = 60,
 }: Row) {
   const wrapRef = useRef<HTMLDivElement>(null);
-  const aRef = useRef<HTMLDivElement>(null); // segment A
-  const bRef = useRef<HTMLDivElement>(null); // segment B
+  const aRef = useRef<HTMLDivElement>(null);
+  const bRef = useRef<HTMLDivElement>(null);
 
-  // Render chips once and reuse for both segments
   const chips = useMemo(
     () =>
       words.map((w, i) => (
         <span
           key={`${w}-${i}`}
           className="
-            px-3 py-1 mx-[2px] rounded-full
+            mx-[2px] rounded-full px-3 py-1
             border border-foreground/15
-            text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.05em]
-            text-foreground/60 bg-background/30
+            bg-background/30
+            text-[11px] uppercase tracking-[0.05em] text-foreground/60
             transition-colors duration-200
             hover:text-[var(--accent)]
             hover:border-[color-mix(in_oklab,var(--accent)_55%,transparent)]
             hover:bg-[color-mix(in_oklab,var(--accent)_12%,transparent)]
             hover:shadow-[0_0_10px_color-mix(in_oklab,var(--accent)_55%,transparent)]
+            sm:text-xs md:text-sm
           "
         >
           {w}
@@ -59,31 +81,30 @@ function RowMarquee({
   );
 
   useEffect(() => {
-    const wrap = wrapRef.current!;
-    const a = aRef.current!;
-    const b = bRef.current!;
+    const wrap = wrapRef.current;
+    const a = aRef.current;
+    const b = bRef.current;
+
     if (!wrap || !a || !b) return;
 
-    let segWidth = 0;   // width of ONE segment (A)
-    let x = 0;          // current left position of segment A
+    let segWidth = 0;
+    let x = 0;
     let raf = 0;
     let last = performance.now();
 
     const measure = () => {
       segWidth = a.scrollWidth;
 
-      // Place B on the correct side so the stream is continuous:
-      // - moving LEFT  (reverse=false): B sits to the RIGHT of A
-      // - moving RIGHT (reverse=true):  B sits to the LEFT  of A
       a.style.transform = `translate3d(${x}px,0,0)`;
       b.style.transform = reverse
         ? `translate3d(${x - segWidth}px,0,0)`
         : `translate3d(${x + segWidth}px,0,0)`;
     };
 
-    // Wait for fonts to avoid mid-loop reflow jumps
-    const fontsReady =
-      (document as any).fonts?.ready?.then?.(() => {}) ?? Promise.resolve();
+    const fontSet = document.fonts;
+    const fontsReady: Promise<void> = fontSet
+      ? fontSet.ready.then(() => undefined)
+      : Promise.resolve();
 
     let ro: ResizeObserver | null = null;
 
@@ -91,7 +112,6 @@ function RowMarquee({
       measure();
 
       ro = new ResizeObserver(() => {
-        // keep continuity when widths change
         const frac = segWidth ? x / segWidth : 0;
         measure();
         x = frac * segWidth;
@@ -105,15 +125,13 @@ function RowMarquee({
         last = now;
 
         if (reverse) {
-          // move RIGHT
           x += pxPerSec * dt;
-          if (x >= segWidth) x -= segWidth; // wrap once A fully moved right
+          if (x >= segWidth) x -= segWidth;
           a.style.transform = `translate3d(${x}px,0,0)`;
           b.style.transform = `translate3d(${x - segWidth}px,0,0)`;
         } else {
-          // move LEFT
           x -= pxPerSec * dt;
-          if (x <= -segWidth) x += segWidth; // wrap once A fully moved left
+          if (x <= -segWidth) x += segWidth;
           a.style.transform = `translate3d(${x}px,0,0)`;
           b.style.transform = `translate3d(${x + segWidth}px,0,0)`;
         }
@@ -131,31 +149,25 @@ function RowMarquee({
   }, [pxPerSec, reverse, words]);
 
   return (
-    <div ref={wrapRef} className="relative overflow-hidden w-full">
-      {/* Segment A */}
+    <div ref={wrapRef} className="relative w-full overflow-hidden">
       <div
         ref={aRef}
-        className="absolute inset-y-0 left-0 flex items-center gap-3 sm:gap-4 pr-[4px]
-          will-change-transform opacity-80"
+        className="absolute inset-y-0 left-0 flex items-center gap-3 pr-[4px] opacity-80 will-change-transform sm:gap-4"
       >
         {chips}
       </div>
 
-      {/* Segment B (positioned to the correct side of A) */}
       <div
         ref={bRef}
-        className="absolute inset-y-0 left-0 flex items-center gap-3 sm:gap-4 pr-[4px]
-          will-change-transform opacity-80"
+        className="absolute inset-y-0 left-0 flex items-center gap-3 pr-[4px] opacity-80 will-change-transform sm:gap-4"
       >
         {chips}
       </div>
 
-      {/* soft edge fades */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-background to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background to-transparent" />
 
-      {/* reserve height so absolute children don't collapse */}
-      <div className="invisible flex items-center gap-2 sm:gap-3 py-2">
+      <div className="invisible flex items-center gap-2 py-2 sm:gap-3">
         {chips}
       </div>
     </div>
@@ -170,7 +182,7 @@ export default function WordBanner({ className = '' }: { className?: string }) {
       aria-label="Undervalued word banner"
       className={`relative overflow-hidden rounded-2xl border border-foreground/10 ${className}`}
     >
-      <div className="relative py-3 sm:py-4 space-y-2 sm:space-y-3">
+      <div className="relative space-y-2 py-3 sm:space-y-3 sm:py-4">
         <RowMarquee words={top} pxPerSec={48} />
         <RowMarquee words={middle} pxPerSec={52} reverse />
         <RowMarquee words={bottom} pxPerSec={50} />

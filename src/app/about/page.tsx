@@ -96,7 +96,7 @@ export default function AboutPage() {
             </h2>
 
             <p>
-              The name pays homage to <em>Moneyball</em>, where the Oakland A’s,
+              The name pays homage to <em>Moneyball</em>, where the Oakland A&apos;s,
               Billy Beane, and Paul DePodesta revolutionized baseball by using
               analytics to uncover undervalued players and outthink bigger
               budgets.

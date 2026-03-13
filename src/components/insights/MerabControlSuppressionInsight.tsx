@@ -43,15 +43,15 @@ export default function MerabControlSuppressionInsight() {
           </div>
 
           <div className="max-w-2xl self-center">
-            <p className="text-base sm:text-lg leading-relaxed text-foreground/78">
-              Control in MMA is a broad statistic. It can demonstrate dominance,
-              targeted submission attempts, ground and pound opportunities, and
-              more. For Merab, control is not just about holding position, but
-              about shaping what the opponent is able to do next. As the control
-              gap grows in Merab’s favor, his opponents' striking freedom tends
-              to narrow, turning wrestling pressure into a form of offensive
-              suppression rather than a scoring category.
-            </p>
+           <p className="text-base sm:text-lg leading-relaxed text-foreground/78">
+            Control in MMA is a broad statistic. It can demonstrate dominance,
+            targeted submission attempts, ground and pound opportunities, and
+            more. For Merab, control is not just about holding position, but
+            about shaping what the opponent is able to do next. As the control
+            gap grows in Merab&apos;s favor, his opponents&apos; striking freedom tends
+            to narrow, turning wrestling pressure into a form of offensive
+            suppression rather than a scoring category.
+          </p>
 
             <p className="mt-4 text-sm sm:text-base text-foreground/65">
               Read the full breakdown{" "}

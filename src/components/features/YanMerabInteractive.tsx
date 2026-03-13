@@ -243,7 +243,7 @@ export default function YanMerabInteractive() {
       {/* Footer note */}
       <div className="mt-8 text-xs text-foreground/55 leading-relaxed">
         Model implements the published structure: expected control (capped at T),
-        Yan share α, and strike output suppressed by threat (r·p) and control share.
+        Yan share &alpha;, and strike output suppressed by threat (r·p) and control share.
       </div>
     </section>
   );

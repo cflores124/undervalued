@@ -13,17 +13,8 @@ export default function SiteHeader() {
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "auto",
-    });
-  };
-
   const handleNavClick = () => {
     closeMobileMenu();
-    scrollToTop();
   };
 
   return (
@@ -39,6 +30,7 @@ export default function SiteHeader() {
         "
       >
         <div className="mx-auto flex h-[10svh] w-full max-w-6xl items-center justify-between px-5 sm:px-12">
+
           {/* Logo */}
           <Link
             href="/"
@@ -67,9 +59,9 @@ export default function SiteHeader() {
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-3 text-xs sm:flex sm:gap-6 sm:text-sm">
+
             <Link
               href="/"
-              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -84,7 +76,6 @@ export default function SiteHeader() {
 
             <Link
               href="/articles"
-              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -99,7 +90,6 @@ export default function SiteHeader() {
 
             <Link
               href="/insights"
-              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -114,7 +104,6 @@ export default function SiteHeader() {
 
             <Link
               href="/about"
-              onClick={scrollToTop}
               className="
                 nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
                 transition-colors
@@ -158,6 +147,7 @@ export default function SiteHeader() {
             "
           >
             <span className="sr-only">Menu</span>
+
             <div className="flex h-5 w-5 flex-col items-center justify-center gap-[3px]">
               <span
                 className={`block h-[1.5px] w-5 bg-current transition-transform duration-200 ${
@@ -189,51 +179,20 @@ export default function SiteHeader() {
             "
           >
             <nav className="mx-auto flex w-full max-w-6xl flex-col px-5 py-3">
-              <Link
-                href="/"
-                onClick={handleNavClick}
-                className="
-                  nav-link rounded-xl px-3 py-3 text-sm
-                  transition-colors
-                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                "
-              >
+
+              <Link href="/" onClick={handleNavClick} className="nav-link rounded-xl px-3 py-3 text-sm">
                 Home
               </Link>
 
-              <Link
-                href="/articles"
-                onClick={handleNavClick}
-                className="
-                  nav-link rounded-xl px-3 py-3 text-sm
-                  transition-colors
-                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                "
-              >
+              <Link href="/articles" onClick={handleNavClick} className="nav-link rounded-xl px-3 py-3 text-sm">
                 Articles
               </Link>
 
-              <Link
-                href="/insights"
-                onClick={handleNavClick}
-                className="
-                  nav-link rounded-xl px-3 py-3 text-sm
-                  transition-colors
-                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                "
-              >
+              <Link href="/insights" onClick={handleNavClick} className="nav-link rounded-xl px-3 py-3 text-sm">
                 Insights
               </Link>
 
-              <Link
-                href="/about"
-                onClick={handleNavClick}
-                className="
-                  nav-link rounded-xl px-3 py-3 text-sm
-                  transition-colors
-                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                "
-              >
+              <Link href="/about" onClick={handleNavClick} className="nav-link rounded-xl px-3 py-3 text-sm">
                 About
               </Link>
 
@@ -242,14 +201,11 @@ export default function SiteHeader() {
                   closeMobileMenu();
                   setContactOpen(true);
                 }}
-                className="
-                  nav-link rounded-xl px-3 py-3 text-left text-sm
-                  transition-colors
-                  hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                "
+                className="nav-link rounded-xl px-3 py-3 text-left text-sm"
               >
                 Contact
               </button>
+
             </nav>
           </div>
         )}
