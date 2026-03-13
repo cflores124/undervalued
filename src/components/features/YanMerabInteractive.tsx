@@ -56,24 +56,16 @@ function computeOutputs(inputs: ModelParams, K: Constants) {
 
   const rp = r * p;
 
-  // Expected Merab control time (minutes)
   const controlMerabRaw = r * K.T * p * (c / 60);
   const controlMerab = Math.min(K.T, controlMerabRaw);
 
-  // Expected Yan control time (minutes)
   const controlYan = K.alpha * controlMerab;
-
-  // Net control differential (minutes)
   const deltaControl = controlMerab - controlYan;
 
-  // Threat & control adjustments (clamped)
   const threatAdj = clamp01(1 - K.k_threat * rp);
   const controlAdj = clamp01(1 - K.k_control * (controlMerab / K.T));
 
-  // Expected Yan strikes
   const yanExpectedStrikes = K.s0 * K.T * threatAdj * controlAdj;
-
-  // Strike suppression (share)
   const strikeSuppression = clamp01(1 - yanExpectedStrikes / (K.s0 * K.T));
 
   return {
@@ -98,18 +90,20 @@ function StatBlock({
   badge?: string;
 }) {
   return (
-    <div className="text-center space-y-2">
-      <div className="text-[13px] sm:text-[15px] font-semibold text-foreground/70">
+    <div className="text-center space-y-1.5 sm:space-y-2">
+      <div className="text-[12px] sm:text-[15px] font-semibold leading-snug text-foreground/70">
         {label}
       </div>
 
-      <div className="text-[16px] sm:text-[18px] font-semibold tabular-nums text-foreground">
+      <div className="text-[15px] sm:text-[18px] font-semibold leading-none tabular-nums text-foreground">
         {value}
       </div>
 
       {badge && (
-        <div className="flex justify-center">
-          <span className="badge text-xs">{badge}</span>
+        <div className="flex justify-center pt-1">
+          <span className="badge px-2.5 py-1 text-[10px] sm:text-xs">
+            {badge}
+          </span>
         </div>
       )}
     </div>
@@ -137,8 +131,8 @@ function SliderRow({
     step < 0.001 ? 4 : step < 0.01 ? 3 : step < 0.1 ? 2 : step < 1 ? 1 : 1;
 
   return (
-    <div className="space-y-3">
-      <div className="text-[15px] sm:text-[16px] font-medium text-foreground/90">
+    <div className="space-y-2.5 sm:space-y-3">
+      <div className="text-[14px] sm:text-[16px] font-medium leading-snug text-foreground/90">
         {label}
       </div>
 
@@ -152,11 +146,11 @@ function SliderRow({
         className="w-full"
         style={{
           accentColor: "var(--accent)",
-          height: 10,
+          height: 7,
         }}
       />
 
-      <div className="text-xs text-foreground/60 tabular-nums">
+      <div className="text-[11px] sm:text-xs text-foreground/60 tabular-nums">
         {formatValue ? formatValue(value) : value.toFixed(decimals)}
       </div>
     </div>
@@ -174,9 +168,9 @@ export default function YanMerabInteractive() {
   );
 
   return (
-    <section className="card glass w-full px-6 py-7 sm:px-10 sm:py-10">
+    <section className="card glass w-full px-4 py-5 sm:px-10 sm:py-10">
       {/* Top stat row */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-5 sm:gap-x-6 sm:gap-y-6 md:grid-cols-3">
         <StatBlock
           label="Net Control Differential"
           badge="Control leverage"
@@ -196,20 +190,24 @@ export default function YanMerabInteractive() {
           value={`${(out.strikeSuppression * 100).toFixed(1)}%`}
         />
 
-        <StatBlock
-          label="Yan Expected Strikes"
-          badge="Projected output"
-          value={`${out.yanExpectedStrikes.toFixed(1)}`}
-        />
+        <div className="col-span-2 flex justify-center md:col-span-1">
+          <div className="w-full max-w-[210px] md:max-w-none">
+            <StatBlock
+              label="Yan Expected Strikes"
+              badge="Projected output"
+              value={`${out.yanExpectedStrikes.toFixed(1)}`}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Divider */}
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         <div className="h-px w-full bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
       </div>
 
       {/* Sliders */}
-      <div className="mt-8 space-y-10">
+      <div className="mt-6 space-y-7 sm:mt-8 sm:space-y-10">
         <SliderRow
           label="Takedown Attempts Per Minute"
           min={BOUNDS.r.min}
@@ -241,9 +239,10 @@ export default function YanMerabInteractive() {
       </div>
 
       {/* Footer note */}
-      <div className="mt-8 text-xs text-foreground/55 leading-relaxed">
+      <div className="mt-6 text-[11px] sm:text-xs leading-relaxed text-foreground/55 sm:mt-8">
         Model implements the published structure: expected control (capped at T),
-        Yan share &alpha;, and strike output suppressed by threat (r·p) and control share.
+        Yan share &alpha;, and strike output suppressed by threat (r·p) and
+        control share.
       </div>
     </section>
   );

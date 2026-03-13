@@ -5,7 +5,8 @@ import YanMerabInteractive from "@/components/features/YanMerabInteractive";
 const description = (
   <>
     A <strong>structural breakdown</strong> of how control differential compresses
-    or restores Petr Yan&apos;s offense against Merab Dvalishvili.
+    or restores Petr Yan&apos;s offense against Merab Dvalishvili. 
+    Scroll to the bottom for an <strong>interactive simulator</strong>.
   </>
 );
 
