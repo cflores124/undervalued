@@ -67,6 +67,12 @@ export default function InsightsPage() {
                   {insight.category}
                 </p>
 
+                {insight.dataSource && (
+                  <p className="mt-2 text-xs sm:text-sm text-foreground/50">
+                    Data collected from {insight.dataSource}
+                  </p>
+                )}
+
                 <p className="mt-4 text-sm sm:text-base text-foreground/65">
                   {insight.ctaText ?? "Open the full insight"}{" "}
                   <Link

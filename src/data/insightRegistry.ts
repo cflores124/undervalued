@@ -6,11 +6,14 @@ export type InsightEntry = {
   slug: string;
   title: string;
   description: string;
+  excerpt: string;
   category: string;
   publishedAt: string;
   relatedArticleSlug?: string;
   featured?: boolean;
-  Component: ComponentType;
+  ctaText?: string;
+  dataSource?: string;
+  Component: ComponentType<{ dataSource?: string }>;
 };
 
 export const insightRegistry: InsightEntry[] = insights.map((insight) => {

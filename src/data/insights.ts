@@ -8,6 +8,7 @@ export type InsightMeta = {
   relatedArticleSlug?: string;
   featured?: boolean;
   ctaText?: string;
+  dataSource?: string;
 };
 
 export const insights: InsightMeta[] = [
@@ -22,5 +23,6 @@ export const insights: InsightMeta[] = [
     relatedArticleSlug: "yan-vs-merab",
     featured: true,
     ctaText: "Open the full breakdown",
+    dataSource: "UFCStats.com",
   },
 ];
