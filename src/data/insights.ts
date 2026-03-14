@@ -1,3 +1,6 @@
+import type { InsightData } from "@/components/insights/InsightFlipCard";
+import merabInsight from "@/data/merab_control_suppression.json";
+
 export type InsightMeta = {
   slug: string;
   title: string;
@@ -9,6 +12,7 @@ export type InsightMeta = {
   featured?: boolean;
   ctaText?: string;
   dataSource?: string;
+  cardData: InsightData;
 };
 
 export const insights: InsightMeta[] = [
@@ -24,5 +28,6 @@ export const insights: InsightMeta[] = [
     featured: true,
     ctaText: "Open the full breakdown",
     dataSource: "UFCStats.com",
+    cardData: merabInsight,
   },
 ];

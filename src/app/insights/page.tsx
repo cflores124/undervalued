@@ -3,7 +3,6 @@ import Link from "next/link";
 import CinematicReveal from "@/components/ui/CinematicReveal";
 import InsightFlipCard from "@/components/insights/InsightFlipCard";
 import { insights } from "@/data/insights";
-import merabInsight from "@/data/merab_control_suppression.json";
 
 export const metadata: Metadata = {
   title: "Insights — Undervalued",
@@ -51,7 +50,7 @@ export default function InsightsPage() {
               className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12"
             >
               <div className="w-full max-w-[495px]">
-                <InsightFlipCard insight={merabInsight} />
+                <InsightFlipCard insight={insight.cardData} />
               </div>
 
               <div className="max-w-2xl self-center">
@@ -74,7 +73,7 @@ export default function InsightsPage() {
                 )}
 
                 <p className="mt-4 text-sm sm:text-base text-foreground/65">
-                  {insight.ctaText ?? "Open the full insight"}{" "}
+                  {insight.ctaText ?? "Open the full breakdown"}{" "}
                   <Link
                     href={`/articles/${insight.relatedArticleSlug}`}
                     className="underline underline-offset-4 transition-opacity hover:opacity-70"
