@@ -62,12 +62,12 @@ export default function InsightsPage() {
                   {insight.excerpt}
                 </p>
 
-                <p className="mt-4 text-sm text-foreground/60">
+                <p className="mt-4 text-xs sm:text-sm text-foreground/60">
                   {insight.category}
                 </p>
 
                 {insight.dataSource && (
-                  <p className="mt-2 text-xs sm:text-sm text-foreground/50">
+                  <p className="mt-2 text-xs sm:text-sm text-foreground/60">
                     Data collected from {insight.dataSource}
                   </p>
                 )}

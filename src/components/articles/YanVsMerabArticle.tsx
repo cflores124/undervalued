@@ -221,6 +221,10 @@ export default function YanVsMerabArticle() {
                 and the fighter who controls that differential ultimately controls
                 the fight.
               </p>
+
+              <p className="mt-4 text-xs sm:text-sm text-foreground/50">
+                Data collected from UFCStats.com
+              </p>
             </CinematicReveal>
           </div>
 
