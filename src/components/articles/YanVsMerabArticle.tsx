@@ -112,8 +112,8 @@ export default function YanVsMerabArticle() {
                 five rounds he accumulated <strong>6:53 of control time</strong>{" "}
                 compared to Yan&apos;s <strong>1:50</strong>. This resulted in a{" "}
                 <strong>net control differential of 5:03</strong>, which accounted
-                for roughly <strong>79%</strong> of the fight&apos;s time under control
-                time. Yan&apos;s striking output reflected that level of sustained
+                for roughly <strong>79%</strong> of the fight&apos;s time under control. 
+                Yan&apos;s striking output reflected that level of sustained
                 pressure. Throughout the fight, Yan landed{" "}
                 <strong>75 significant strikes</strong>, just{" "}
                 <strong>3.0 per minute</strong>, which is well below his typical
@@ -186,12 +186,12 @@ export default function YanVsMerabArticle() {
                 space, Yan moved toward the fence, where he could leverage the
                 fence to stay upright and concentrate on posture, reversing weight
                 distribution, and hand fighting. By doing this, Yan transferred
-                energy expenditure back to Merab, as it then became the onus of Merab to
+                energy expenditure back to Merab, as it then became Merab's responsibility to
                 pull Yan down to the ground.
               </p>
 
               <p>
-                This reduced the muscular load required to defend while allowing Yan
+                This adjustment reduced the muscular load required to defend while allowing Yan
                 to re-establish his jab-to-overhand-right combination with full
                 kinetic sequencing. This forced Merab to respect damage upon entry,
                 further slowing down his pace of wrestling exchanges and narrowing
