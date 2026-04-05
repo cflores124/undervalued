@@ -186,7 +186,7 @@ export default function YanVsMerabArticle() {
                 space, Yan moved toward the fence, where he could leverage the
                 fence to stay upright and concentrate on posture, reversing weight
                 distribution, and hand fighting. By doing this, Yan transferred
-                energy expenditure back to Merab, as it then became Merab's responsibility to
+                energy expenditure back to Merab, as it then became Merab&apos;s responsibility to
                 pull Yan down to the ground.
               </p>
 
