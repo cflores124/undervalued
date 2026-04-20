@@ -113,8 +113,8 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                In the NFL, the fourth quarter operates in a <strong>different domain</strong>
-                than the rest of the game. Time is compressed, possessions are
+                In the NFL, the fourth quarter operates in a <strong>different domain</strong> than 
+                the rest of the game. Time is compressed, possessions are
                 limited, and the <strong>cost of failure sharply increases</strong>. Every play
                 carries an <strong>element of finality</strong>.
               </p>
