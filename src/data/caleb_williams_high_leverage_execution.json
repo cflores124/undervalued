@@ -1,0 +1,69 @@
+{
+  "athlete": "Caleb Williams",
+  "title": "High-Leverage Execution",
+  "image": "/williams.jpg",
+  "xLabel": "Team",
+  "yLabel": "Average Net WPA per possession",
+  "summary": "Chicago translated late-game creation into results. In the fourth quarter, the Bears ranked among the NFL’s best teams in average net win probability added per possession, showing how off-structure quarterback play could still produce efficient, high-leverage execution.",
+  "season": 2025,
+  "quarter": "Q4",
+  "metric": "Average Net WPA per possession",
+  "leagueAverage": 0.01008266,
+  "teams": {
+    "1": {
+      "team": "DAL",
+      "value": 0.06461569,
+      "q4_possessions": 44,
+      "avg_abs_net_wpa": 0.10196881,
+      "median_net_wpa": -0.00030261,
+      "median_abs_net_wpa": 0.04577771,
+      "total_net_wpa": 2.84309015,
+      "total_abs_net_wpa": 4.48662752,
+      "avg_plays_per_possession": 7.20454545
+    },
+    "2": {
+      "team": "CHI",
+      "value": 0.06420417,
+      "q4_possessions": 47,
+      "avg_abs_net_wpa": 0.1397122,
+      "median_net_wpa": 0.00074509,
+      "median_abs_net_wpa": 0.08770826,
+      "total_net_wpa": 3.01759618,
+      "total_abs_net_wpa": 6.5664732,
+      "avg_plays_per_possession": 7.23404255
+    },
+    "3": {
+      "team": "BUF",
+      "value": 0.05374694,
+      "q4_possessions": 48,
+      "avg_abs_net_wpa": 0.08478548,
+      "median_net_wpa": 0.00399618,
+      "median_abs_net_wpa": 0.031434,
+      "total_net_wpa": 2.57985328,
+      "total_abs_net_wpa": 4.06970284,
+      "avg_plays_per_possession": 7.35416667
+    },
+    "4": {
+      "team": "SF",
+      "value": 0.03749388,
+      "q4_possessions": 48,
+      "avg_abs_net_wpa": 0.08899276,
+      "median_net_wpa": 0.00017199,
+      "median_abs_net_wpa": 0.03381936,
+      "total_net_wpa": 1.79970614,
+      "total_abs_net_wpa": 4.2716526,
+      "avg_plays_per_possession": 6.27083333
+    },
+    "5": {
+      "team": "ATL",
+      "value": 0.03606304,
+      "q4_possessions": 43,
+      "avg_abs_net_wpa": 0.10371342,
+      "median_net_wpa": -0.00008982,
+      "median_abs_net_wpa": 0.04431868,
+      "total_net_wpa": 1.55071078,
+      "total_abs_net_wpa": 4.4596772,
+      "avg_plays_per_possession": 7.37209302
+    }
+  }
+}

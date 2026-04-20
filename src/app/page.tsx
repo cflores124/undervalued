@@ -115,16 +115,17 @@ export default function Home() {
               y={12}
               duration={0.55}
             >
-              <TiltCard href="/articles/yan-vs-merab">
+              <TiltCard href="/articles/williams-bears">
                 <h3 className="font-semibold tracking-tight group-hover:underline">
-                  What Actually Decides Yan vs. Merab?
+                  How did Caleb Williams and the 2025 Bears break win probability?
                 </h3>
                 <p className="mt-2 text-sm text-foreground/70">
-                  A structural breakdown of how control differential compresses or restores Petr Yan’s
-                  offense against Merab Dvalishvili.
+                  A structural breakdown of how Caleb Williams and the Bears survived
+                  disruption, created outside of structure, and turned broken plays into
+                  decisive fourth-quarter win probability swings.
                 </p>
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  6 min read · MMA
+                  6 min read · NFL
                 </span>
               </TiltCard>
             </CinematicReveal>

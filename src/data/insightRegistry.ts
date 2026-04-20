@@ -1,6 +1,8 @@
 import type { ComponentType } from "react";
 import { insights } from "@/data/insights";
+
 import MerabControlSuppressionInsight from "@/components/insights/MerabControlSuppressionInsight";
+import BearsNetAverageWPAPerPossessionInsight from "@/components/insights/BearsNetAverageWPAPerPossessionInsight";
 
 export type InsightEntry = {
   slug: string;
@@ -23,6 +25,13 @@ export const insightRegistry: InsightEntry[] = insights.map((insight) => {
         ...insight,
         Component: MerabControlSuppressionInsight,
       };
+
+    case "caleb-high-leverage-execution":
+      return {
+        ...insight,
+        Component: BearsNetAverageWPAPerPossessionInsight,
+      };
+
     default:
       throw new Error(`No component registered for slug: ${insight.slug}`);
   }

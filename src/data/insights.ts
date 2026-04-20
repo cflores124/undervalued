@@ -1,5 +1,8 @@
 import type { InsightData } from "@/components/insights/InsightFlipCard";
+import type { InsightData2 } from "@/components/insights/InsightFlipCard2";
+
 import merabInsight from "@/data/merab_control_suppression.json";
+import calebInsight from "@/data/caleb_williams_high_leverage_execution.json";
 
 export type InsightMeta = {
   slug: string;
@@ -12,10 +15,25 @@ export type InsightMeta = {
   featured?: boolean;
   ctaText?: string;
   dataSource?: string;
-  cardData: InsightData;
+  cardData: InsightData | InsightData2;
 };
 
 export const insights: InsightMeta[] = [
+  {
+    slug: "caleb-high-leverage-execution",
+    title: "Play Creation Under Pressure",
+    description: "High-Leverage Execution",
+    excerpt:
+      "The fourth quarter is defined by volatility, with compressed time, limited possessions, and outsized consequences on every play. The Bears didn’t just operate in this environment: they exploited it. Ranking second in execution by average net WPA per possession, they consistently turned high-leverage moments into positive outcomes. At the center was Caleb Williams, whose ability to create on broken plays kept drives alive when structure failed. Without that creation, those same possessions often collapse before execution can matter.",
+    category: "Football Insight",
+    publishedAt: "2026-04-20",
+    relatedArticleSlug: "williams-bears",
+    featured: true,
+    ctaText: "Open the full breakdown",
+    dataSource: "nflreadr / nflfastR",
+    cardData: calebInsight,
+  },
+
   {
     slug: "merab-control-suppression",
     title: "High-Paced Control Pressure",

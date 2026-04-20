@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CinematicReveal from "@/components/ui/CinematicReveal";
 import InsightFlipCard from "@/components/insights/InsightFlipCard";
+import InsightFlipCard2 from "@/components/insights/InsightFlipCard2";
 import { insights } from "@/data/insights";
 
 export const metadata: Metadata = {
@@ -50,7 +51,11 @@ export default function InsightsPage() {
               className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12"
             >
               <div className="w-full max-w-[495px]">
-                <InsightFlipCard insight={insight.cardData} />
+                {"points" in insight.cardData ? (
+                  <InsightFlipCard insight={insight.cardData} />
+                ) : (
+                  <InsightFlipCard2 insight={insight.cardData} />
+                )}
               </div>
 
               <div className="max-w-2xl self-center">
