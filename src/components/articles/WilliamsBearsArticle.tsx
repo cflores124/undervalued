@@ -157,9 +157,9 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                In successful comebacks, Williams repeatedly used his legs to
-                <strong>rescue drives that should have ended</strong>. Against the Raiders, Caleb
-                escaped pressure for a 12-yard scramble (+6.7% WPA) before
+                In successful comebacks, Williams repeatedly used his legs 
+                to <strong>rescue drives that should have ended</strong>. Against 
+                the Raiders, Caleb escaped pressure for a 12-yard scramble (+6.7% WPA) before
                 completing a 17-yard pass to extend the game-winning drive. In
                 the final minutes of the game against the Bengals, a third-and-long
                 scramble (+6.5% WPA) not only prevented a <strong>drive-ending play</strong> but
