@@ -141,8 +141,8 @@ export default function WilliamsBearsArticle() {
                 goal was to win early and absorb mistakes over time, keeping the
                 game even relatively close allowed them to capitalize on
                 <strong>decisive opponent errors</strong> in the fourth quarter. The game then shifted
-                from a <strong>test of consistency</strong> to a <strong>test of critical execution</strong>
-                in the highest-leverage moments.
+                from a <strong>test of consistency</strong> to a <strong>test of critical execution</strong> in 
+                the highest-leverage moments.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -152,8 +152,8 @@ export default function WilliamsBearsArticle() {
               <p>
                 The separation of a successful comeback from a failed recovery
                 came down to a specific sequence for the Bears: <strong>pressure disrupts
-                the initial play</strong>, forcing the offense into a <strong>“broken state.”</strong>
-                The game then hinges on whether that disruption can be <strong>salvaged</strong>.
+                the initial play</strong>, forcing the offense into a <strong>“broken state.”</strong> The 
+                game then hinges on whether that disruption can be <strong>salvaged</strong>.
               </p>
 
               <p>
