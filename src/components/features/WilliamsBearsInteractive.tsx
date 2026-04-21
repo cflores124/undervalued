@@ -106,9 +106,6 @@ export default function WilliamsBearsInteractive() {
                         minHeight: "18px",
                       }}
                     />
-                    {isActive ? (
-                      <div className="pointer-events-none absolute inset-x-0 -top-1 mx-auto h-[calc(100%+8px)] w-[108%] rounded-[1.25rem] border border-[color-mix(in_oklab,var(--foreground)_14%,transparent)]" />
-                    ) : null}
                   </div>
 
                   <div className="space-y-1 text-center">
