@@ -139,10 +139,9 @@ export default function WilliamsBearsArticle() {
               <p>
                 For the Bears, this was akin to <strong>high-stakes gambling</strong>. While the
                 goal was to win early and absorb mistakes over time, keeping the
-                game even relatively close allowed them to capitalize on
-                <strong>decisive opponent errors</strong> in the fourth quarter. The game then shifted
-                from a <strong>test of consistency</strong> to a <strong>test of critical execution</strong> in 
-                the highest-leverage moments.
+                game even relatively close allowed them to capitalize on <strong>decisive opponent errors</strong> in 
+                the fourth quarter. The game then shifted from a <strong>test of consistency</strong> to 
+                a <strong>test of critical execution</strong> in the highest-leverage moments.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
