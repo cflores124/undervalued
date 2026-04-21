@@ -24,7 +24,7 @@ export const insights: InsightMeta[] = [
     title: "Play Creation Under Pressure",
     description: "High-Leverage Execution",
     excerpt:
-      "The fourth quarter is defined by volatility, with compressed time, limited possessions, and outsized consequences on every play. The Bears didn’t just operate in this environment: they exploited it. Ranking second in execution by average net WPA per possession, they consistently turned high-leverage moments into positive outcomes. At the center was Caleb Williams, whose ability to create on broken plays kept drives alive when structure failed. Without that creation, those same possessions often collapse before execution can matter.",
+      "The fourth quarter is defined by volatility, with compressed time, limited possessions, and outsized consequences on every play. The Bears didn’t just operate in this environment: they exploited it. Ranking second in execution by average net WPA per possession, they consistently turned high-leverage moments into positive outcomes. At the center was Caleb Williams, whose ability to create on broken plays kept drives alive when structure failed.",
     category: "Football Insight",
     publishedAt: "2026-04-20",
     relatedArticleSlug: "williams-bears",

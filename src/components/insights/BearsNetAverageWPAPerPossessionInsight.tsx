@@ -30,8 +30,7 @@ export default function BearsNetAverageWPAPerPossessionInsight({
           second in execution by average net WPA per possession, they
           consistently turned high-leverage moments into positive outcomes. At
           the center was Caleb Williams, whose ability to create on broken plays
-          kept drives alive when structure failed. Without that creation, those
-          same possessions often collapse before execution can matter.
+          kept drives alive when structure failed.
         </p>
 
         {dataSource && (
