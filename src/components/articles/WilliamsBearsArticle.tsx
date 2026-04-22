@@ -127,9 +127,9 @@ export default function WilliamsBearsArticle() {
                 <strong>live in it</strong>. In 2025, their average{" "}
                 <strong>absolute WPA per possession</strong> in the fourth quarter was{" "}
                 <strong>13.97%</strong>, well above the league average of{" "}
-                <strong>8.57%</strong>. This reflects how large swings were on each possession,
-                regardless of direction, and marking the highest level of volatility among all
-                32 teams. At the same time, they averaged a <strong>net WPA of 6.42%</strong>{" "}
+                <strong>8.57%</strong>. This captures the magnitude of win probability swings on each possession, 
+                regardless of direction, and marked the highest level of volatility among all 32 teams. At the same time, 
+                they averaged a <strong>net WPA of 6.42%</strong>{" "}
                 per possession, indicating that they ranked <strong>2nd</strong> in consistently 
                 turning those swings in their favor.
               </p>
@@ -159,11 +159,10 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                The separation between a successful comeback and a failed recovery
-                came down to a specific sequence: <strong>pressure disrupted
-                the initial play</strong>, forcing the offense into a <strong>“broken state.”</strong> The 
-                game then hinged on whether Caleb could create a positive play in that 
-                moment of disruption.
+                The separation between a successful comeback and a failed recovery came down to a specific 
+                sequence: <strong>pressure disrupted the initial play</strong>, forcing the offense 
+                into a <strong>“broken state,”</strong> <strong>creation determined whether the drive survived</strong>, 
+                and <strong>execution converted that survival into meaningful outcomes</strong>.
               </p>
 
               <p>
@@ -183,7 +182,7 @@ export default function WilliamsBearsArticle() {
                 followed by consecutive incompletions that ended the drive. Against the Ravens,
                 an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
                 case, the disruption held, and the play ended at the point of pressure.
-                Explicitly, disruption alon doesn&apos;t produce a win, <strong>it only matters when it ends the play</strong>.
+                Explicitly, disruption alone doesn&apos;t produce a win, <strong>it only matters when it ends the play</strong>.
               </p>
 
               <p>
