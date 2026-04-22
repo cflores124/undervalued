@@ -102,7 +102,7 @@ export default function WilliamsBearsArticle() {
                 However, looking at the season in its entirety, a clearer pattern
                 emerges. These were not controlled comebacks built on steady
                 execution; they were <strong>high-stakes gambles</strong> where their success
-                was defined by their ability to thrive in volatile,
+                was defined by their ability to survive in volatile,
                 high-leverage environments. These outcome rested heavily
                 on Caleb Williams&apos; ability to <strong>create under pressure</strong>.
               </p>
@@ -114,18 +114,18 @@ export default function WilliamsBearsArticle() {
               <p>
                 In the NFL, the fourth quarter operates in a <strong>different domain</strong> than 
                 the rest of the game. Time is compressed, possessions are
-                limited, and the cost of failure sharply increases, and every play
+                limited, the cost of failure sharply increases, and every play
                 carries an <strong>element of finality</strong>.
               </p>
 
               <p>
-                  The Bears didn&apos;t just play in this environment; they found a way to <strong>live in it</strong>. 
-                  In 2025, their average absolute net change in <strong>win probability (WPA, or win probability added)</strong> 
-                  per possession in the fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
-                  marking the highest level of volatility among all 32 teams. At the same time, they averaged 
-                  a net change of <strong>6.42%</strong> per possession, ranking <strong>2nd in execution</strong>, 
-                  meaning each possession, on average, <strong>positively moved their chances of winning by over six percentage points</strong>.
-                </p>
+                The Bears didn&apos;t just play in this environment; they found a way to <strong>live in it</strong>. 
+                In 2025, their average <em>absolute</em> change in <strong>win probability (WPA, or win probability added)</strong> per 
+                possession in the fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
+                marking the highest level of volatility among all 32 teams. This reflects how large the swings were on each possession, regardless of direction. 
+                At the same time, they averaged a <em>net</em> change of <strong>6.42%</strong> per possession, meaning they ranked <strong>2nd in converting those swings 
+                into favorable outcomes</strong>.
+              </p>
 
               <p>
                 On a granular level, the swings are equally as dramatic. The
@@ -142,8 +142,8 @@ export default function WilliamsBearsArticle() {
                 play in the fourth quarter carried a disproportionate impact and a single possession
                 could drastically swing win probability. While the goal was to win early and absorb
                 mistakes over time, keeping the game even remotely close allowed them to capitalize 
-                on <strong>play creation that sustained drives and execution that converted those moments into
-                actual wins</strong>.
+                on <strong>play creation</strong> that sustained drives and <strong>execution</strong> that converted those moments into
+                actual wins.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -185,9 +185,9 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 The distinction isn&apos;t about play design; it&apos;s about <strong>survival at the point of disruption</strong>.
-                If the offense survives the initial breakdown through <strong>Caleb&apos;s ability to scramble or extend plays</strong>,
-                the drive is restored, allowing for <strong>execution that produces meaningful offensive outcomes</strong>. If not,
-                the drive ends at the <strong>point of disruption</strong>, resulting in a stalled possession.
+                If the offense survives the initial breakdown through Caleb&apos;s ability to scramble or extend plays,
+                the drive is restored, allowing for execution that produces meaningful offensive outcomes. If not,
+                the drive ends at the point of disruption, resulting in a stalled possession.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
