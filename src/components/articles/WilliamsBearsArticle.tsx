@@ -102,15 +102,14 @@ export default function WilliamsBearsArticle() {
                 However, looking at the season in its entirety, a clearer pattern
                 emerges. These were not controlled comebacks built on steady
                 execution; they were <strong>high-stakes gambles</strong> where their success
-                was defined by their ability to survive in volatile,
-                high-leverage environments. These outcome rested heavily
-                on Caleb Williams&apos; ability to <strong>create under pressure</strong>.
+                was defined by their ability to survive in volatile environments. 
+                These outcome rested heavily on Caleb Williams&apos; ability to <strong>create under pressure</strong>.
               </p>
 
               <p>
                 To understand what shaped these fourth-quarter outcomes, this analysis focuses on{" "}
                 <strong>win probability added (WPA)</strong>, a metric that captures how each
-                play shifts a team&apos;s chances of winning, both positively and negatively.
+                play shifts a team&apos;s chances of winning (both positively and negatively).
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -120,19 +119,18 @@ export default function WilliamsBearsArticle() {
               <p>
                 In the NFL, the fourth quarter operates in a <strong>different domain</strong> than 
                 the rest of the game. Time is compressed, possessions are
-                limited, the cost of failure sharply increases, and every play
-                carries an <strong>element of finality</strong>.
+                limited, and the cost of failure <strong>sharply increases</strong>.
               </p>
 
               <p>
                 The Bears didn&apos;t just play in this environment; they found a way to{" "}
                 <strong>live in it</strong>. In 2025, their average{" "}
                 <strong>absolute WPA per possession</strong> in the fourth quarter was{" "}
-                <strong>13.97%</strong>. This was well above the league average of{" "}
-                <strong>8.57%</strong>, reflecting how large WPA swings were on each possession
-                regardless of direction and marking the highest level of volatility among all
+                <strong>13.97%</strong>, well above the league average of{" "}
+                <strong>8.57%</strong>. This reflects how large swings were on each possession,
+                regardless of direction, and marking the highest level of volatility among all
                 32 teams. At the same time, they averaged a <strong>net WPA of 6.42%</strong>{" "}
-                per possession, indicating they ranked <strong>2nd</strong> in consistently
+                per possession, indicating that they ranked <strong>2nd</strong> in consistently 
                 turning those swings in their favor.
               </p>
 
@@ -174,18 +172,18 @@ export default function WilliamsBearsArticle() {
                 the Raiders, Caleb escaped pressure for a 12-yard scramble (+6.7% WPA) before
                 completing a 17-yard pass to extend the game-winning drive. In
                 the final minutes of the game against the Bengals, a third-and-long
-                scramble (+6.5% WPA) not only prevented a <strong>drive-ending play</strong> but
+                scramble not only prevented a <strong>drive-ending play</strong> but
                 also set up a 58-yard touchdown that swung win probability by
                 over <strong>50%</strong>.
               </p>
 
               <p>
                 Conversely, in failed recoveries, the initial play-creation never materialized.
-                Against the Vikings in Week 1, pressure led to a sack (-5.1% WPA), which was then
+                Against the Vikings in Week 1, pressure led to a sack, which was then
                 followed by consecutive incompletions that ended the drive. Against the Ravens,
                 an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
                 case, the disruption held, and the play ended at the point of pressure.
-                Explicitly, <strong>disruption only matters when it ends the play</strong>.
+                Explicitly, disruption alon doesn't produce a win, <strong>it only matters when it ends the play</strong>.
               </p>
 
               <p>
@@ -215,8 +213,8 @@ export default function WilliamsBearsArticle() {
               <p>
                 With 5:37 remaining and facing 4th-and-8, the play quickly broke
                 down. Caleb rolled left to escape a looping pass rusher, reset
-                on the run, and threw across his body to Rome Odunze for the
-                first down. While the play added 7.8% to their win probability,
+                on the run, and threw across his body to Rome Odunze for a 27-yard conversion. 
+                While the play added 7.8% to their win probability,
                 its true value was in the fact that it <strong>prevented the drive from ending</strong>.
               </p>
 
@@ -236,8 +234,7 @@ export default function WilliamsBearsArticle() {
                 Bears ahead (+18.5% WPA). The play followed a <strong>“call it, show it,
                 break it”</strong> philosophy, using an earlier screen to Luther Burden
                 as bait to manipulate the defense. But that design only mattered because
-                Caleb Williams <strong>saved a 4th-and-8 that should have failed</strong>,
-                creating the opportunity for the offense to return to structure and execute.
+                Caleb Williams <strong>saved a 4th-and-8 that should have failed</strong>.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
