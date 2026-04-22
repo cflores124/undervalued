@@ -119,13 +119,13 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                The Bears didn&apos;t just play in this environment; they found a way to <strong>live in it</strong>. 
-                In 2025, their average absolute net change in win probability per possession in the 
-                fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
-                marking the highest level of volatility among all 32 teams. At the same time, they averaged 
-                a net change of <strong>6.42%</strong> per possession, ranking <strong>2nd in execution</strong>, 
-                meaning they consistently turned high-leverage possessions into <strong>positive game-defining outcomes</strong>.
-              </p>
+                  The Bears didn&apos;t just play in this environment; they found a way to <strong>live in it</strong>. 
+                  In 2025, their average absolute net change in <strong>win probability (WPA, or win probability added)</strong> 
+                  per possession in the fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
+                  marking the highest level of volatility among all 32 teams. At the same time, they averaged 
+                  a net change of <strong>6.42%</strong> per possession, ranking <strong>2nd in execution</strong>, 
+                  meaning each possession, on average, <strong>positively moved their chances of winning by over six percentage points</strong>.
+                </p>
 
               <p>
                 On a granular level, the swings are equally as dramatic. The
@@ -221,10 +221,11 @@ export default function WilliamsBearsArticle() {
               <p>
                 This sequence set up the dagger: a <strong>perfectly executed
                 screen-and-go</strong> to DJ Moore for a 25-yard touchdown to put the
-                Bears ahead (+18.5% WPA). This play followed a “call it, show it,
-                break it” philosophy, using an earlier screen to Luther Burden
-                as bait to manipulate the defense. However, that elite play call
-                only mattered because Caleb Williams <strong>saved a 4th-and-8 that should have failed</strong>.
+                Bears ahead (+18.5% WPA). The play followed a <strong>“call it, show it,
+                break it”</strong> philosophy, using an earlier screen to Luther Burden
+                as bait to manipulate the defense. But that design only mattered because
+                Caleb Williams <strong>saved a 4th-and-8 that should have failed</strong>,
+                creating the opportunity for the offense to return to structure and execute.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -239,11 +240,10 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 This created an environment that was both <strong>powerful and fragile</strong>.
-                It enabled a miraculous comeback against the Packers, but it
-                also led to the devastating collapse in the Divisional round
-                against the Rams. Fourth-quarter football isn&apos;t so much
-                about executing perfectly, but about <strong>surviving broken plays long
-                enough for execution to matter</strong>.
+                It enabled a miraculous comeback against the Packers, but it also led to a
+                devastating collapse in the Divisional round against the Rams. Fourth-quarter
+                football isn&apos;t just about perfect execution, but about <strong>surviving broken plays
+                long enough for execution to matter</strong>.
               </p>
 
               <p>
