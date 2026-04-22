@@ -183,7 +183,7 @@ export default function WilliamsBearsArticle() {
                 followed by consecutive incompletions that ended the drive. Against the Ravens,
                 an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
                 case, the disruption held, and the play ended at the point of pressure.
-                Explicitly, disruption alon doesn't produce a win, <strong>it only matters when it ends the play</strong>.
+                Explicitly, disruption alon doesn&apos;t produce a win, <strong>it only matters when it ends the play</strong>.
               </p>
 
               <p>
