@@ -175,7 +175,9 @@ export default function WilliamsBearsArticle() {
                 to a sack (-5.1% WPA), which was then followed by consecutive
                 incompletions that ended the drive. Against the Ravens, an
                 interception in the fourth immediately flipped the game
-                (-11.8% WP).
+                (-11.8% WP). In each case, the disruption held and the play ended
+                at the point of pressure. Against the Bears, disruption that does
+                not end the play is not a win; it is an opportunity for the offense.
               </p>
 
               <p>
