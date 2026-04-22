@@ -95,7 +95,7 @@ export default function WilliamsBearsArticle() {
                 In 2025, the Chicago Bears recorded <strong>seven comeback wins within
                 the final two minutes</strong> of game time. They became known as the
                 “Cardiac Bears,” a team that defied the odds even when their win
-                probability dipped as low as <strong>4%</strong>.
+                probability dipped as low as 4%.
               </p>
 
               <p>
@@ -123,8 +123,8 @@ export default function WilliamsBearsArticle() {
                 In 2025, their average <em>absolute</em> change in <strong>win probability (WPA, or win probability added)</strong> per 
                 possession in the fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
                 marking the highest level of volatility among all 32 teams. This reflects how large the swings were on each possession, regardless of direction. 
-                At the same time, they averaged a <em>net</em> change of <strong>6.42%</strong> per possession, meaning they ranked <strong>2nd in converting those swings 
-                into favorable outcomes</strong>.
+                At the same time, they averaged a <em>net</em> change of <strong>6.42%</strong> per possession, meaning they ranked <strong>2nd in execution</strong>, 
+                consistently turning those swings in their favor.
               </p>
 
               <p>
@@ -233,17 +233,16 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                The Bears didn&apos;t break win probability through a single edge, but through a
-                <strong> sequence</strong>: volatility created disruption, Caleb neutralized it,
-                and that allowed execution to emerge in the <strong>highest-leverage moments</strong>.
+                The Bears didn&apos;t break win probability through a single edge, but through a volatile environment that enabled fourth-quarter comebacks. 
+                Within that environment, creation during disruption laid the foundation for execution that mattered most in <strong>high-leverage moments</strong>.
               </p>
 
               <p>
-                This created an environment that was both <strong>powerful and fragile</strong>.
-                It enabled a miraculous comeback against the Packers, but it also led to a
+                This created an environment that was both powerful and fragile.
+                It enabled a miraculous comeback in Week 16 and the Wild Card games against the Packers, but it also led to a
                 devastating collapse in the Divisional round against the Rams. Fourth-quarter
-                football isn&apos;t just about perfect execution, but about <strong>surviving broken plays
-                long enough for execution to matter</strong>.
+                football isn&apos;t just about perfect execution, but about <strong>survival through broken plays</strong>
+                long enough for execution to matter.
               </p>
 
               <p>
