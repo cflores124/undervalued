@@ -95,16 +95,15 @@ export default function WilliamsBearsArticle() {
                 In 2025, the Chicago Bears recorded <strong>seven comeback wins within
                 the final two minutes</strong> of game time. They became known as the
                 “Cardiac Bears,” a team that defied the odds even when their win
-                probability dipped as low as <strong>4%</strong> while the offense was on the
-                field.
+                probability dipped as low as <strong>4%</strong>.
               </p>
 
               <p>
                 However, looking at the season in its entirety, a clearer pattern
                 emerges. These were not controlled comebacks built on steady
-                execution; they were <strong>high-stakes gambles</strong>. The Bears&apos; success
-                was defined by their ability to thrive in <strong>volatile,
-                high-leverage environments</strong> where the outcome often rested heavily
+                execution; they were <strong>high-stakes gambles</strong> where their success
+                was defined by their ability to thrive in volatile,
+                high-leverage environments. These outcome rested heavily
                 on Caleb Williams&apos; ability to <strong>create under pressure</strong>.
               </p>
 
@@ -115,7 +114,7 @@ export default function WilliamsBearsArticle() {
               <p>
                 In the NFL, the fourth quarter operates in a <strong>different domain</strong> than 
                 the rest of the game. Time is compressed, possessions are
-                limited, and the <strong>cost of failure sharply increases</strong>. Every play
+                limited, and the cost of failure sharply increases, and every play
                 carries an <strong>element of finality</strong>.
               </p>
 
@@ -140,12 +139,11 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 For the Bears, this was akin to <strong>high-stakes gambling</strong>, where each
-                play in the fourth quarter carried outsized impact and a small number of outcomes
+                play in the fourth quarter carried a disproportionate impact and a single possession
                 could drastically swing win probability. While the goal was to win early and absorb
-                mistakes over time, keeping the game even relatively close allowed them to capitalize
-                on <strong>decisive opponent errors</strong> in the fourth quarter. The game then shifted
-                from a <strong>test of consistency</strong> to a <strong>test of critical execution</strong> in 
-                the highest-leverage moments.
+                mistakes over time, keeping the game even remotely close allowed them to capitalize 
+                on <strong>play creation that sustained drives and execution that converted those moments into
+                actual wins</strong>.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -153,10 +151,11 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                The separation of a successful comeback from a failed recovery
-                came down to a specific sequence for the Bears: <strong>pressure disrupts
+                The separation between a successful comeback and a failed recovery
+                came down to the sequence outlined above: <strong>pressure disrupted
                 the initial play</strong>, forcing the offense into a <strong>“broken state.”</strong> The 
-                game then hinges on whether that disruption can be <strong>salvaged</strong>.
+                game then hinged on whether Caleb could create a positive play in that 
+                moment of disruption.
               </p>
 
               <p>
@@ -185,10 +184,10 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                The distinction isn&apos;t about play design; it&apos;s about <strong>survival</strong>.
-                If the offense survives the first moment of failure, the system
-                could function again. If not, the drive ends at the <strong>point of
-                disruption</strong>.
+                The distinction isn&apos;t about play design; it&apos;s about <strong>survival at the point of disruption</strong>.
+                If the offense survives the initial breakdown through <strong>Caleb&apos;s ability to scramble or extend plays</strong>,
+                the drive is restored, allowing for <strong>execution that produces meaningful offensive outcomes</strong>. If not,
+                the drive ends at the <strong>point of disruption</strong>, resulting in a stalled possession.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
