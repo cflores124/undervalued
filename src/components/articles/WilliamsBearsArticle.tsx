@@ -128,11 +128,11 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                On a granular level, the swings are equally as dramatic. The
+                On a granular level, the momemtum shifts are equally as dramatic. The
                 average change in win probability per play rose from <strong>2.4%</strong> in the
                 first three quarters to <strong>3.7%</strong> in the fourth, increasing the <strong>impact of every play</strong>. 
                 In close games, that number spiked to <strong>4.66%</strong>, where a single snap carried even more 
-                game defining impact. The volatility followed suit: the standard deviation of these swings jumped 
+                game defining impact. The volatility followed suit: the standard deviation of average absolute chnage in WPA per play jumped 
                 from <strong>2.54%</strong> early in the game to a staggering <strong>6.19%</strong> in 
                 the fourth quarter, expanding the range of outcomes on each play.
               </p>
@@ -152,7 +152,7 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 The separation between a successful comeback and a failed recovery
-                came down to the sequence outlined above: <strong>pressure disrupted
+                came down to a specific sequence: <strong>pressure disrupted
                 the initial play</strong>, forcing the offense into a <strong>“broken state.”</strong> The 
                 game then hinged on whether Caleb could create a positive play in that 
                 moment of disruption.
@@ -175,9 +175,9 @@ export default function WilliamsBearsArticle() {
                 to a sack (-5.1% WPA), which was then followed by consecutive
                 incompletions that ended the drive. Against the Ravens, an
                 interception in the fourth immediately flipped the game
-                (-11.8% WP). In each case, the disruption held and the play ended
-                at the point of pressure. Against the Bears, disruption that does
-                not end the play is not a win; it is an opportunity for the offense.
+                (-11.8% WPA). In each case, the disruption held and the play ended
+                at the point of pressure. Specifically, disruption alone does
+                not result in a win; it is when that disruption ends the play and the Bears have no opportunity to create.
               </p>
 
               <p>
@@ -186,7 +186,7 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                The distinction isn&apos;t about play design; it&apos;s about <strong>survival at the point of disruption</strong>.
+                The distinction isn&apos;t about play design; it&apos;s about <strong>surviving that inital point of disruption</strong>.
                 If the offense survives the initial breakdown through Caleb&apos;s ability to scramble or extend plays,
                 the drive is restored, allowing for execution that produces meaningful offensive outcomes. If not,
                 the drive ends at the point of disruption, resulting in a stalled possession.
@@ -287,8 +287,8 @@ export default function WilliamsBearsArticle() {
           >
             <p className="text-sm sm:text-base leading-relaxed text-foreground/75">
               This section breaks the Bears&apos; Wild Card comeback into five decisive
-              fourth-quarter moments. The bar chart shows how a <strong>single survival play</strong>
-              prevented the drive from ending, allowing Chicago to move from
+              fourth-quarter moments. The bar chart shows how a <strong>single survival play</strong> prevented 
+              the drive from ending, allowing Chicago to move from
               <strong> disruption → execution</strong> and reshape its win probability one play at a time.
             </p>
 
