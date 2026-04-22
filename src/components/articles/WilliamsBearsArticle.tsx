@@ -124,24 +124,28 @@ export default function WilliamsBearsArticle() {
                 In 2025, their average absolute net change in win probability per possession in the 
                 fourth quarter was <strong>13.97%</strong>, well above the league average of <strong>8.57%</strong>, 
                 marking the highest level of volatility among all 32 teams. At the same time, they averaged 
-                a net change of <strong>6.42%</strong> per possession, ranking <strong>2nd in execution</strong>.
+                a net change of <strong>6.42%</strong> per possession, ranking <strong>2nd in execution</strong>, 
+                meaning they consistently turned high-leverage possessions into <strong>positive game-defining outcomes</strong>.
               </p>
 
               <p>
                 On a granular level, the swings are equally as dramatic. The
                 average change in win probability per play rose from <strong>2.4%</strong> in the
-                first three quarters to <strong>3.7%</strong> in the fourth. In close games, that
-                number spiked to <strong>4.66%</strong>. The volatility followed suit: the
-                standard deviation of these swings jumped from <strong>2.54%</strong> early in
-                the game to a staggering <strong>6.19%</strong> in the fourth quarter.
+                first three quarters to <strong>3.7%</strong> in the fourth, increasing the <strong>impact of every play</strong>. 
+                In close games, that number spiked to <strong>4.66%</strong>, where a single snap carried even more 
+                game defining impact. The volatility followed suit: the standard deviation of these swings jumped 
+                from <strong>2.54%</strong> early in the game to a staggering <strong>6.19%</strong> in 
+                the fourth quarter, expanding the range of outcomes on each play.
               </p>
 
               <p>
-                For the Bears, this was akin to <strong>high-stakes gambling</strong>. While the
-                goal was to win early and absorb mistakes over time, keeping the
-                game even relatively close allowed them to capitalize on <strong>decisive opponent errors</strong> in 
-                the fourth quarter. The game then shifted from a <strong>test of consistency</strong> to 
-                a <strong>test of critical execution</strong> in the highest-leverage moments.
+                For the Bears, this was akin to <strong>high-stakes gambling</strong>, where each
+                play in the fourth quarter carried outsized impact and a small number of outcomes
+                could drastically swing win probability. While the goal was to win early and absorb
+                mistakes over time, keeping the game even relatively close allowed them to capitalize
+                on <strong>decisive opponent errors</strong> in the fourth quarter. The game then shifted
+                from a <strong>test of consistency</strong> to a <strong>test of critical execution</strong> in 
+                the highest-leverage moments.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -229,11 +233,9 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                The 2025 Bears thrived by navigating a <strong>high-volatility
-                environment</strong> where the odds were stacked against them. Their
-                success relied on the <strong>symbiotic relationship</strong> between Ben
-                Johnson&apos;s play-calling and Caleb Williams&apos; ability to
-                create during broken reps.
+                The Bears didn&apos;t break win probability through a single edge, but through a
+                <strong> sequence</strong>: volatility created disruption, Caleb neutralized it,
+                and that allowed execution to emerge in the <strong>highest-leverage moments</strong>.
               </p>
 
               <p>
