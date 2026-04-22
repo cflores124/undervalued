@@ -246,9 +246,7 @@ export default function WilliamsBearsInteractive() {
 
         <div className="mt-4 text-center">
           <p className="mx-auto max-w-3xl text-sm leading-relaxed text-foreground/62">
-            This sequence is the argument in miniature: one survival rep prevents
-            the drive from ending, and everything that follows becomes possible
-            because the Bears are allowed to return to structure.
+            This sequence is the argument in miniature: one survival rep prevents the drive from ending and allows the Bears to return to structure.
           </p>
         </div>
       </div>
