@@ -129,7 +129,7 @@ export default function WilliamsBearsArticle() {
                 <strong>8.57%</strong>. This captures the magnitude of win probability swings on each possession, 
                 regardless of direction, and marked the highest level of volatility among all 32 teams. At the same time, 
                 they averaged a <strong>net WPA of 6.42%</strong>{" "}
-                per possession, ranking them <strong>2nd</strong> in consistently 
+                per possession, ranking them <strong>2nd</strong> in execution, consistently 
                 turning those swings in their favor.
               </p>
 
@@ -157,7 +157,7 @@ export default function WilliamsBearsArticle() {
               <p>
                 The separation between a successful comeback and a failed recovery came down to a specific 
                 sequence: pressure <strong>disrupted</strong> the initial play, forcing the offense 
-                into a broken state,” <strong>creation</strong> determined whether the drive survived, 
+                into a "broken state,” <strong>creation</strong> determined whether the drive survived, 
                 and <strong>execution</strong> converted that survival into meaningful outcomes.
               </p>
 
