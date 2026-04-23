@@ -5,9 +5,9 @@ import WilliamsBearsInteractive from "@/components/features/WilliamsBearsInterac
 const description = (
   <>
     A <strong>structural breakdown</strong> of how Caleb Williams and the 2025
-    Bears thrived in <strong>high-volatility fourth-quarter environments</strong> and repeatedly
-    turned <strong>broken plays into win probability swings</strong>. Scroll to the bottom for an 
-    interactive breakdown of the Bears’ defining fourth-quarter drive.
+    Bears thrived in <strong>high-volatility fourth-quarter environments</strong>. 
+    Scroll to the bottom for an interactive breakdown of the Bears&apos; defining 
+    fourth-quarter drive.
   </>
 );
 
@@ -86,7 +86,7 @@ export default function WilliamsBearsArticle() {
                 <span className="float-left mr-2 mt-1 text-6xl sm:text-7xl font-bold leading-[0.82]">
                   W
                 </span>
-                hat does it actually mean to <strong>“break” win probability</strong>, and how
+                hat does it mean to <strong>“break” win probability</strong>, and how
                 did the Bears consistently create that effect throughout the 2025
                 NFL season?
               </p>
@@ -99,17 +99,16 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                However, looking at the season in its entirety, a clearer pattern
+                However, looking at the season in its entirety, a clear pattern
                 emerges. These were not controlled comebacks built on steady
                 execution; they were <strong>high-stakes gambles</strong> where their success
                 was defined by their ability to survive in volatile environments. 
-                These outcome rested heavily on Caleb Williams&apos; ability to <strong>create under pressure</strong>.
               </p>
 
               <p>
                 To understand what shaped these fourth-quarter outcomes, this analysis focuses on{" "}
                 <strong>win probability added (WPA)</strong>, a metric that captures how each
-                play shifts a team&apos;s chances of winning (both positively and negatively).
+                play shifts a team&apos;s chances of winning (positively and negatively).
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -130,7 +129,7 @@ export default function WilliamsBearsArticle() {
                 <strong>8.57%</strong>. This captures the magnitude of win probability swings on each possession, 
                 regardless of direction, and marked the highest level of volatility among all 32 teams. At the same time, 
                 they averaged a <strong>net WPA of 6.42%</strong>{" "}
-                per possession, indicating that they ranked <strong>2nd</strong> in consistently 
+                per possession, ranking them <strong>2nd</strong> in consistently 
                 turning those swings in their favor.
               </p>
 
@@ -146,12 +145,9 @@ export default function WilliamsBearsArticle() {
               </p>
 
               <p>
-                For the Bears, this was akin to <strong>high-stakes gambling</strong>, where each
+                For the Bears, this was akin to <strong>high-stakes gambling</strong>. Each
                 play in the fourth quarter carried a disproportionate impact and a single possession
-                could drastically swing win probability. While the goal was to win early and absorb
-                mistakes over time, keeping the game even remotely close allowed them to capitalize 
-                on <strong>play creation</strong> that sustained drives and <strong>execution</strong> that converted those moments into
-                actual wins.
+                could drastically swing win probability. 
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -181,22 +177,19 @@ export default function WilliamsBearsArticle() {
                 Against the Vikings in Week 1, pressure led to a sack, which was then
                 followed by consecutive incompletions that ended the drive. Against the Ravens,
                 an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
-                case, the disruption held, and the play ended at the point of pressure.
-                Explicitly, disruption alone doesn&apos;t produce a win, <strong>it only matters when it ends the play</strong>.
+                case, the disruption held, and the play ended at the point of pressure, as the only 
+                way to stop the Bears was to stop the play itself.
+              </p>
+
+              <p>
+                The distinction isn&apos;t about play design, but about surviving the point of disruption.
+                If the offense survives through Caleb&apos;s ability to scramble or extend plays,
+                the drive is restored and execution can follow. If not, the possession stalls there and dies.
               </p>
 
               <p>
                 Ultimately, <strong>13 of the Bears&apos; 20 games were decided late</strong>;
                 they won seven and lost six.
-              </p>
-
-              <p>
-                The distinction isn&apos;t about play design, it&apos;s about{" "}
-                <strong>surviving the initial point of disruption</strong>. If the offense survives
-                the initial breakdown through Caleb&apos;s ability to scramble or extend plays,
-                the drive is restored, allowing for execution that produces meaningful offensive
-                outcomes. If not, the drive ends at the point of disruption, resulting in a
-                stalled possession.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
