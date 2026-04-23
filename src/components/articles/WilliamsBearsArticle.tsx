@@ -108,7 +108,7 @@ export default function WilliamsBearsArticle() {
               <p>
                 To understand what shaped these fourth-quarter outcomes, this analysis focuses on{" "}
                 <strong>win probability added (WPA)</strong>, a metric that captures how each
-                play shifts a team&apos;s chances of winning (positively and negatively).
+                play shifts a team&apos;s chances of winning, both positively and negatively.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -156,9 +156,9 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 The separation between a successful comeback and a failed recovery came down to a specific 
-                sequence: <strong>pressure disrupted the initial play</strong>, forcing the offense 
-                into a <strong>“broken state,”</strong> <strong>creation determined whether the drive survived</strong>, 
-                and <strong>execution converted that survival into meaningful outcomes</strong>.
+                sequence: pressure <strong>disrupted</strong> the initial play, forcing the offense 
+                into a broken state,” <strong>creation</strong> determined whether the drive survived, 
+                and <strong>execution</strong> converted that survival into meaningful outcomes.
               </p>
 
               <p>
@@ -166,7 +166,7 @@ export default function WilliamsBearsArticle() {
                 to <strong>rescue drives that should have ended</strong>. Against 
                 the Raiders, Caleb escaped pressure for a 12-yard scramble (+6.7% WPA) before
                 completing a 17-yard pass to extend the game-winning drive. In
-                the final minutes of the game against the Bengals, a third-and-long
+                the final minute of the game against the Bengals, a third-and-long
                 scramble not only prevented a <strong>drive-ending play</strong> but
                 also set up a 58-yard touchdown that swung win probability by
                 over <strong>50%</strong>.
@@ -178,7 +178,7 @@ export default function WilliamsBearsArticle() {
                 followed by consecutive incompletions that ended the drive. Against the Ravens,
                 an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
                 case, the disruption held, and the play ended at the point of pressure, as the only 
-                way to stop the Bears was to stop the play itself.
+                way to definitively stop the Bears was to stop the play itself.
               </p>
 
               <p>
