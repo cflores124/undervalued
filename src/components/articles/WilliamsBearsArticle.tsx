@@ -157,7 +157,7 @@ export default function WilliamsBearsArticle() {
               <p>
                 The separation between a successful comeback and a failed recovery came down to a specific 
                 sequence: pressure <strong>disrupted</strong> the initial play, forcing the offense 
-                into a "broken state,” <strong>creation</strong> determined whether the drive survived, 
+                into a &ldquo;broken state,&rdquo; <strong>creation</strong> determined whether the drive survived, 
                 and <strong>execution</strong> converted that survival into meaningful outcomes.
               </p>
 
