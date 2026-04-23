@@ -4,7 +4,7 @@ import WilliamsBearsInteractive from "@/components/features/WilliamsBearsInterac
 
 const description = (
   <>
-    A <strong>structural breakdown</strong> of how Caleb Williams and the 2025
+    An <strong>explanatory analysis</strong> of how Caleb Williams and the 2025
     Bears thrived in <strong>high-volatility fourth-quarter environments</strong>. 
     Scroll to the bottom for an interactive breakdown of the Bears&apos; defining 
     fourth-quarter drive.
