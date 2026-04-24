@@ -1,11 +1,13 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const ContactModal = dynamic(() => import("@/components/layout/ContactModal"), { ssr: false });
+const ContactModal = dynamic(() => import("@/components/layout/ContactModal"), {
+  ssr: false,
+});
 
 export default function SiteHeader() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -30,8 +32,6 @@ export default function SiteHeader() {
         "
       >
         <div className="mx-auto flex h-[10svh] w-full max-w-6xl items-center justify-between px-5 sm:px-12">
-
-          {/* Logo */}
           <Link
             href="/"
             className="flex items-center"
@@ -39,99 +39,64 @@ export default function SiteHeader() {
             onClick={handleNavClick}
           >
             <Image
-              src="/undervaluedlogo-light.png"
+              src="/undervalued-logo.png"
               alt="Undervalued"
               width={170}
               height={170}
-              className="logo-light h-auto w-[120px] sm:w-[150px]"
+              className="h-auto w-[44px] sm:w-[52px] md:w-[56px]"
               priority
             />
-            <Image
-              src="/undervaluedlogo-dark.png"
-              alt="Undervalued"
-              width={170}
-              height={170}
-              className="logo-dark h-auto w-[120px] sm:w-[150px]"
-              priority
-            />
+
+            <div className="ml-4 hidden h-10 w-px bg-[color-mix(in_oklab,var(--foreground)_35%,transparent)] xl:block" />
+
+            <div className="ml-4 hidden xl:block">
+              <Image
+                src="/undervalued-header-light.png"
+                alt="Undervalued"
+                width={520}
+                height={120}
+                className="logo-light h-auto w-[250px]"
+                priority
+              />
+
+              <Image
+                src="/undervalued-header-dark.png"
+                alt="Undervalued"
+                width={520}
+                height={120}
+                className="logo-dark h-auto w-[250px]"
+                priority
+              />
+            </div>
+
             <span className="sr-only">Undervalued</span>
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden items-center gap-3 text-xs sm:flex sm:gap-6 sm:text-sm">
-
-            <Link
-              href="/"
-              className="
-                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
-                transition-colors
-                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                focus-visible:outline-none
-                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
-                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
-              "
-            >
+            <Link href="/" className="nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5">
               Home
             </Link>
 
-            <Link
-              href="/articles"
-              className="
-                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
-                transition-colors
-                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                focus-visible:outline-none
-                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
-                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
-              "
-            >
+            <Link href="/articles" className="nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5">
               Articles
             </Link>
 
-            <Link
-              href="/insights"
-              className="
-                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
-                transition-colors
-                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                focus-visible:outline-none
-                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
-                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
-              "
-            >
+            <Link href="/insights" className="nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5">
               Insights
             </Link>
 
-            <Link
-              href="/about"
-              className="
-                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
-                transition-colors
-                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                focus-visible:outline-none
-                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
-                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
-              "
-            >
+            <Link href="/about" className="nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5">
               About
             </Link>
 
             <button
               onClick={() => setContactOpen(true)}
-              className="
-                nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5
-                transition-colors
-                hover:bg-[color-mix(in_oklab,var(--foreground)_6%,transparent)]
-                focus-visible:outline-none
-                focus-visible:ring-2 focus-visible:ring-[var(--ring)]
-                focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]
-              "
+              className="nav-link rounded-xl px-2.5 py-1 sm:px-3 sm:py-1.5"
             >
               Contact
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -168,7 +133,6 @@ export default function SiteHeader() {
           </button>
         </div>
 
-        {/* Mobile Dropdown */}
         {mobileMenuOpen && (
           <div
             className="
@@ -179,7 +143,6 @@ export default function SiteHeader() {
             "
           >
             <nav className="mx-auto flex w-full max-w-6xl flex-col px-5 py-3">
-
               <Link href="/" onClick={handleNavClick} className="nav-link rounded-xl px-3 py-3 text-sm">
                 Home
               </Link>
@@ -205,7 +168,6 @@ export default function SiteHeader() {
               >
                 Contact
               </button>
-
             </nav>
           </div>
         )}

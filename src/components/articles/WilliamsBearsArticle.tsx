@@ -264,7 +264,7 @@ export default function WilliamsBearsArticle() {
             duration={0.55}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
-              Wild Card vs Packers: Drive Survival {"->"} Execution
+              Wild Card vs Packers: Disruption {"->"} Execution
             </h2>
           </CinematicReveal>
 
