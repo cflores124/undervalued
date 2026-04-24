@@ -8,7 +8,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import FooterBand from "@/components/layout/FooterBand";
 import HeaderBand from "@/components/layout/HeaderBand";
 import BFCacheReset from "@/components/layout/BFCacheReset";
-import ScrollToTop from "@/components/layout/ScrollToTop"; // <-- ADD THIS
+import ScrollToTop from "@/components/layout/ScrollToTop";
+import OrientationGuard from "@/components/layout/OrientationGuard"; 
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -26,11 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        {/* Forces dark color-scheme for built-in form controls & scrollbars */}
         <meta name="color-scheme" content="dark" />
       </head>
 
-      {/* body is the scroll container; reserve space for fixed header & footer */}
       <body
         className={[
           geistSans.variable,
@@ -42,13 +41,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "pb-[calc(10svh+env(safe-area-inset-bottom))]",
         ].join(" ")}
       >
-        {/* Scroll reset on route change */}
-        <ScrollToTop />
+        {/* 🔒 Orientation Guard (highest layer) */}
+        <OrientationGuard />
 
-        {/* Reset transforms when returning from iOS/Safari back-forward cache */}
+        {/* Scroll + lifecycle helpers */}
+        <ScrollToTop />
         <BFCacheReset />
 
-        {/* Fixed layers */}
+        {/* Fixed UI layers */}
         <HeaderBand />
         <SiteHeader />
         <SiteFooter />
