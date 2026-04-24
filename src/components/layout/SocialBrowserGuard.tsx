@@ -2,26 +2,27 @@
 
 import { useEffect, useState } from "react";
 
-export default function TwitterBrowserGuard({
+export default function SocialBrowserGuard({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [isTwitterBrowser, setIsTwitterBrowser] = useState(false);
+  const [isSocialBrowser, setIsSocialBrowser] = useState(false);
 
   useEffect(() => {
     const ua = navigator.userAgent.toLowerCase();
 
-    const isTwitter =
+    const isSocial =
       ua.includes("twitter") ||
       ua.includes("twitterios") ||
       ua.includes("twitterandroid") ||
-      ua.includes("x.com");
+      ua.includes("x.com") ||
+      ua.includes("instagram");
 
-    setIsTwitterBrowser(isTwitter);
+    setIsSocialBrowser(isSocial);
   }, []);
 
-  if (isTwitterBrowser) return null;
+  if (isSocialBrowser) return null;
 
   return <>{children}</>;
 }

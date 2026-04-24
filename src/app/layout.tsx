@@ -10,7 +10,7 @@ import HeaderBand from "@/components/layout/HeaderBand";
 import BFCacheReset from "@/components/layout/BFCacheReset";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 import OrientationGuard from "@/components/layout/OrientationGuard";
-import TwitterBrowserGuard from "@/components/layout/TwitterBrowserGuard";
+import SocialBrowserGuard from "@/components/layout/SocialBrowserGuard"; // ✅ FIXED NAME
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -42,19 +42,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "pb-[calc(10svh+env(safe-area-inset-bottom))]",
         ].join(" ")}
       >
+        {/* Orientation lock */}
         <OrientationGuard />
 
+        {/* UX helpers */}
         <ScrollToTop />
         <BFCacheReset />
 
+        {/* Fixed layers */}
         <HeaderBand />
         <SiteHeader />
 
-        <TwitterBrowserGuard>
+        {/* Hide footer in social in-app browsers */}
+        <SocialBrowserGuard>
           <SiteFooter />
           <FooterBand />
-        </TwitterBrowserGuard>
+        </SocialBrowserGuard>
 
+        {/* Page content */}
         <div className="p-6 font-sans sm:p-12">
           <main className="mx-auto w-full max-w-6xl">{children}</main>
         </div>
