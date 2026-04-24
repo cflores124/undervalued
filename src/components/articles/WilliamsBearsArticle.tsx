@@ -289,6 +289,8 @@ export default function WilliamsBearsArticle() {
               fourth-quarter moments. The bar chart shows how a <strong>single survival play</strong> prevented 
               the drive from ending, allowing Chicago to move from
               <strong> disruption → execution</strong> and reshape its win probability one play at a time.
+              <br /><br />
+              Tap each timestamp to highlight the corresponding win probability bar and reveal a short play summary.
             </p>
 
             <div className="flex flex-col items-center gap-4">
