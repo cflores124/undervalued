@@ -9,7 +9,7 @@ import FooterBand from "@/components/layout/FooterBand";
 import HeaderBand from "@/components/layout/HeaderBand";
 import BFCacheReset from "@/components/layout/BFCacheReset";
 import ScrollToTop from "@/components/layout/ScrollToTop";
-import OrientationGuard from "@/components/layout/OrientationGuard"; 
+import OrientationGuard from "@/components/layout/OrientationGuard";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -38,23 +38,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "selection:bg-lime-300/20 selection:text-neutral-100",
           "min-h-dvh overflow-y-scroll",
           "pt-[calc(10svh+env(safe-area-inset-top))]",
-          "pb-[calc(10svh+env(safe-area-inset-bottom))]",
+          "pb-[calc(72px+env(safe-area-inset-bottom))]",
         ].join(" ")}
       >
-        {/* 🔒 Orientation Guard (highest layer) */}
         <OrientationGuard />
 
-        {/* Scroll + lifecycle helpers */}
         <ScrollToTop />
         <BFCacheReset />
 
-        {/* Fixed UI layers */}
         <HeaderBand />
         <SiteHeader />
         <SiteFooter />
         <FooterBand />
 
-        {/* Page content */}
         <div className="p-6 font-sans sm:p-12">
           <main className="mx-auto w-full max-w-6xl">{children}</main>
         </div>
