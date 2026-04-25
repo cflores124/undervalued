@@ -1,6 +1,7 @@
 // /app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 import SiteHeader from "@/components/layout/SiteHeader";
@@ -10,7 +11,7 @@ import HeaderBand from "@/components/layout/HeaderBand";
 import BFCacheReset from "@/components/layout/BFCacheReset";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 import OrientationGuard from "@/components/layout/OrientationGuard";
-import SocialBrowserGuard from "@/components/layout/SocialBrowserGuard"; // ✅ FIXED NAME
+import SocialBrowserGuard from "@/components/layout/SocialBrowserGuard";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -63,6 +64,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="p-6 font-sans sm:p-12">
           <main className="mx-auto w-full max-w-6xl">{children}</main>
         </div>
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );
