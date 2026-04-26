@@ -90,15 +90,24 @@ export default function YanVsMerabArticle() {
               </p>
 
               <p>
-                Across their two meetings, fans saw two variations of the same fight. 
-                The first fight was defined by Merab&apos;s sustained wrestling pressure, compressing Yan&apos;s 
-                offensive output and leading to a decision victory. In the second fight, Yan&apos;s defensive 
-                adjustment broke that pressure, restoring his striking and flipping the outcome.
+                In 2025, Merab Dvalishvili was &quot;The Machine&quot; in the UFC&apos;s bantamweight
+                division. After securing the belt at the end of 2024, he set out to do
+                something unprecedented: defend his title four times in a calander year. That
+                run included wins over division standouts Umar Nurmagomedov, Sean O&apos;Malley,
+                and Cory Sandhagen. His final defense was a rematch with Petr Yan, but this
+                time, the outcome was different.
               </p>
 
               <p>
-                Through this lens, the structural hinge of this matchup is <strong>wrestling&apos;s control of the fight</strong>, 
-                shaping when offense is created, sustained, or taken away entirely.
+                Across their two meetings, fans saw two variations of the same fight. 
+                The first fight was defined by Merab&apos;s relentless wrestling pressure, which compressed Yan&apos;s 
+                offensive output and led to a decision victory. In the second fight, Yan&apos;s defensive 
+                adjustment broke that pressure and restoried his striking ability, ultimately flipping the outcome.
+              </p>
+
+              <p>
+                Through this lens, the structural hinge of this matchup is the effect <strong>high-pace control pressure</strong> has 
+                on the fight, shaping when offense is created, sustained, or taken away entirely.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
