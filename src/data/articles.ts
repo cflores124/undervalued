@@ -21,7 +21,7 @@ export const articles: ArticleMeta[] = [
   },
   {
     slug: "yan-vs-merab",
-    title: "What Actually Decides Yan vs. Merab?",
+    title: "What actually decides Yan vs. Merab?",
     description:
       "A structural breakdown of how control differential compresses or restores Petr Yan’s offense against Merab Dvalishvili.",
     category: "UFC Analysis",
