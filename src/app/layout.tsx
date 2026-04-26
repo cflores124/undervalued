@@ -17,8 +17,16 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.undervaluedanalytics.com"),
   title: "Undervalued",
-  description: "Analytics-driven sports stories told with clarity.",
+  description: "Sports stories backed by data.",
+  openGraph: {
+    title: "Undervalued",
+    description: "Sports stories backed by data.",
+    url: "https://www.undervaluedanalytics.com",
+    siteName: "Undervalued",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
