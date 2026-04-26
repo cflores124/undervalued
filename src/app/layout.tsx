@@ -19,13 +19,23 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.undervaluedanalytics.com"),
   title: "Undervalued",
-  description: "Sports stories backed by data.",
+  description:
+    "Sports stories backed by data. Undervalued is a sports intelligence platform built to uncover what is truly driving results through clear, analytical storytelling.",
   openGraph: {
     title: "Undervalued",
-    description: "Sports stories backed by data.",
+    description:
+      "Sports stories backed by data. Undervalued is a sports intelligence platform built to uncover what is truly driving results through clear, analytical storytelling.",
     url: "https://www.undervaluedanalytics.com",
     siteName: "Undervalued",
     type: "website",
+    images: [
+      {
+        url: "https://www.undervaluedanalytics.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Undervalued Sports Intelligence",
+      },
+    ],
   },
 };
 
