@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.undervaluedanalytics.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Undervalued Sports Intelligence",
