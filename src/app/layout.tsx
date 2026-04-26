@@ -30,12 +30,19 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.undervaluedanalytics.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Undervalued Sports Intelligence",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Undervalued",
+    description:
+      "Sports stories backed by data. Undervalued is a sports intelligence platform built to uncover what is truly driving results through clear, analytical storytelling.",
+    images: ["https://www.undervaluedanalytics.com/og-image.png"],
   },
 };
 
