@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Undervalued",
     description:
       "Sports stories backed by data. Undervalued is a sports intelligence platform built to uncover what is truly driving results through clear, analytical storytelling.",
-    images: ["https://www.undervaluedanalytics.com/og-image.png"],
+    images: ["https://www.undervaluedanalytics.com/og-image-v2.png"],
   },
 };
 
