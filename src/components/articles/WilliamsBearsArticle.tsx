@@ -6,7 +6,7 @@ const description = (
   <>
     An <strong>explanatory analysis</strong> of how Caleb Williams and the 2025
     Bears thrived in <strong>high-volatility fourth-quarter environments</strong>. 
-    Scroll to the bottom for an interactive breakdown of the Bears&apos; defining 
+    Scroll to the bottom for an interactive visualization of the Bears&apos; defining 
     fourth-quarter drive.
   </>
 );
@@ -100,7 +100,7 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 However, looking at the season in its entirety, a clear pattern
-                emerges. These were not controlled comebacks built on steady
+                emerges. These weren&apos;t controlled comebacks built on steady
                 execution; they were <strong>high-stakes gambles</strong> where their success
                 was defined by their ability to survive in volatile environments. 
               </p>
@@ -126,22 +126,20 @@ export default function WilliamsBearsArticle() {
                 <strong>live in it</strong>. In 2025, their average{" "}
                 <strong>absolute WPA per possession</strong> in the fourth quarter was{" "}
                 <strong>13.97%</strong>, well above the league average of{" "}
-                <strong>8.57%</strong>. This captures the magnitude of win probability swings on each possession, 
-                regardless of direction, and marked the highest level of volatility among all 32 teams. At the same time, 
-                they averaged a <strong>net WPA of 6.42%</strong>{" "}
-                per possession, ranking them <strong>2nd</strong> in execution, consistently 
-                turning those swings in their favor.
+                <strong>8.57%</strong>, reflecting the magnitude of win probability swings on each possession. 
+                Despite that volatility, they also produced results, averaging a{" "}
+                <strong>net WPA of 6.42%</strong> per possession, ranking{" "}
+                <strong>2nd</strong> in execution and consistently turning those swings in their favor.
               </p>
 
               <p>
-                On a granular level, the momentum shifts are equally as dramatic. The average{" "}
-                <strong>absolute WPA per play</strong> rose from 2.4% in the
-                first three quarters to 3.7% in the fourth, increasing the
-                impact of every play. In close games, that number spiked to
-                4.66%, where a single snap carried even more game-defining impact.
-                The volatility followed suit: the standard deviation of absolute WPA per play
-                jumped from 2.54% early in the game to a staggering 6.19% in the fourth quarter,
-                expanding the range of outcomes on each play.
+                On a smaller scale, each play carried more weight. The average{" "}
+                <strong>absolute WPA per play</strong> rose from <strong>2.4%</strong> in the
+                first three quarters to <strong>3.7%</strong> in the fourth, and climbed to{" "}
+                <strong>4.66%</strong> in close games, where a single snap could define the
+                outcome. The range of outcomes expanded as well, with the standard deviation
+                increasing from <strong>2.54%</strong> early in the game to{" "}
+                <strong>6.19%</strong> in the fourth quarter.
               </p>
 
               <p>
@@ -156,35 +154,32 @@ export default function WilliamsBearsArticle() {
 
               <p>
                 The separation between a successful comeback and a failed recovery came down to a specific 
-                sequence: pressure <strong>disrupted</strong> the initial play, forcing the offense 
+                fourth quarter sequence: pressure <strong>disrupted</strong> the initial play, forcing the offense 
                 into a &ldquo;broken state,&rdquo; <strong>creation</strong> determined whether the drive survived, 
                 and <strong>execution</strong> converted that survival into meaningful outcomes.
               </p>
 
               <p>
-                In successful comebacks, Williams repeatedly used his legs 
-                to <strong>rescue drives that should have ended</strong>. Against 
-                the Raiders, Caleb escaped pressure for a 12-yard scramble (+6.7% WPA) before
-                completing a 17-yard pass to extend the game-winning drive. In
-                the final minute of the game against the Bengals, a third-and-long
-                scramble not only prevented a <strong>drive-ending play</strong> but
-                also set up a 58-yard touchdown that swung win probability by
-                over <strong>50%</strong>.
+                In successful comebacks, Williams used his legs to rescue drives that
+                should have ended, turning disruption into opportunity in the most critical
+                moments. Against the Raiders, he escaped for a 12-yard scramble (+6.7% WPA)
+                and followed with a 17-yard completion to sustain the game-winning drive. In
+                the final minute against the Bengals, a third-and-long scramble prevented a
+                drive-ending play and led to a 58-yard touchdown that swung win probability
+                by over <strong>50%</strong>.
               </p>
 
               <p>
-                Conversely, in failed recoveries, the initial play-creation never materialized.
-                Against the Vikings in Week 1, pressure led to a sack, which was then
-                followed by consecutive incompletions that ended the drive. Against the Ravens,
-                an interception (-11.8% WPA) in the fourth immediately flipped the game. In each
-                case, the disruption held, and the play ended at the point of pressure, as the only 
-                way to definitively stop the Bears was to stop the play itself.
+                In failed recoveries, that creation never materialized. Against the Vikings
+                in Week 1, late-game pressure led to a sack and consecutive incompletions, while
+                against the Ravens, a fourth-quarter interception (-11.8% WPA) flipped the
+                game.
               </p>
 
               <p>
-                The distinction isn&apos;t about play design, but about surviving the point of disruption.
-                If the offense survives through Caleb&apos;s ability to scramble or extend plays,
-                the drive is restored and execution can follow. If not, the possession stalls there and dies.
+                The distinction came down to survival at the point of disruption. When
+                Williams created in those moments, the drive lived and execution
+                followed. When he didn&apos;t, the possession ended there.
               </p>
 
               <p>
@@ -197,8 +192,16 @@ export default function WilliamsBearsArticle() {
               </h2>
 
               <p>
-                The NFL&apos;s “ABSOLUTE CINEMA IN CHICAGO” YouTube feature
-                captures this dynamic perfectly during the Bears&apos; Wild Card
+                The NFL&apos;s{" "}
+                <a
+                  href="https://youtu.be/nuDJV-rvswg?si=Cr5KCETrHDg3sCr-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-80"
+                >
+                  “ABSOLUTE CINEMA IN CHICAGO”
+                </a>{" "}
+                YouTube feature captures this dynamic perfectly during the Bears&apos; Wild Card
                 matchup against the Packers.
               </p>
 
@@ -229,24 +232,31 @@ export default function WilliamsBearsArticle() {
                 Caleb Williams <strong>saved a 4th-and-8 that should have failed</strong>.
               </p>
 
+              <p>
+                In the end, the Bears swung win probability by over{" "}
+                <strong>70%</strong> in under four minutes.
+              </p>
+
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
                 Tying it all together:
               </h2>
 
               <p>
-                The Bears didn&apos;t break win probability through a single edge, but through a volatile environment that enabled fourth-quarter comebacks. 
-                Within that environment, creation during disruption laid the foundation for execution that mattered most in <strong>high-leverage moments</strong>.
+                The Bears didn&apos;t break win probability through a single edge, but through a volatile environment 
+                that enabled fourth-quarter comebacks. Within that environment, creation during disruption laid the 
+                foundation for execution that mattered most in <strong>high-leverage moments</strong>.
               </p>
 
               <p>
                 This created a system that was both powerful and fragile. It enabled a
-                miraculous comeback in Week 16 and the Wild Card games against the Packers,
-                but it also led to a devastating collapse in the Divisional round against the
-                Rams. Fourth-quarter football isn&apos;t just about perfect execution, but about{" "}
-                <strong>survival through broken plays</strong> long enough for execution to matter.
+                miraculous comeback in the Wild Card game against the Packers,
+                but also led to a devastating collapse in the Divisional round against the
+                Rams.
               </p>
 
               <p>
+                Fourth-quarter football isn&apos;t just about perfect execution, but about 
+                survival through broken plays long enough for execution to matter.
                 In that environment, the <strong>most valuable play</strong> isn&apos;t the one
                 that wins the game; it&apos;s the one that <strong>prevents it from ending</strong>.
               </p>

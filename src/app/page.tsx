@@ -120,12 +120,11 @@ export default function Home() {
                   How did Caleb Williams and the 2025 Bears break win probability?
                 </h3>
                 <p className="mt-2 text-sm text-foreground/70">
-                  A structural breakdown of how Caleb Williams and the Bears survived
-                  disruption, created outside of structure, and turned broken plays into
-                  decisive fourth-quarter win probability swings.
+                  An explanatory analysis of how Caleb Williams and the 2025
+                  Bears thrived in high-volatility fourth-quarter environments.
                 </p>
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  6 min read · NFL
+                  8 min read · NFL
                 </span>
               </TiltCard>
             </CinematicReveal>

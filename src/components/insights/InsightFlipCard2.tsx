@@ -23,7 +23,7 @@ type Props = {
 };
 
 function formatTick(value: number) {
-  return value.toFixed(3);
+  return `${(value * 100).toFixed(1)}`;
 }
 
 export default function InsightFlipCard2({ insight }: Props) {

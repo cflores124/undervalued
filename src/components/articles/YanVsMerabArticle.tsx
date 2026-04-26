@@ -16,7 +16,7 @@ export default function YanVsMerabArticle() {
       <div className="mx-auto w-full max-w-6xl">
         <main>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-            What Actually Decides Yan vs. Merab?
+            What actually decides Yan vs. Merab?
           </h1>
 
           <div className="relative mt-4 max-w-3xl">
@@ -90,39 +90,38 @@ export default function YanVsMerabArticle() {
               </p>
 
               <p>
-                Across their two meetings, viewers saw two variations of the same
-                fight. In the first fight, Merab&apos;s relentless wrestling compressed
-                Yan&apos;s offensive ability, leading Merab to a decision victory. Yan&apos;s
-                defensive adjustment in the second fight disrupted that pressure,
-                allowing his striking to return and reversing the outcome.
+                Across their two meetings, fans saw two variations of the same fight. 
+                The first fight was defined by Merab&apos;s sustained wrestling pressure, compressing Yan&apos;s 
+                offensive output and leading to a decision victory. In the second fight, Yan&apos;s defensive 
+                adjustment broke that pressure, restoring his striking and flipping the outcome.
               </p>
 
               <p>
-                Through this lens, the structural hinge of this matchup is{" "}
-                <strong>net control differential</strong>.
+                Through this lens, the structural hinge of this matchup is <strong>wrestling&apos;s control of the fight</strong>, 
+                shaping when offense is created, sustained, or taken away entirely.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
-                What do the numbers tell us?
+                How did wrestling impact each fight?
               </h2>
 
               <p>
                 In the pair&apos;s first meeting, Merab attempted{" "}
                 <strong>49 takedowns</strong>, landing <strong>11</strong>, and over
-                five rounds he accumulated <strong>6:53 of control time</strong>{" "}
-                compared to Yan&apos;s <strong>1:50</strong>. This resulted in a{" "}
-                <strong>net control differential of 5:03</strong>, which accounted
-                for roughly <strong>79%</strong> of the fight&apos;s time under control. 
+                five rounds he accumulated <strong>6:53 of control time</strong>. 
+                Comparing this to Yan&apos;s 1:50 of control time the result was a{" "}
+                <strong>net control differential of 5:03</strong>. This accounted
+                for roughly <strong>79%</strong> of the fight&apos;s time under control, and 
                 Yan&apos;s striking output reflected that level of sustained
-                pressure. Throughout the fight, Yan landed{" "}
+                pressure. Throughout the fight, Yan only landed{" "}
                 <strong>75 significant strikes</strong>, just{" "}
                 <strong>3.0 per minute</strong>, which is well below his typical
-                pace, and the rounds in which Merab controlled the most time also
+                pace. Additionally, the rounds in which Merab controlled the most time also
                 produced some of Yan&apos;s lowest strike totals (rounds 3 &amp; 5).
               </p>
 
               <p>
-                Dynamics shifted in the second fight. Merab&apos;s takedown attempts
+                However, dynamics shifted in the second fight. Merab&apos;s number of takedown attempts
                 dropped to <strong>29</strong>, and his success rate fell from{" "}
                 <strong>22%</strong> to just <strong>6%</strong>, producing only{" "}
                 <strong>two completed takedowns</strong>. The{" "}
@@ -169,7 +168,7 @@ export default function YanVsMerabArticle() {
 
               <p>
                 The result is sustained <strong>isometric tension</strong> across
-                the posterior chain (neck, back, hips, and legs) while the defender
+                the posterior chain (neck, back, hips, and legs) while his opponent
                 attempts to escape. Over time, the result is cumulative fatigue.
               </p>
 
@@ -183,8 +182,8 @@ export default function YanVsMerabArticle() {
                 eliminate control pressure, he turned into it. This is because
                 Merab&apos;s system works like quicksand; the more you fight it, the more
                 it pulls you in. Rather than defending takedowns purely in open
-                space, Yan moved toward the fence, where he could leverage the
-                fence to stay upright and concentrate on posture, reversing weight
+                space, Yan moved toward the fence, where he could utilize it as 
+                leverage to stay upright and concentrate on posture, reversing weight
                 distribution, and hand fighting. By doing this, Yan transferred
                 energy expenditure back to Merab, as it then became Merab&apos;s responsibility to
                 pull Yan down to the ground.
@@ -217,7 +216,7 @@ export default function YanVsMerabArticle() {
 
               <p>
                 In this matchup, control time is more than a statistic; it is the
-                physical expression of pressure, fatigue, and positional dominance,
+                physical expression of <strong>pressure, fatigue, and positional dominance,</strong>{" "}
                 and the fighter who controls that differential ultimately controls
                 the fight.
               </p>
@@ -289,7 +288,7 @@ export default function YanVsMerabArticle() {
                   dark:hover:bg-white/15
                 "
               >
-                Download Modeling PDF
+                Mathematical Modeling
               </a>
             </div>
           </CinematicReveal>

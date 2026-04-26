@@ -34,7 +34,7 @@
       "yardline_100": 57,
       "score_differential": -11,
       "play_type": "pass",
-      "detail_text": "Facing fourth-and-eight down 11, Williams rolls left under pressure and finds Rome Odunze for a 27-yard conversion. The play raises Chicago's post-play win probability to 11.8% (+7.8% WPA). More importantly, it prevents the drive from ending and becomes the survival rep that makes the comeback sequence possible.",
+      "detail_text": "Williams finds Rome Odunze for 27 yards on 4th & 8, keeping the drive alive. The play lifts Chicago to 11.8% post-play win probability and becomes the survival rep enabling the comeback.",
       "significance_note": "This was the survival play. Without it, the drive ends immediately."
     },
     {
@@ -54,7 +54,7 @@
       "yardline_100": 8,
       "score_differential": -11,
       "play_type": "pass",
-      "detail_text": "With the drive still alive, Williams hits Olamide Zaccheaus for an 8-yard touchdown over the middle. The play pushes Chicago's post-play win probability to 20.4% (+11.2% WPA). It marks the point where the offense moves from broken-play survival back into structured execution.",
+      "detail_text": "Williams hits Olamide Zaccheaus for an 8-yard touchdown over the middle. The play raises Chicago to 20.4% post-play win probability and shifts the drive from survival into execution.",
       "significance_note": "The offense is now operating within structure again."
     },
     {
@@ -74,7 +74,7 @@
       "yardline_100": 66,
       "score_differential": -3,
       "play_type": "pass",
-      "detail_text": "After a defensive stop and missed Packers field goal, Williams finds Colston Loveland for 12 yards. The completion lifts Chicago's post-play win probability to 43.6% (+8.2% WPA). It sustains rhythm, keeps the drive on schedule, and avoids forcing another recovery rep.",
+      "detail_text": "Williams finds Colston Loveland for 12 yards to stabilize the drive. The completion raises Chicago to 43.6% post-play win probability and keeps the offense on schedule moving forward.",
       "significance_note": "This play sustains rhythm and keeps the drive on schedule."
     },
     {
@@ -94,7 +94,7 @@
       "yardline_100": 48,
       "score_differential": -3,
       "play_type": "pass",
-      "detail_text": "Now trailing by three, Williams gets the ball to D'Andre Swift for a 23-yard gain into scoring range. The play lifts Chicago's post-play win probability to 56.8% (+15.5% WPA). It flips field position and puts the defense in a far more fragile state before the decisive call arrives.",
+      "detail_text": "Williams gets the ball to D’Andre Swift for 23 yards into scoring range. The play raises Chicago to 56.8% post-play win probability and flips the field before the decisive scoring shot.",
       "significance_note": "This gain flips field position and pushes Chicago into scoring range."
     },
     {
@@ -114,7 +114,7 @@
       "yardline_100": 25,
       "score_differential": -3,
       "play_type": "pass",
-      "detail_text": "On the next snap, Chicago hits DJ Moore for a 25-yard touchdown on a screen-and-go concept. The play lifts Chicago's post-play win probability to 75.4% (+18.5% WPA). It is the kill shot, but it only exists because the fourth-and-eight survival play kept the drive alive.",
+      "detail_text": "Williams hits DJ Moore for a 25-yard touchdown to complete the comeback. The play raises Chicago to 75.4% post-play win probability, but it only exists because the drive first survived.",
       "significance_note": "This is the decisive execution play that completes the comeback."
     }
   ]

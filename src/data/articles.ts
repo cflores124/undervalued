@@ -13,9 +13,9 @@ export const articles: ArticleMeta[] = [
     slug: "williams-bears",
     title: "How did Caleb Williams and the 2025 Bears break win probability?",
     description:
-      "A structural breakdown of how Caleb Williams and the 2025 Bears thrived in high-volatility fourth-quarter environments and repeatedly turned broken plays into win probability swings.",
+      "An explanatory analysis of how Caleb Williams and the 2025 Bears thrived in high-volatility fourth-quarter environments.",
     category: "NFL Analysis",
-    readTime: "6 min read",
+    readTime: "8 min read",
     publishedAt: "2026-04-18T00:00:00.000Z",
     featured: true,
   },
