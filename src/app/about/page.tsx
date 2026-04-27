@@ -16,7 +16,7 @@ export default function AboutPage() {
           {/* Main title */}
           <CinematicReveal delay={0} y={12} duration={0.55}>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-              About Undervalued
+              About
             </h1>
           </CinematicReveal>
 
