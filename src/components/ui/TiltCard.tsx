@@ -1,5 +1,5 @@
 // /components/TiltCard.tsx
-"use client";
+'use client';
 
 import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
@@ -9,17 +9,6 @@ type TiltCardProps = {
   href?: string;
   className?: string;
 };
-
-function forceScrollTop() {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "auto",
-  });
-
-  document.documentElement.scrollTop = 0;
-  document.body.scrollTop = 0;
-}
 
 export default function TiltCard({ children, href, className = "" }: TiltCardProps) {
   const rx = useMotionValue(0);
@@ -44,7 +33,9 @@ export default function TiltCard({ children, href, className = "" }: TiltCardPro
       }}
       style={{ rotateX: sx, rotateY: sy, transformStyle: "preserve-3d" }}
       className={[
+        // base “Latest” behavior
         "card p-5 will-change-transform group",
+        // accent glow (auto orange in light, neon-green in dark because --accent changes)
         "transition-all duration-300",
         "hover:border-[color-mix(in_oklab,var(--accent)_55%,transparent)]",
         "hover:shadow-[0_0_0_4px_color-mix(in_oklab,var(--accent)_22%,transparent),var(--shadow)]",
@@ -56,13 +47,7 @@ export default function TiltCard({ children, href, className = "" }: TiltCardPro
   );
 
   return href ? (
-    <Link
-      href={href}
-      scroll={true}
-      prefetch={false}
-      onClick={forceScrollTop}
-      className="block [perspective:1000px]"
-    >
+    <Link href={href} className="block [perspective:1000px]">
       {CardBody}
     </Link>
   ) : (

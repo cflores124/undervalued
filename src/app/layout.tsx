@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           geistMono.variable,
           "antialiased bg-[#0b0b0b] text-neutral-200",
           "selection:bg-lime-300/20 selection:text-neutral-100",
-          "min-h-dvh",
+          "min-h-dvh overflow-y-scroll",
           "pt-[calc(10svh+env(safe-area-inset-top))]",
           "pb-[calc(10svh+env(safe-area-inset-bottom))]",
         ].join(" ")}
