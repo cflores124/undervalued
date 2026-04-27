@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 function forceScrollTop() {
   window.scrollTo({
@@ -26,7 +26,6 @@ function isMobileSafari() {
 
 export default function ScrollToTop() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -39,7 +38,7 @@ export default function ScrollToTop() {
 
     forceScrollTop();
 
-    const frame1 = requestAnimationFrame(() => {
+    const frame = requestAnimationFrame(() => {
       forceScrollTop();
 
       requestAnimationFrame(() => {
@@ -66,14 +65,14 @@ export default function ScrollToTop() {
     }
 
     return () => {
-      cancelAnimationFrame(frame1);
+      cancelAnimationFrame(frame);
       timers.forEach(window.clearTimeout);
 
       if (safariInterval) {
         window.clearInterval(safariInterval);
       }
     };
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   useEffect(() => {
     const handlePageShow = () => {
