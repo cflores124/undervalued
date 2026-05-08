@@ -50,7 +50,7 @@ export default function WorldCupArticle() {
                   <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                     <Image
                       src="/world-cup-1.jpg"
-                      alt="Brazil celebrating a World Cup victory"
+                      alt="Athlete lifting the World Cup"
                       width={1200}
                       height={1200}
                       className="h-auto w-full object-cover"
