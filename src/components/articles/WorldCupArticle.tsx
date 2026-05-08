@@ -49,7 +49,7 @@ export default function WorldCupArticle() {
                 <figure className="space-y-3">
                   <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                     <Image
-                      src="/world-cup-1.jpg"
+                      src="/worldcup.jpg"
                       alt="Athlete lifting the World Cup"
                       width={900}
                       height={1100}
