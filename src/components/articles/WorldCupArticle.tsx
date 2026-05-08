@@ -51,8 +51,8 @@ export default function WorldCupArticle() {
                     <Image
                       src="/world-cup-1.jpg"
                       alt="Athlete lifting the World Cup"
-                      width={1200}
-                      height={1200}
+                      width={900}
+                      height={1100}
                       className="h-auto w-full object-cover"
                       priority
                     />
