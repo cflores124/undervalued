@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CinematicReveal from "@/components/ui/CinematicReveal";
+
 import InsightFlipCard from "@/components/insights/InsightFlipCard";
 import InsightFlipCard2 from "@/components/insights/InsightFlipCard2";
+import type { InsightData2 } from "@/components/insights/InsightFlipCard2";
+import WorldCupNetEloFlipCard from "@/components/insights/WorldCupNetEloFlipCard";
+import type { WorldCupNetEloData } from "@/components/insights/WorldCupNetEloFlipCard";
+
 import { insights } from "@/data/insights";
 
 export const metadata: Metadata = {
@@ -26,10 +31,11 @@ export default function InsightsPage() {
           stagger={0.12}
         >
           <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-            <strong>Welcome to Insights.</strong> This is where Undervalued distills
-            deeper analysis into concise visual notes. Each entry is built to highlight
-            a specific performance pattern, tactical mechanism, or analytical idea drawn
-            from the broader logic behind sport.
+            <strong>Welcome to Insights.</strong> This is where Undervalued
+            distills deeper analysis into concise visual notes. Each entry is
+            built to highlight a specific performance pattern, tactical
+            mechanism, or analytical idea drawn from the broader logic behind
+            sport.
           </p>
         </CinematicReveal>
       </div>
@@ -51,10 +57,14 @@ export default function InsightsPage() {
               className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12"
             >
               <div className="w-full max-w-[495px]">
-                {"points" in insight.cardData ? (
+                {insight.slug === "world-cup-contender-net-elo" ? (
+                  <WorldCupNetEloFlipCard
+                    insight={insight.cardData as WorldCupNetEloData}
+                  />
+                ) : "points" in insight.cardData ? (
                   <InsightFlipCard insight={insight.cardData} />
                 ) : (
-                  <InsightFlipCard2 insight={insight.cardData} />
+                  <InsightFlipCard2 insight={insight.cardData as InsightData2} />
                 )}
               </div>
 

@@ -3,6 +3,8 @@ import type { ArticleMeta } from "@/data/articles";
 
 import YanVsMerabArticle from "@/components/articles/YanVsMerabArticle";
 import WilliamsBearsArticle from "@/components/articles/WilliamsBearsArticle";
+import WorldCupArticle from "@/components/articles/WorldCupArticle";
+
 import { articles } from "@/data/articles";
 
 export type ArticleEntry = ArticleMeta & {
@@ -11,6 +13,12 @@ export type ArticleEntry = ArticleMeta & {
 
 export const articleRegistry: ArticleEntry[] = articles.map((article) => {
   switch (article.slug) {
+    case "world-cup-pathways":
+      return {
+        ...article,
+        Component: WorldCupArticle,
+      };
+
     case "williams-bears":
       return {
         ...article,

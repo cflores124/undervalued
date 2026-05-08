@@ -1,8 +1,9 @@
 import type { ComponentType } from "react";
 import { insights } from "@/data/insights";
 
-import MerabControlSuppressionInsight from "@/components/insights/MerabControlSuppressionInsight";
+import WorldCupContenderNetEloInsight from "@/components/insights/WorldCupContenderNetEloInsight";
 import BearsNetAverageWPAPerPossessionInsight from "@/components/insights/BearsNetAverageWPAPerPossessionInsight";
+import MerabControlSuppressionInsight from "@/components/insights/MerabControlSuppressionInsight";
 
 export type InsightEntry = {
   slug: string;
@@ -20,16 +21,22 @@ export type InsightEntry = {
 
 export const insightRegistry: InsightEntry[] = insights.map((insight) => {
   switch (insight.slug) {
-    case "merab-control-suppression":
+    case "world-cup-contender-net-elo":
       return {
         ...insight,
-        Component: MerabControlSuppressionInsight,
+        Component: WorldCupContenderNetEloInsight,
       };
 
     case "caleb-high-leverage-execution":
       return {
         ...insight,
         Component: BearsNetAverageWPAPerPossessionInsight,
+      };
+
+    case "merab-control-suppression":
+      return {
+        ...insight,
+        Component: MerabControlSuppressionInsight,
       };
 
     default:

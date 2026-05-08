@@ -1,0 +1,52 @@
+{
+  "teams": [
+    {
+      "team": "Argentina",
+      "pathway": "Protection + Survival",
+      "strengths": "Argentina’s biggest strength heading into the World Cup is scoring first and protecting their lead. In the 2024 Copa América, they scored first in all six matches, won all six, and conceded just one goal after taking the lead, demonstrating elite control and game-state protection.",
+      "weaknesses": "Argentina’s primary weakness is burst scoring efficiency. Despite generating 35 shots on target, they converted only 9 goals (25.71%), indicating an inability to consistently separate from opponents despite sustained pressure.",
+      "opportunities": "Argentina has a proven fallback pathway through survival situations. In Copa América, they won a penalty shootout against Ecuador and secured the final in extra time against Colombia, showing they can still win when matches extend beyond regulation.",
+      "threats": "Argentina’s system is optimized for leading game states but remains untested when trailing. Against top competition capable of scoring first, their ability to generate urgency and overcome deficits is uncertain."
+    },
+    {
+      "team": "Brazil",
+      "pathway": "Burst + Volatility",
+      "strengths": "Brazil’s biggest strength is its burst scoring capability. They converted one out of every three shots on target in the most recent Copa America, demonstrating high finishing efficiency when chances are created.",
+      "weaknesses": "Brazil’s biggest weakness is game-state protection. They struggled to consistently establish leads, and when they did, they failed to maintain control, as seen in their draw against Colombia after scoring first.",
+      "opportunities": "Brazil has an opportunity to convert its burst scoring into late-game impact. Their ability to score quickly in short windows, as shown against Paraguay, can be leveraged to create decisive moments in close matches.",
+      "threats": "Brazil’s biggest threat is exposure to survival scenarios. Due to unstable control, they are susceptible to being pushed into extra time or penalties, where they have already shown vulnerability."
+    },
+    {
+      "team": "Colombia",
+      "pathway": "Protection + Scoring Efficiency",
+      "strengths": "Colombia’s biggest strengths heading into the 2026 World Cup are game-state protection and scoring efficiency. They converted 12 of 27 shots on target (44.44%), and consistently protected all four matches in which they scored first.",
+      "weaknesses": "Colombia’s biggest weakness is overall game control. Despite strong moments against Uruguay, they struggled to consistently suppress opponents across full matches, allowing a goal against Panama after leading by two goals and allowing Argentina to convert in extra time.",
+      "opportunities": "Colombia has an opportunity to turn its scoring efficiency into decisive results in close matches. They averaged 4.5 shots on target per game and converted at a high rate, creating strong potential for high-leverage impact.",
+      "threats": "Colombia’s biggest threat is exposure to survival scenarios. Due to inconsistent control, they are more likely to be pushed into extra time, where they have already shown vulnerability."
+    },
+    {
+      "team": "England",
+      "pathway": "Survival + Late-Game Production",
+      "strengths": "England’s biggest strength heading into the 2026 World Cup is its ability to survive matches beyond regulation. They won both knockout games that extended past 90 minutes, scoring in extra time once and winning in a penalty shootout in the other.",
+      "weaknesses": "England’s biggest weakness is overall game control, as they struggled to suppress opponents and maintain leads. They allowed 24 shots on target and conceded 6 goals across the 2024 Euros.",
+      "opportunities": "England has an opportunity to turn late-game production into consistent results. They scored five late goals across four matches, but converted only two of those games into wins.",
+      "threats": "England’s biggest threat is its limited attacking volume. Despite 32% conversion, they averaged just 3.57 shots on target per game, limiting their ability to keep pace with high-scoring teams."
+    },
+    {
+      "team": "France",
+      "pathway": "Control + Suppression",
+      "strengths": "France’s biggest strengths heading into the 2026 World Cup is its ability to control matches and suppress opponent offense. Across six games, they allowed only three shots on target per game and held opponents to a 16.7% conversion rate.",
+      "weaknesses": "France’s biggest weakness is burst scoring. They generated 24 shots on target but converted only 4 (16.7%), limiting their ability to create separation despite sustained control.",
+      "opportunities": "France has an opportunity to convert control into wins in extended matches. With four draws in six games, they consistently reach late-game scenarios where results can be decided.",
+      "threats": "France’s biggest threat is the ability to convert control into wins. Despite scoring first in four matches, they struggled to consistently close out games, only winning two out of those four matches."
+    },
+    {
+      "team": "Spain",
+      "pathway": "Control + Separation",
+      "strengths": "Spain’s biggest strength heading into the 2026 World Cup is its ability to control matches and convert that control into wins. They led in five matches and won all five, while limiting opponents to 3.14 shots on target per game.",
+      "weaknesses": "Spain’s biggest weakness is occasional lapses in defensive closure during high-leverage moments. Despite strong overall control, they conceded in each knockout match, increasing pressure in later stages.",
+      "opportunities": "Spain has an opportunity to use its offensive volume to create separation in matches. With 6.29 shots on target per game, they consistently generate pressure that can break games open.",
+      "threats": "Spain’s biggest threat is its lack of exposure to penalty shootouts. While they experienced extra time, their survival pathway in penalties remained untested throughout the 2024 Euros."
+    }
+  ]
+}

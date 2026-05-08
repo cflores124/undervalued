@@ -1,0 +1,329 @@
+import Image from "next/image";
+import CinematicReveal from "@/components/ui/CinematicReveal";
+import WorldCupSwotInteractive from "@/components/features/WorldCupSwotInteractive";
+
+const description = (
+  <>
+    An <strong>analytical breakdown</strong> of World Cup championship pathways,
+    <strong> tournament pressure</strong>, and the identities shaping the{" "}
+    <strong>2026 contenders</strong>. Scroll to explore the interactive{" "}
+    <strong>contender SWOT tool</strong>.
+  </>
+);
+
+export default function WorldCupArticle() {
+  return (
+    <section className="w-full">
+      <div className="mx-auto w-full max-w-6xl">
+        <main>
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+            What actually determines who wins the World Cup?
+          </h1>
+
+          <div className="relative mt-4 max-w-3xl">
+            <CinematicReveal
+              className="relative"
+              delay={0.5}
+              y={10}
+              duration={0.55}
+              stagger={0.12}
+            >
+              <p className="text-base sm:text-lg leading-relaxed text-foreground/80">
+                {description}
+              </p>
+            </CinematicReveal>
+          </div>
+
+          <div className="mt-8 sm:mt-10">
+            <div className="mx-auto h-px w-[90%] bg-[color-mix(in_oklab,var(--foreground)_12%,transparent)]" />
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,1fr)_420px]">
+            <CinematicReveal
+              delay={0.75}
+              y={12}
+              duration={0.6}
+              className="order-1 lg:order-2 lg:sticky lg:top-24"
+            >
+              <aside>
+                <figure className="space-y-3">
+                  <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                    <Image
+                      src="/world-cup-1.jpg"
+                      alt="Brazil celebrating a World Cup victory"
+                      width={1200}
+                      height={1200}
+                      className="h-auto w-full object-cover"
+                      priority
+                    />
+                  </div>
+
+                  <figcaption className="text-xs leading-relaxed text-foreground/60">
+                    Odd Andersen / AFP via Getty Images
+                  </figcaption>
+                </figure>
+              </aside>
+            </CinematicReveal>
+
+            <CinematicReveal
+              delay={0.15}
+              stagger={0.08}
+              duration={0.7}
+              y={14}
+              className="
+                order-2 lg:order-1
+                prose prose-lg max-w-3xl
+                dark:prose-invert
+                space-y-6 md:space-y-7
+                prose-p:my-0 prose-p:leading-[1.9]
+                prose-p:text-foreground/80
+                prose-headings:text-foreground
+                prose-strong:font-semibold prose-strong:text-foreground
+              "
+            >
+              <p>
+                <span className="float-left mr-2 mt-1 text-6xl sm:text-7xl font-bold leading-[0.82]">
+                  W
+                </span>
+                hat can past tournaments reveal about how the 2026 FIFA World Cup might unfold?
+                Do World Cup winners emerge by chance or by choice?
+              </p>
+
+              <p>
+                The FIFA World Cup is the most prestigious tournament in soccer and undeniably
+                the biggest sporting event in the world. Every four years, nations from across
+                the globe come together to compete agianst one another and determine who is truly the best
+                at the “beautiful game”. Since its inception in 1930, roughly 80
+                national teams have competed to win the trophy, yet only 8 have ever lifted it.
+              </p>
+
+              <p>
+                Looking back at recent international history through the lens of Elo ratings and
+                global rankings, a clear trend surfaces. The teams that contend for the
+                World Cup do not arrive there by accident. Their presence is the result of a
+                sustained, multi-year effort that places them among the world&apos;s elite.
+              </p>
+
+              <p>
+                Yet reaching that tier is not enough; the World Cup demands more. The difference
+                between a contender and a champion is the ability to{" "}
+                <strong>reach peak form under pressure</strong>.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
+                What have World Cup winners historically looked like?
+              </h2>
+
+              <p>
+                To understand what World Cup winners have historically looked like, it is essential
+                to understand the World Football Elo Ratings system. Originally developed by Arpad
+                Elo for professional chess, the model was adapted for soccer to measure true team
+                strength on a match-to-match basis. The system accounts for factors such as match
+                importance, home-field advantage, and goal differential. Since 2018, FIFA has used
+                its own Elo-based system to rank teams internationally.
+              </p>
+
+              <p>
+                When tracking the Elo ratings of World Cup winners following the 2002 tournament,
+                a pattern emerges. Champions enter the tournament with a strong
+                upward momentum and reach their peak when it matters most.
+              </p>
+
+              <p>
+                This pattern is best illustrated by Spain in 2010, Germany in 2014, France in 2018, and
+                Argentina in 2022. Each of these teams built sustained momentum in the years leading
+                up to the tournament and converted that momentum into a peak performance under the
+                bright lights of a global stage. Notably, all improved by roughly{" "}
+                <strong>180 to 210 Elo points</strong> during their build-up and entered the
+                tournament with Elo ratings between <strong>1975 and 2105</strong> at the end of
+                the preceding year; a range that defines the true tier of championship-level teams.
+              </p>
+
+              <p>
+                Altogether, this indicates that there is a clear path to winning through sustained
+                growth, momentum, and the ability to carry that momentum into a tournament peak.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
+                How do today&apos;s contenders shape up?
+              </h2>
+
+              <p>
+                At the end of 2025, Spain (<strong>2172 Elo</strong>), Argentina, France, England, Colombia, 
+                and Brazil (<strong>1978 Elo</strong>) stand as the world&apos;s leading contenders for the
+                2026 World Cup. Each sits within, or above, the historical championship Elo range,
+                but each follows a distinctly different path to winning.
+              </p>
+
+              <p>
+                Spain most closely resembles the ideal historical winner profile. Since 2022,
+                it has gained <strong>176 Elo points</strong>, won the 2024 Euros, and entered
+                2026 as the world&apos;s top-ranked team. The trajectory mirrors the same sustained
+                momentum shown by recent champions entering their tournament peak.
+              </p>
+
+              <p>
+                Argentina and France remain elite tournament forces, but neither follows the
+                typical historical trajectory. Argentina enters as the reigning World Cup champion
+                and a two-time Copa América winner, while France continues to consistently reach
+                the final stages of major tournaments. Yet both have experienced net Elo declines
+                in recent years, suggesting sustained dominance rather than rising momentum.
+              </p>
+
+              <p>
+                England and Colombia occupy a different category. Both reached the final of their
+                continental championship in 2024 and have maintained steady upward growth, with
+                England rising <strong>76 Elo points</strong> since 2022 and Colombia{" "}
+                <strong>102</strong> since 2020. However, neither has experienced the explosive
+                rise associated with most recent champions. Instead, their profiles more closely
+                resemble 2006 Italy: competitive enough to win, but dependent on finding peak form
+                during the tournament itself.
+              </p>
+
+              <p>
+                Brazil presents the clearest warning sign. Despite remaining within the
+                championship Elo tier, its rating has declined by <strong>171 points</strong> since
+                the end of 2021, signifying a drop from elite winning form. Still, their talent
+                ceiling and historical success make it difficult to fully dismiss them.
+              </p>
+
+              <p>
+                In the end, positioning heading into the tournament sets the stage, but converting
+                form into tournament success is what defines a champion. The question is how that
+                conversion actually happens.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
+                How do contenders become champions?
+              </h2>
+
+              <p>
+                International soccer operates in a uniquely constrained environment that
+                fundamentally shapes the FIFA World Cup. Unlike club teams, national teams
+                assemble intermittently with limited preparation time, yet are expected to
+                perform in high-stakes tournaments that occur only every two to four years.
+                Within a single cycle, managers change, players age, rosters evolve, and
+                tactical approaches shift, creating a volatile environment where identifying
+                consistent winning patterns becomes difficult.
+              </p>
+
+              <p>
+                To better understand how teams win in this environment, five core factors
+                were identified: <strong>Control/Suppression</strong>,{" "}
+                <strong>Volatility/Bursts</strong>,{" "}
+                <strong>Late-Game Ability</strong>,{" "}
+                <strong>Extended-Game Survival</strong>, and{" "}
+                <strong>Game-State Protection</strong>. Together, these factors measure how
+                teams create control, generate separation, survive high-leverage moments, and
+                protect advantages under the unique pressures of the World Cup.
+              </p>
+
+              <p>
+                Different champions express these factors in different ways, which is
+                reflected in the fact that recent World Cup winners have not shared a single
+                identity. Italy won in 2006 through adaptability, combining late-game execution,
+                control, extra-time separation, and penalty resilience. France in 2018
+                allowed matches to remain competitive before separating through short,
+                decisive bursts, while Argentina in 2022 built early leads before repeatedly
+                surviving breakdowns through extra time and penalties.
+              </p>
+
+              <p>
+                Together, these five factors matter because they measure team identity, revealing
+                the pathway each team has to converts its potential into a championship.
+              </p>
+
+              <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
+                Tying it all together:
+              </h2>
+
+              <p>
+                The World Cup offers competitors and viewers very few certainties. Teams are placed
+                on the biggest stage with a set of problems and no clear solutions.
+              </p>
+
+              <p>
+                Across the last five tournaments, <strong>64.44%</strong> of matches have been
+                decided by one goal or less, <strong>37.33%</strong> of knockout matches have been
+                extended to extra time or penalties, and the average champion has been exposed to{" "}
+                <strong>1.4</strong> of these extended knockout matches.
+              </p>
+
+              <p>
+                Ultimately, the team that wins the World Cup is not determined through a universal
+                formula, but through a team&apos;s ability to leverage a pathway that{" "}
+                <strong>converts its unique identity into peak form under pressure</strong>.
+              </p>
+
+              <p className="mt-4 text-xs sm:text-sm text-foreground/50">
+                Data collected from World Football Elo Ratings and FBref.com
+              </p>
+            </CinematicReveal>
+          </div>
+
+          <CinematicReveal
+            className="mt-16 text-center"
+            delay={0.2}
+            y={10}
+            duration={0.55}
+          >
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-foreground">
+              2026 Contender SWOT Analysis
+            </h2>
+          </CinematicReveal>
+
+          <CinematicReveal
+            className="mt-16"
+            delay={0.3}
+            y={12}
+            duration={0.6}
+          >
+            <WorldCupSwotInteractive />
+          </CinematicReveal>
+
+          <CinematicReveal
+            className="mx-auto mt-6 max-w-3xl space-y-6 text-center"
+            delay={0.4}
+            y={10}
+            duration={0.55}
+            stagger={0.12}
+            >
+            <p className="text-sm sm:text-base leading-relaxed text-foreground/75">
+                This section evaluates each contender through a SWOT framework built
+                around tournament identity. Rather than searching for a universal
+                formula, the analysis isolates how each team is most likely to win,
+                where it is vulnerable, and which match conditions could ultimately
+                decide its pathway through the World Cup.
+            </p>
+
+            <div className="flex flex-col items-center gap-4">
+                <p className="text-sm text-foreground/70">
+                Explore the supporting evidence behind this analysis.
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                    href="/historical-world-cup-winners.pdf"
+                    download
+                    className="inline-flex items-center justify-center rounded-full border border-neutral-300 bg-neutral-100 px-5 py-2.5 text-sm font-medium transition hover:bg-neutral-200 dark:border-white/15 dark:bg-white/10 dark:hover:bg-white/15"
+                >
+                    Historical Trends
+                </a>
+
+                <a
+                    href="/five-factors-pathway-modeling.pdf"
+                    download
+                    className="inline-flex items-center justify-center rounded-full border border-neutral-300 bg-neutral-100 px-5 py-2.5 text-sm font-medium transition hover:bg-neutral-200 dark:border-white/15 dark:bg-white/10 dark:hover:bg-white/15"
+                >
+                    Mathematical Modeling
+                </a>
+                </div>
+            </div>
+          </CinematicReveal>
+
+          <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(60%_40%_at_50%_0%,rgba(255,255,255,0.04),transparent_60%)]" />
+        </main>
+      </div>
+    </section>
+  );
+}

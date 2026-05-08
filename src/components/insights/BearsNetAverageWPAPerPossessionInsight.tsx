@@ -20,7 +20,7 @@ export default function BearsNetAverageWPAPerPossessionInsight({
         stagger={0.12}
       >
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
-          Play Creation Under Pressure
+          Disruption, Creation, Execution
         </h2>
 
         <p className="text-sm sm:text-base leading-relaxed text-foreground/75">

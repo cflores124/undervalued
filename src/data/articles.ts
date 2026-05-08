@@ -10,6 +10,16 @@ export type ArticleMeta = {
 
 export const articles: ArticleMeta[] = [
   {
+    slug: "world-cup-pathways",
+    title: "What actually determines who wins the World Cup?",
+    description:
+      "An analytical breakdown of World Cup championship pathways, tournament pressure, and the identities shaping the 2026 contenders.",
+    category: "International Soccer Analysis",
+    readTime: "9 min read",
+    publishedAt: "2026-05-06T00:00:00.000Z",
+    featured: true,
+  },
+  {
     slug: "williams-bears",
     title: "How did Caleb Williams and the 2025 Bears break win probability?",
     description:

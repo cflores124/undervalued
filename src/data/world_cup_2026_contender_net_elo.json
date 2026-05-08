@@ -1,0 +1,58 @@
+{
+  "athlete": "2026 World Cup",
+  "title": "Contender Elo Momentum",
+  "xLabel": "Team",
+  "yLabel": "Net Elo Change",
+  "summary": "Net Elo shows how each contender is trending heading into the 2026 World Cup. Spain, Colombia, and England enter with positive momentum, while Argentina, France, and Brazil remain elite but have declined from their recent rating peaks.",
+  "metric": "Net Elo Change",
+  "teams": {
+    "1": {
+      "team": "Spain",
+      "start_year": 2022,
+      "end_year": 2025,
+      "start_elo": 1996,
+      "end_elo": 2172,
+      "net_elo": 176
+    },
+    "2": {
+      "team": "Colombia",
+      "start_year": 2020,
+      "end_year": 2025,
+      "start_elo": 1896,
+      "end_elo": 1998,
+      "net_elo": 102
+    },
+    "3": {
+      "team": "England",
+      "start_year": 2022,
+      "end_year": 2025,
+      "start_elo": 1966,
+      "end_elo": 2042,
+      "net_elo": 76
+    },
+    "4": {
+      "team": "Argentina",
+      "start_year": 2022,
+      "end_year": 2025,
+      "start_elo": 2144,
+      "end_elo": 2113,
+      "net_elo": -31
+    },
+    "5": {
+      "team": "France",
+      "start_year": 2023,
+      "end_year": 2025,
+      "start_elo": 2110,
+      "end_elo": 2063,
+      "net_elo": -47
+    },
+    "6": {
+      "team": "Brazil",
+      "start_year": 2021,
+      "end_year": 2025,
+      "start_elo": 2149,
+      "end_elo": 1978,
+      "net_elo": -171
+    }
+  }
+}

@@ -101,20 +101,27 @@ export default function Home() {
 
         {/* LATEST */}
         <section className="mt-2">
-          <CinematicReveal
-            delay={0.45}
-            y={10}
-            duration={0.55}
-          >
+          <CinematicReveal delay={0.45} y={10} duration={0.55}>
             <h2 className="text-lg font-semibold tracking-tight">Latest</h2>
           </CinematicReveal>
 
           <div className="mt-5 grid gap-6 sm:grid-cols-2">
-            <CinematicReveal
-              delay={0.55}
-              y={12}
-              duration={0.55}
-            >
+            <CinematicReveal delay={0.55} y={12} duration={0.55}>
+              <TiltCard href="/articles/world-cup-pathways">
+                <h3 className="font-semibold tracking-tight group-hover:underline">
+                  What actually determines who wins the World Cup?
+                </h3>
+                <p className="mt-2 text-sm text-foreground/70">
+                  An analytical breakdown of World Cup championship pathways,
+                  tournament pressure, and the identities shaping the 2026 contenders.
+                </p>
+                <span className="mt-3 inline-block text-xs text-foreground/60">
+                  9 min read · Soccer
+                </span>
+              </TiltCard>
+            </CinematicReveal>
+
+            <CinematicReveal delay={0.65} y={12} duration={0.55}>
               <TiltCard href="/articles/williams-bears">
                 <h3 className="font-semibold tracking-tight group-hover:underline">
                   How did Caleb Williams and the 2025 Bears break win probability?
@@ -125,24 +132,6 @@ export default function Home() {
                 </p>
                 <span className="mt-3 inline-block text-xs text-foreground/60">
                   8 min read · NFL
-                </span>
-              </TiltCard>
-            </CinematicReveal>
-
-            <CinematicReveal
-              delay={0.65}
-              y={12}
-              duration={0.55}
-            >
-              <TiltCard>
-                <h3 className="font-semibold tracking-tight text-foreground/60">
-                  Coming Soon
-                </h3>
-                <p className="mt-2 text-sm text-foreground/55">
-                  New piece in progress. Check back shortly.
-                </p>
-                <span className="mt-3 inline-block text-xs text-foreground/45">
-                  — Undervalued
                 </span>
               </TiltCard>
             </CinematicReveal>
