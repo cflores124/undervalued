@@ -116,7 +116,7 @@ export default function Home() {
                   tournament pressure, and the identities shaping the 2026 contenders.
                 </p>
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  9 min read · Soccer
+                  10 min read · Soccer
                 </span>
               </TiltCard>
             </CinematicReveal>

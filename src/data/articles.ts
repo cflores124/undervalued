@@ -15,7 +15,7 @@ export const articles: ArticleMeta[] = [
     description:
       "An analytical breakdown of World Cup championship pathways, tournament pressure, and the identities shaping the 2026 contenders.",
     category: "International Soccer Analysis",
-    readTime: "9 min read",
+    readTime: "10 min read",
     publishedAt: "2026-05-06T00:00:00.000Z",
     featured: true,
   },

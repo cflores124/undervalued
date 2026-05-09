@@ -6,7 +6,7 @@ const description = (
   <>
     An <strong>analytical breakdown</strong> of World Cup championship pathways, 
     environmental pressures, and the identities shaping the 
-    2026 contenders Scroll to explore the interactive{" "}
+    2026 contenders. Scroll to explore the interactive{" "}
     <strong>contender SWOT tool</strong>.
   </>
 );
@@ -93,8 +93,8 @@ export default function WorldCupArticle() {
                 The FIFA World Cup is the most prestigious tournament in soccer and undeniably
                 the biggest sporting event in the world. Every four years, nations from across
                 the globe come together to compete and determine who is truly the best
-                at the “beautiful game”. Since its inception in 1930, roughly 80
-                national teams have competed to win the trophy, yet only 8 have ever lifted it.
+                at the “beautiful game”. Since its inception in 1930, roughly <strong>80</strong>{" "}
+                national teams have competed to win the trophy, yet only <strong>8</strong> have ever lifted it.
               </p>
 
               <p>
@@ -118,15 +118,24 @@ export default function WorldCupArticle() {
                 To understand what World Cup winners have historically looked like, it is essential
                 to understand the World Football Elo Ratings system. Originally developed by Arpad
                 Elo for professional chess, the model was adapted for soccer to measure true team
-                strength on a match-to-match basis. The system accounts for factors such as match
+                strength on a match-by-match basis. The system accounts for factors such as match
                 importance, home-field advantage, and goal differential. Since 2018, FIFA has used
                 its own Elo-based system to rank teams internationally.
               </p>
 
               <p>
                 When tracking the Elo ratings of World Cup winners following the 2002 tournament,
-                a pattern emerges. Champions enter the tournament with a strong
-                upward momentum and reach their peak when it matters most.
+                a pattern emerges. Champions enter the tournament with a strong{" "}
+                <strong>upward momentum</strong> and reach their peak when it matters most.
+              </p>
+
+              <p>
+                These momentum periods can be understood as build-up phases: extended
+                stretches in which a national team experiences sustained long-term growth
+                despite short-term fluctuations in form, environment, or results. Some develop
+                gradually over nearly a decade, like Germany from{" "}
+                <strong>2003 to 2013</strong>, while others accelerate rapidly within a
+                single cycle, like Argentina from <strong>2018 to 2021</strong>.
               </p>
 
               <p>
@@ -166,7 +175,7 @@ export default function WorldCupArticle() {
                 Argentina and France remain elite tournament forces, but neither follows the
                 typical historical trajectory. Argentina enters as the reigning World Cup champion
                 and a two-time Copa América winner, while France continues to consistently reach
-                the final stages of major tournaments. Yet both have experienced net Elo declines
+                the final stages of major tournaments. Yet both have experienced <strong>net Elo declines</strong>{" "}
                 in recent years, suggesting sustained dominance rather than rising momentum.
               </p>
 
@@ -208,29 +217,34 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                To better understand how teams win in this environment, five core factors
-                were identified: <strong>Control/Suppression</strong>,{" "}
+                To better understand how teams win in this environment, five core
+                factors were identified: <strong>Control/Suppression</strong>,{" "}
                 <strong>Volatility/Bursts</strong>,{" "}
-                <strong>Late-Game Ability</strong>,{" "}
+                <strong>Late-Game Execution</strong>,{" "}
                 <strong>Extended-Game Survival</strong>, and{" "}
-                <strong>Game-State Protection</strong>. Together, these factors measure how
-                teams create control, generate separation, survive high-leverage moments, and
-                protect advantages under the unique pressures of the World Cup.
+                <strong>Game-State Protection</strong>. Together, these factors use
+                metrics such as shots on target per game, goals conceded per game,
+                scoring first, extra-time and penalty exposure, and match outcomes to
+                profile a team&apos;s identity under pressure. That framework was then used
+                to identify each contender&apos;s strengths, weaknesses, opportunities, and
+                threats within the pressure environment of its most recent continental
+                tournament, which can be explored below in the interactive SWOT tool.
               </p>
 
               <p>
-                Different champions express these factors in different ways, which is
-                reflected in the fact that recent World Cup winners have not shared a single
-                identity. Italy won in 2006 through adaptability, combining late-game execution,
-                control, extra-time separation, and penalty resilience. France in 2018
-                allowed matches to remain competitive before separating through short,
-                decisive bursts, while Argentina in 2022 built early leads before repeatedly
-                surviving breakdowns through extra time and penalties.
+                Looking back, recent champions reached the same outcome through
+                different competitive pathways. Italy won in 2006 through adaptability,
+                combining late-game execution, control, extra-time separation, and
+                penalty resilience. France in 2018 allowed matches to remain competitive
+                before separating through short, decisive bursts, while Argentina in
+                2022 built early leads before repeatedly surviving breakdowns through
+                extra time and penalties.
               </p>
 
               <p>
-                Together, these five factors matter because they measure team identity, revealing
-                the pathway each team has to converts its potential into a championship.
+                Together, these <strong>five factors</strong> show that there is no single pathway to a
+                World Cup title and provide a framework for understanding how different
+                contenders can attempt to convert their potential into a championship.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -243,16 +257,18 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Across the last five tournaments, <strong>64.44%</strong> of matches have been
-                decided by one goal or less, <strong>37.33%</strong> of knockout matches have been
-                extended to extra time or penalties, and the average champion has been exposed to{" "}
-                <strong>1.4</strong> of these extended knockout matches.
+                Across the last five tournaments, <strong>64.44%</strong> of matches
+                were decided by one goal or less, while{" "}
+                <strong>37.33%</strong> of knockout matches extended to extra time or
+                penalties. On average, each champion was forced into{" "}
+                <strong>1.4</strong> of these extended knockout matches, meaning the
+                margins for success are razor-thin.
               </p>
 
               <p>
-                Ultimately, the team that wins the World Cup is not determined through a universal
-                formula, but through a team&apos;s ability to leverage a pathway that{" "}
-                <strong>converts its unique identity into peak form under pressure</strong>.
+                Ultimately, the team that wins the World Cup is not determined by a
+                universal formula, but by its ability to turn its unique pathway into
+                peak form under pressure.
               </p>
 
               <p className="mt-4 text-xs sm:text-sm text-foreground/50">
