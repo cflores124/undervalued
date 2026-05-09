@@ -4,9 +4,9 @@ import WorldCupSwotInteractive from "@/components/features/WorldCupSwotInteracti
 
 const description = (
   <>
-    An <strong>analytical breakdown</strong> of World Cup championship pathways,
-    <strong> tournament pressure</strong>, and the identities shaping the{" "}
-    <strong>2026 contenders</strong>. Scroll to explore the interactive{" "}
+    An <strong>analytical breakdown</strong> of World Cup championship pathways, 
+    environmental pressures, and the identities shaping the 
+    2026 contenders Scroll to explore the interactive{" "}
     <strong>contender SWOT tool</strong>.
   </>
 );
@@ -92,7 +92,7 @@ export default function WorldCupArticle() {
               <p>
                 The FIFA World Cup is the most prestigious tournament in soccer and undeniably
                 the biggest sporting event in the world. Every four years, nations from across
-                the globe come together to compete agianst one another and determine who is truly the best
+                the globe come together to compete and determine who is truly the best
                 at the “beautiful game”. Since its inception in 1930, roughly 80
                 national teams have competed to win the trophy, yet only 8 have ever lifted it.
               </p>
