@@ -3,7 +3,7 @@ export const INSIGHTS_PER_PAGE = 3;
 export type InsightSlug =
   | "world-cup-contender-net-elo"
   | "caleb-high-leverage-execution"
-  | "merab-control-suppression";
+  | "merab-control-suppression"
 
 export type InsightMeta = {
   slug: InsightSlug;

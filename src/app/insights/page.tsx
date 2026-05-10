@@ -56,7 +56,8 @@ export default function InsightsPage() {
         <div className="grid gap-8" aria-label="Insights list">
           {pageInsights.map((insight) => {
             const registryEntry = getInsightRegistryEntry(insight.slug);
-            const PreviewComponent = registryEntry.PreviewComponent;
+
+            if (!registryEntry) return null;
 
             return (
               <div
@@ -64,7 +65,7 @@ export default function InsightsPage() {
                 className="mx-auto grid w-full max-w-5xl grid-cols-1 items-start gap-8 lg:grid-cols-[460px_minmax(0,1fr)] lg:gap-12"
               >
                 <div className="w-full max-w-[495px]">
-                  <PreviewComponent {...registryEntry.previewProps} />
+                  {registryEntry.renderPreview()}
                 </div>
 
                 <div className="max-w-2xl self-center">
@@ -105,7 +106,11 @@ export default function InsightsPage() {
         </div>
 
         {totalPages > 1 && (
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12 flex items-center justify-center gap-4">
+            <span className="text-sm text-foreground/45">
+              Page {currentPage} of {totalPages}
+            </span>
+
             <Link
               href="/insights/page/2"
               className="rounded-full border border-foreground/15 px-5 py-2 text-sm text-foreground/70 transition hover:border-foreground/30 hover:text-foreground"

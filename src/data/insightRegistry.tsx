@@ -1,4 +1,4 @@
-import type { ComponentType } from "react";
+import type { ComponentType, ReactElement } from "react";
 
 import {
   insights,
@@ -36,8 +36,7 @@ import calebInsight from "@/data/caleb_williams_high_leverage_execution.json";
 
 export type InsightRegistryEntry = InsightMeta & {
   FullPageComponent: ComponentType<{ dataSource?: string }>;
-  PreviewComponent: ComponentType<any>;
-  previewProps?: Record<string, unknown>;
+  renderPreview: () => ReactElement;
 };
 
 /* =========================
@@ -52,11 +51,9 @@ export const insightRegistry: Record<InsightSlug, InsightRegistryEntry> = {
 
     FullPageComponent: WorldCupContenderNetEloInsight,
 
-    PreviewComponent: WorldCupContenderNetEloCard,
-
-    previewProps: {
-      insight: worldCupNetEloInsight,
-    },
+    renderPreview: () => (
+      <WorldCupContenderNetEloCard insight={worldCupNetEloInsight} />
+    ),
   },
 
   "caleb-high-leverage-execution": {
@@ -66,11 +63,9 @@ export const insightRegistry: Record<InsightSlug, InsightRegistryEntry> = {
 
     FullPageComponent: BearsNetAverageWPAPerPossessionInsight,
 
-    PreviewComponent: BearsNetAverageWPAPerPossessionCard,
-
-    previewProps: {
-      insight: calebInsight,
-    },
+    renderPreview: () => (
+      <BearsNetAverageWPAPerPossessionCard insight={calebInsight} />
+    ),
   },
 
   "merab-control-suppression": {
@@ -80,11 +75,7 @@ export const insightRegistry: Record<InsightSlug, InsightRegistryEntry> = {
 
     FullPageComponent: MerabControlSuppressionInsight,
 
-    PreviewComponent: MerabControlSuppressionCard,
-
-    previewProps: {
-      insight: merabInsight,
-    },
+    renderPreview: () => <MerabControlSuppressionCard insight={merabInsight} />,
   },
 };
 
