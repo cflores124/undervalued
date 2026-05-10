@@ -158,9 +158,8 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                At the end of 2025, Spain (<strong>2172 Elo</strong>), Argentina, France,
-                England, Colombia, and Brazil (<strong>1978 Elo</strong>) remain the
-                world&apos;s leading contenders for the 2026 World Cup. Each sits within, or
+                At the end of 2025, Spain, Argentina, France, England, Colombia, and Brazil remain 
+                the world&apos;s leading contenders for the 2026 World Cup. Each sits within, or
                 above, the historical championship Elo range, but each enters through a
                 different momentum profile.
               </p>
@@ -203,42 +202,43 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                International soccer operates in a uniquely constrained environment that
-                fundamentally shapes the FIFA World Cup. Unlike club teams, national teams
-                assemble intermittently with limited preparation time, yet are expected to
-                perform in high-stakes tournaments that occur only every two to four years.
-                Within a single cycle, managers change, players age, rosters evolve, and
-                tactical approaches shift, creating a volatile environment where identifying
-                consistent winning patterns becomes difficult.
+                International soccer operates in a uniquely constrained environment that shapes
+                the FIFA World Cup. Unlike club teams, national teams assemble intermittently
+                with limited preparation time, yet are expected to perform in high-stakes
+                tournaments that occur only every two to four years. Within a single cycle,
+                managers change, players age, rosters evolve, and tactical approaches shift,
+                creating a volatile environment where identifying consistent winning patterns
+                becomes difficult.
               </p>
 
               <p>
-                To better understand how teams win in this environment, five core factors were
-                identified: <strong>Control/Suppression</strong>,{" "}
-                <strong>Volatility/Bursts</strong>, <strong>Late-Game Execution</strong>,{" "}
+                Looking back, recent World Cup champions have reached the same outcome through
+                fundamentally different competitive pathways. Italy won in 2006 through
+                adaptability, combining control, late-game execution, extra-time separation,
+                and penalty resilience. France in 2018 created separation through short,
+                decisive bursts, while Argentina in 2022 built early leads before repeatedly
+                surviving high-leverage breakdowns through extra time and penalties.
+              </p>
+
+              <p>
+                To better understand how teams navigate this environment, five core factors
+                were identified: <strong>Control/Suppression</strong>,{" "}
+                <strong>Volatility/Bursts</strong>,{" "}
+                <strong>Late-Game Execution</strong>,{" "}
                 <strong>Extended-Game Survival</strong>, and{" "}
                 <strong>Game-State Protection</strong>. Together, these factors use metrics
                 such as shots on target per game, goals conceded per game, scoring first,
                 extra-time and penalty exposure, and match outcomes to profile a team&apos;s
-                competitive identity.
+                competitive identity and pathway to winning.
               </p>
 
               <p>
-                Looking back, recent champions reinforce this idea by reaching the same outcome
-                through different competitive pathways. Italy won in 2006 through adaptability,
-                combining control, late-game execution, extra-time separation, and penalty
-                resilience. France in 2018 created separation through short, decisive bursts,
-                while Argentina in 2022 built early leads before repeatedly surviving
-                high-leverage breakdowns through extra time and penalties.
-              </p>
-
-              <p>
-                For 2026, this five-factor framework was used to identify each contender&apos;s
-                strengths, weaknesses, opportunities, and threats within the pressure
-                environment of its most recent continental tournament. The interactive SWOT
-                tool below highlights each contender&apos;s most viable pathway to winning based
-                on historical patterns, while recognizing that tournament conditions can still
-                reshape outcomes.
+                For 2026, this five-factor framework was used to identify each
+                contender&apos;s strengths, weaknesses, opportunities, and threats within the
+                pressure environment of its most recent continental tournament. The interactive
+                SWOT tool below highlights each contender&apos;s most viable pathway to winning
+                based on historical championship patterns, while recognizing that tournament
+                conditions can still reshape outcomes.
               </p>
 
               <p>
