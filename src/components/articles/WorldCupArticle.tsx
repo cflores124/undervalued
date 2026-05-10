@@ -138,7 +138,7 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                This is a pattern best illustrated by the four most recent World Cup champions: 
+                This pattern is best illustrated by the four most recent World Cup champions: 
                 Spain, Germany, France, and Argentina. Each of these teams built sustained momentum in the 
                 years leading up to the tournament and converted that momentum into a peak performance under the
                 bright lights of a global stage. Notably, all improved by roughly{" "}
