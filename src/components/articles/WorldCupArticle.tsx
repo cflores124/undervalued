@@ -150,8 +150,8 @@ export default function WorldCupArticle() {
 
               <p>
                 Altogether, this indicates that there is a clear pattern of winning through sustained
-                growth, momentum, and the ability to carry that momentum into a tournament peak. So which of the 
-                the 2026 contenders match this trajectory?
+                growth, momentum, and the ability to carry that momentum into a tournament peak. The question 
+                is no longer what past champions looked like, but which 2026 contenders resemble them.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
