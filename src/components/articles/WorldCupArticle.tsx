@@ -92,7 +92,7 @@ export default function WorldCupArticle() {
               <p>
                 The FIFA World Cup is the most prestigious tournament in soccer and undeniably
                 the biggest sporting event in the world. Every four years, nations from across
-                the globe come together to compete and determine who is truly the best
+                the globe come together to determine who is truly the best
                 at the “beautiful game”. Since its inception in 1930, roughly <strong>80</strong>{" "}
                 national teams have competed to win the trophy, yet only <strong>8</strong> have ever lifted it.
               </p>
@@ -148,7 +148,7 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Altogether, this indicates that there is a clear pattern of winning through sustained
+                Altogether, this indicates that there is a clear path to winning through sustained
                 growth, momentum, and the ability to carry that momentum into a tournament peak.
               </p>
 
@@ -159,7 +159,7 @@ export default function WorldCupArticle() {
               <p>
                 At the end of 2025, Spain, Argentina, France, England, Colombia, and Brazil remain 
                 the world&apos;s leading contenders for the 2026 World Cup. Each sits within, or
-                above, the historical championship Elo range, but each enters through a
+                above, the historical championship Elo range, but enters through a
                 different momentum profile.
               </p>
 
