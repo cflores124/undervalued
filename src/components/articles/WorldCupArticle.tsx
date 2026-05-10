@@ -148,8 +148,9 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Altogether, this indicates that there is a clear path to winning through sustained
-                growth, momentum, and the ability to carry that momentum into a tournament peak.
+                Altogether, this reveals a clear pattern of winning through sustained growth,
+                momentum, and peaking at the right time. The focus now shifts to which 2026
+                contenders best match that profile.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -181,10 +182,10 @@ export default function WorldCupArticle() {
 
               <p>
                 Argentina, France, and Brazil represent a different type of threat. Argentina
-                remains the reigning World Cup champion and a back-to-back Copa América
-                winner, while France continues to reach the final stages of major tournaments.
-                On the other hand, Brazil still possesses one of the sport&apos;s highest talent ceilings. 
-                Yet all three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
+                remains the reigning World Cup champion and a back-to-back Copa América winner,
+                France continues to consistently reach the final stages of major tournaments,
+                and Brazil still possesses one of the sport&apos;s highest talent ceilings. Yet
+                all three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
                 <strong>171-point Elo drop</strong> since the end of 2021, suggesting sustained
                 elite status rather than the rising trajectory typically associated with recent
                 champions.
