@@ -138,7 +138,7 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                This pattern is best illustrated by the four most recent World Cup champions: 
+                This is a pattern best illustrated by the four most recent World Cup champions: 
                 Spain, Germany, France, and Argentina. Each of these teams built sustained momentum in the 
                 years leading up to the tournament and converted that momentum into a peak performance under the
                 bright lights of a global stage. Notably, all improved by roughly{" "}
@@ -149,8 +149,7 @@ export default function WorldCupArticle() {
 
               <p>
                 Altogether, this indicates that there is a clear pattern of winning through sustained
-                growth, momentum, and the ability to carry that momentum into a tournament peak. The question 
-                is no longer what past champions looked like, but which 2026 contenders resemble them.
+                growth, momentum, and the ability to carry that momentum into a tournament peak.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
