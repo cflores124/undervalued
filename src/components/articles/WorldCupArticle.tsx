@@ -149,8 +149,9 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Altogether, this indicates that there is a clear path to winning through sustained
-                growth, momentum, and the ability to carry that momentum into a tournament peak.
+                Altogether, this indicates that there is a clear pattern of winning through sustained
+                growth, momentum, and the ability to carry that momentum into a tournament peak. So which of the 
+                the 2026 contenders match this trajectory?
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -158,42 +159,38 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                At the end of 2025, Spain (<strong>2172 Elo</strong>), Argentina, France, England, Colombia, 
-                and Brazil (<strong>1978 Elo</strong>) stand as the world&apos;s leading contenders for the
-                2026 World Cup. Each sits within, or above, the historical championship Elo range,
-                but each follows a distinctly different path to winning.
+                At the end of 2025, Spain (<strong>2172 Elo</strong>), Argentina, France,
+                England, Colombia, and Brazil (<strong>1978 Elo</strong>) remain the
+                world&apos;s leading contenders for the 2026 World Cup. Each sits within, or
+                above, the historical championship Elo range, but each enters through a
+                different momentum profile.
               </p>
 
               <p>
-                Spain most closely resembles the ideal historical winner profile. Since 2022,
-                it has gained <strong>176 Elo points</strong>, won the 2024 Euros, and entered
-                2026 as the world&apos;s top-ranked team. The trajectory mirrors the same sustained
+                Spain most closely resembles the ideal historical champion. Since 2022, it has
+                gained <strong>176 Elo points</strong>, won the 2024 Euros, and entered 2026 as
+                the world&apos;s top-ranked team. Its trajectory mirrors the sustained upward
                 momentum shown by recent champions entering their tournament peak.
               </p>
 
               <p>
-                Argentina and France remain elite tournament forces, but neither follows the
-                typical historical trajectory. Argentina enters as the reigning World Cup champion
-                and a back-to-back Copa América winner, while France continues to consistently reach
-                the final stages of major tournaments. Yet both have experienced <strong>net Elo declines</strong>{" "}
-                in recent years, suggesting sustained dominance rather than rising momentum.
+                England and Colombia occupy a different tier of contender. Both reached the
+                final of their continental championship in 2024 and have continued to rise
+                steadily, with England gaining <strong>76 Elo points</strong> since 2022 and
+                Colombia gaining <strong>102</strong> since 2020. Rather than explosive
+                momentum, their profiles more closely resemble 2006 Italy: strong enough to
+                win, but dependent on reaching peak form during the tournament itself.
               </p>
 
               <p>
-                England and Colombia occupy a different category. Both reached the final of their
-                continental championship in 2024 and have maintained steady upward growth, with
-                England rising <strong>76 Elo points</strong> since 2022 and Colombia{" "}
-                <strong>102</strong> since 2020. However, neither has experienced the explosive
-                rise associated with most recent champions. Instead, their profiles more closely
-                resemble 2006 Italy: competitive enough to win, but dependent on finding peak form
-                during the tournament itself.
-              </p>
-
-              <p>
-                Brazil presents the clearest warning sign. Despite remaining within the
-                championship Elo tier, its rating has declined by <strong>171 points</strong> since
-                the end of 2021, signifying a drop from elite winning form. Still, their talent
-                ceiling and historical success make it difficult to fully dismiss them.
+                Argentina, France, and Brazil represent a different type of threat. Argentina
+                remains the reigning World Cup champion and a back-to-back Copa América
+                winner, while France continues to reach the final stages of major tournaments.
+                Brazil still possesses one of the sport&apos;s highest talent ceilings. Yet all
+                three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
+                <strong>171-point Elo drop</strong> since the end of 2021, suggesting sustained
+                elite status rather than the rising trajectory typically associated with recent
+                champions.
               </p>
 
               <p>
@@ -217,34 +214,38 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                To better understand how teams win in this environment, five core
-                factors were identified: <strong>Control/Suppression</strong>,{" "}
-                <strong>Volatility/Bursts</strong>,{" "}
-                <strong>Late-Game Execution</strong>,{" "}
+                To better understand how teams win in this environment, five core factors were
+                identified: <strong>Control/Suppression</strong>,{" "}
+                <strong>Volatility/Bursts</strong>, <strong>Late-Game Execution</strong>,{" "}
                 <strong>Extended-Game Survival</strong>, and{" "}
-                <strong>Game-State Protection</strong>. Together, these factors use
-                metrics such as shots on target per game, goals conceded per game,
-                scoring first, extra-time and penalty exposure, and match outcomes to
-                profile a team&apos;s identity. That framework was then used
-                to identify each contender&apos;s strengths, weaknesses, opportunities, and
-                threats within the pressure environment of its most recent continental
-                tournament, which can be explored below in the interactive SWOT tool.
+                <strong>Game-State Protection</strong>. Together, these factors use metrics
+                such as shots on target per game, goals conceded per game, scoring first,
+                extra-time and penalty exposure, and match outcomes to profile a team&apos;s
+                competitive identity.
               </p>
 
               <p>
-                Looking back, recent champions reached the same outcome through
-                different competitive pathways. Italy won in 2006 through adaptability,
-                combining late-game execution, control, extra-time separation, and
-                penalty resilience. France in 2018 allowed matches to remain competitive
-                before separating through short, decisive bursts, while Argentina in
-                2022 built early leads before repeatedly surviving breakdowns through
-                extra time and penalties.
+                Looking back, recent champions reinforce this idea by reaching the same outcome
+                through different competitive pathways. Italy won in 2006 through adaptability,
+                combining control, late-game execution, extra-time separation, and penalty
+                resilience. France in 2018 created separation through short, decisive bursts,
+                while Argentina in 2022 built early leads before repeatedly surviving
+                high-leverage breakdowns through extra time and penalties.
               </p>
 
               <p>
-                Together, these <strong>five factors</strong> highlight that there is no single pathway to a
-                World Cup title and provide a framework for understanding how different
-                contenders can attempt to convert their potential into a championship.
+                For 2026, this five-factor framework was used to identify each contender&apos;s
+                strengths, weaknesses, opportunities, and threats within the pressure
+                environment of its most recent continental tournament. The interactive SWOT
+                tool below highlights each contender&apos;s most viable pathway to winning based
+                on historical patterns, while recognizing that tournament conditions can still
+                reshape outcomes.
+              </p>
+
+              <p>
+                Ultimately, these <strong>five factors</strong> show that there is no single
+                pathway to a World Cup title and provide a framework for understanding how
+                different contenders can attempt to convert their potential into a championship.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -260,15 +261,15 @@ export default function WorldCupArticle() {
                 Across the last five tournaments, <strong>64.44%</strong> of matches
                 were decided by one goal or less, while{" "}
                 <strong>37.33%</strong> of knockout matches extended to extra time or
-                penalties. On average, each champion was forced into{" "}
+                penalties. On average, a championship team was forced into{" "}
                 <strong>1.4</strong> of these extended knockout matches, meaning the
                 margins for success are razor-thin.
               </p>
 
               <p>
                 Ultimately, the team that wins the World Cup is not determined by a
-                universal formula, but by its ability to turn its unique pathway into
-                peak form under pressure.
+                universal formula, but by its ability to turn its unique pathway 
+                into <strong>peak form under pressure</strong>.
               </p>
 
               <p className="mt-4 text-xs sm:text-sm text-foreground/50">
