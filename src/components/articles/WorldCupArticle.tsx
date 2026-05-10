@@ -4,7 +4,7 @@ import WorldCupSwotInteractive from "@/components/features/WorldCupSwotInteracti
 
 const description = (
   <>
-    An <strong>analytical breakdown</strong> of World Cup championship pathways, 
+    An <strong>analytical framework</strong> of World Cup championship pathways, 
     environmental pressures, and the identities shaping the 
     2026 contenders. Scroll to explore the interactive{" "}
     <strong>contender SWOT tool</strong>.
