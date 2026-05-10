@@ -219,9 +219,10 @@ export default function WorldCupArticle() {
 
               <p>
                 To better understand how teams navigate this environment, five core factors
-                were identified: Control/Suppression, Volatility/Bursts, Late-Game
-                Execution, Extended-Game Survival, and Game-State Protection. Together,
-                these factors use situational metrics such as shots on target, goals
+                were identified: <strong>Control/Suppression</strong>,{" "}
+                <strong>Volatility/Bursts</strong>, <strong>Late-Game Execution</strong>,{" "} 
+                <strong>Extended-Game Survival</strong>, and <strong>Game-State Protection</strong>. 
+                Together, these factors use situational metrics such as shots on target, goals
                 conceded, scoring first, and extra-time or penalty exposure to profile how
                 teams create, protect, and sustain winning pathways under pressure.
               </p>
