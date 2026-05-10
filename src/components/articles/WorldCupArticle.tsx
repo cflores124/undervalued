@@ -123,8 +123,8 @@ export default function WorldCupArticle() {
 
               <p>
                 When tracking the Elo ratings of World Cup winners following the 2002 tournament,
-                a pattern emerges. Champions enter the tournament with a strong{" "}
-                <strong>upward momentum</strong> and reach their peak when it matters most.
+                a distinct championship profile begins to take shape. Champions enter the tournament 
+                with a strong <strong>upward momentum</strong> and reach their peak when it matters most.
               </p>
 
               <p>
