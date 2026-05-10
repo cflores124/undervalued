@@ -116,10 +116,10 @@ export default function WorldCupArticle() {
               <p>
                 To understand what World Cup winners have historically looked like, it is essential
                 to understand the World Football Elo Ratings system. Originally developed by Arpad
-                Elo for professional chess, the model was adapted for soccer to measure true team
-                strength on a match-by-match basis. The system accounts for factors such as match
-                importance, home-field advantage, and goal differential. Since 2018, FIFA has used
-                its own Elo-based system to rank teams internationally.
+                Elo for professional chess, the model was adapted for soccer to measure team strength
+                on a match-by-match basis. Ratings adjust after every match based on opponent quality,
+                match importance, home-field advantage, and goal differential, allowing the system to
+                track changes in team strength over time.
               </p>
 
               <p>
@@ -138,13 +138,13 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                This pattern is best illustrated by the four most recent World Cup champions: 
-                Spain, Germany, France, and Argentina. Each of these teams built sustained momentum in the 
-                years leading up to the tournament and converted that momentum into a peak performance under the
-                bright lights of a global stage. Notably, all improved by roughly{" "}
-                <strong>180 to 210 Elo points</strong> during their build-up and entered the
-                tournament with Elo ratings between <strong>1975 and 2105</strong> at the end of
-                the preceding year; a range that defines the true tier of championship-level teams.
+                This pattern is best illustrated by the four most recent World Cup champions:
+                Spain, Germany, France, and Argentina. Each built sustained momentum before
+                converting it into a tournament peak. Notably, all improved by roughly{" "}
+                <strong>180 to 210 Elo points</strong> during their build-up phase and entered
+                the tournament with Elo ratings between <strong>1975 and 2105</strong> at the
+                end of the preceding year, establishing a consistent range associated with
+                recent champions.
               </p>
 
               <p>
@@ -204,10 +204,9 @@ export default function WorldCupArticle() {
                 International soccer operates in a uniquely constrained environment that shapes
                 the FIFA World Cup. Unlike club teams, national teams assemble intermittently
                 with limited preparation time, yet are expected to perform in high-stakes
-                tournaments that occur only every two to four years. Within a single cycle,
-                managers change, players age, rosters evolve, and tactical approaches shift,
-                creating a volatile environment where identifying consistent winning patterns
-                becomes difficult.
+                tournaments held only every two to four years. Within a single cycle, managers
+                change, players age, rosters evolve, and tactical approaches shift, creating
+                a volatile environment where consistent winning patterns are difficult to identify.
               </p>
 
               <p>
@@ -243,7 +242,7 @@ export default function WorldCupArticle() {
               <p>
                 Ultimately, these <strong>five factors</strong> show that there is no single
                 pathway to a World Cup title and provide a framework for understanding how
-                different contenders can attempt to convert their potential into a championship.
+                different contenders can convert their potential into a championship.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
