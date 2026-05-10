@@ -201,12 +201,11 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                International soccer operates in a uniquely constrained environment that shapes
-                the FIFA World Cup. Unlike club teams, national teams assemble intermittently
-                with limited preparation time, yet are expected to perform in high-stakes
-                tournaments held only every <strong>two to four years</strong>. Within a single cycle, 
-                managers change, players age, rosters evolve, and tactical approaches shift, creating
-                a volatile environment where consistent winning patterns are difficult to identify.
+                International soccer operates in a uniquely constrained environment that
+                shapes the FIFA World Cup. National teams assemble intermittently with
+                limited preparation time while managers, players, and tactical systems
+                constantly change, creating a volatile environment where consistent winning
+                patterns are difficult to identify.
               </p>
 
               <p>
