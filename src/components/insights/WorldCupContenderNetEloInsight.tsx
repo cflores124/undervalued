@@ -1,6 +1,6 @@
 import Link from "next/link";
 import CinematicReveal from "@/components/ui/CinematicReveal";
-import WorldCupNetEloFlipCard from "@/components/insights/WorldCupNetEloFlipCard";
+import WorldCupNetEloFlipCard from "@/components/insights/WorldCupContenderNetEloCard";
 import worldCupInsight from "@/data/world_cup_2026_contender_net_elo.json";
 
 type Props = {

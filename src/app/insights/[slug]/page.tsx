@@ -1,20 +1,24 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getInsightBySlug, insightRegistry } from "@/data/insightRegistry";
+
+import {
+  getInsightRegistryEntry,
+  insightRegistry,
+} from "@/data/insightRegistry";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
-  return insightRegistry.map((insight) => ({
+  return Object.values(insightRegistry).map((insight) => ({
     slug: insight.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const insight = getInsightBySlug(slug);
+  const insight = getInsightRegistryEntry(slug);
 
   if (!insight) {
     return {
@@ -30,11 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function InsightPage({ params }: Props) {
   const { slug } = await params;
-  const insight = getInsightBySlug(slug);
+  const insight = getInsightRegistryEntry(slug);
 
   if (!insight) notFound();
 
-  const Component = insight.Component;
+  const FullPageComponent = insight.FullPageComponent;
 
-  return <Component />;
+  return <FullPageComponent dataSource={insight.dataSource} />;
 }

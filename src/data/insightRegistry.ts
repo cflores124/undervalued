@@ -1,49 +1,97 @@
 import type { ComponentType } from "react";
-import { insights } from "@/data/insights";
+
+import {
+  insights,
+  type InsightMeta,
+  type InsightSlug,
+} from "@/data/insights";
+
+/* =========================
+   FULL INSIGHT PAGES
+========================= */
 
 import WorldCupContenderNetEloInsight from "@/components/insights/WorldCupContenderNetEloInsight";
 import BearsNetAverageWPAPerPossessionInsight from "@/components/insights/BearsNetAverageWPAPerPossessionInsight";
 import MerabControlSuppressionInsight from "@/components/insights/MerabControlSuppressionInsight";
 
-export type InsightEntry = {
-  slug: string;
-  title: string;
-  description: string;
-  excerpt: string;
-  category: string;
-  publishedAt: string;
-  relatedArticleSlug?: string;
-  featured?: boolean;
-  ctaText?: string;
-  dataSource?: string;
-  Component: ComponentType<{ dataSource?: string }>;
+/* =========================
+   PREVIEW CARD COMPONENTS
+========================= */
+
+import WorldCupContenderNetEloCard from "@/components/insights/WorldCupContenderNetEloCard";
+import BearsNetAverageWPAPerPossessionCard from "@/components/insights/BearsNetAverageWPAPerPossessionCard";
+import MerabControlSuppressionCard from "@/components/insights/MerabControlSuppressionCard";
+
+/* =========================
+   CARD DATA
+========================= */
+
+import worldCupNetEloInsight from "@/data/world_cup_2026_contender_net_elo.json";
+import merabInsight from "@/data/merab_control_suppression.json";
+import calebInsight from "@/data/caleb_williams_high_leverage_execution.json";
+
+/* =========================
+   TYPES
+========================= */
+
+export type InsightRegistryEntry = InsightMeta & {
+  FullPageComponent: ComponentType<{ dataSource?: string }>;
+  PreviewComponent: ComponentType<any>;
+  previewProps?: Record<string, unknown>;
 };
 
-export const insightRegistry: InsightEntry[] = insights.map((insight) => {
-  switch (insight.slug) {
-    case "world-cup-contender-net-elo":
-      return {
-        ...insight,
-        Component: WorldCupContenderNetEloInsight,
-      };
+/* =========================
+   REGISTRY
+========================= */
 
-    case "caleb-high-leverage-execution":
-      return {
-        ...insight,
-        Component: BearsNetAverageWPAPerPossessionInsight,
-      };
+export const insightRegistry: Record<InsightSlug, InsightRegistryEntry> = {
+  "world-cup-contender-net-elo": {
+    ...insights.find(
+      (insight) => insight.slug === "world-cup-contender-net-elo"
+    )!,
 
-    case "merab-control-suppression":
-      return {
-        ...insight,
-        Component: MerabControlSuppressionInsight,
-      };
+    FullPageComponent: WorldCupContenderNetEloInsight,
 
-    default:
-      throw new Error(`No component registered for slug: ${insight.slug}`);
-  }
-});
+    PreviewComponent: WorldCupContenderNetEloCard,
 
-export function getInsightBySlug(slug: string) {
-  return insightRegistry.find((insight) => insight.slug === slug);
+    previewProps: {
+      insight: worldCupNetEloInsight,
+    },
+  },
+
+  "caleb-high-leverage-execution": {
+    ...insights.find(
+      (insight) => insight.slug === "caleb-high-leverage-execution"
+    )!,
+
+    FullPageComponent: BearsNetAverageWPAPerPossessionInsight,
+
+    PreviewComponent: BearsNetAverageWPAPerPossessionCard,
+
+    previewProps: {
+      insight: calebInsight,
+    },
+  },
+
+  "merab-control-suppression": {
+    ...insights.find(
+      (insight) => insight.slug === "merab-control-suppression"
+    )!,
+
+    FullPageComponent: MerabControlSuppressionInsight,
+
+    PreviewComponent: MerabControlSuppressionCard,
+
+    previewProps: {
+      insight: merabInsight,
+    },
+  },
+};
+
+/* =========================
+   HELPERS
+========================= */
+
+export function getInsightRegistryEntry(slug: string) {
+  return insightRegistry[slug as InsightSlug];
 }

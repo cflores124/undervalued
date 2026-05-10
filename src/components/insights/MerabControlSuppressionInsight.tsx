@@ -1,6 +1,6 @@
 import Link from "next/link";
 import CinematicReveal from "@/components/ui/CinematicReveal";
-import InsightFlipCard from "@/components/insights/InsightFlipCard";
+import InsightFlipCard from "@/components/insights/MerabControlSuppressionCard";
 import merabInsight from "@/data/merab_control_suppression.json";
 
 type Props = {

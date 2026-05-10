@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+
 import CinematicReveal from "@/components/ui/CinematicReveal";
 
 import {
@@ -9,14 +11,47 @@ import {
 
 import { getInsightRegistryEntry } from "@/data/insightRegistry";
 
-export const metadata: Metadata = {
-  title: "Insights — Undervalued",
-  description: "Short analytical notes and visual insights from Undervalued.",
+type PageProps = {
+  params: {
+    page: string;
+  };
 };
 
-export default function InsightsPage() {
-  const currentPage = 1;
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const pageNumber = Number(params.page);
+
+  return {
+    title: `Insights — Page ${pageNumber} — Undervalued`,
+    description:
+      "Archived analytical insights and visual breakdowns from Undervalued.",
+  };
+}
+
+export async function generateStaticParams() {
   const totalPages = getTotalInsightPages();
+
+  return Array.from({ length: totalPages - 1 }, (_, index) => ({
+    page: String(index + 2),
+  }));
+}
+
+export default function PaginatedInsightsPage({
+  params,
+}: PageProps) {
+  const currentPage = Number(params.page);
+
+  const totalPages = getTotalInsightPages();
+
+  if (
+    Number.isNaN(currentPage) ||
+    currentPage < 2 ||
+    currentPage > totalPages
+  ) {
+    notFound();
+  }
+
   const pageInsights = getPaginatedInsights(currentPage);
 
   return (
@@ -34,11 +69,8 @@ export default function InsightsPage() {
           stagger={0.12}
         >
           <p className="text-base sm:text-lg text-foreground/80 leading-relaxed">
-            <strong>Welcome to Insights.</strong> This is where Undervalued
-            distills deeper analysis into concise visual notes. Each entry is
-            built to highlight a specific performance pattern, tactical
-            mechanism, or analytical idea drawn from the broader logic behind
-            sport.
+            Archived analytical notes, tactical observations, and visual
+            breakdowns from Undervalued.
           </p>
         </CinematicReveal>
       </div>
@@ -56,6 +88,9 @@ export default function InsightsPage() {
         <div className="grid gap-8" aria-label="Insights list">
           {pageInsights.map((insight) => {
             const registryEntry = getInsightRegistryEntry(insight.slug);
+
+            if (!registryEntry) return null;
+
             const PreviewComponent = registryEntry.PreviewComponent;
 
             return (
@@ -104,16 +139,29 @@ export default function InsightsPage() {
           })}
         </div>
 
-        {totalPages > 1 && (
-          <div className="mt-12 flex justify-center">
+        <div className="mt-12 flex items-center justify-center gap-4">
+          {currentPage > 1 && (
             <Link
-              href="/insights/page/2"
+              href={
+                currentPage - 1 === 1
+                  ? "/insights"
+                  : `/insights/page/${currentPage - 1}`
+              }
+              className="rounded-full border border-foreground/15 px-5 py-2 text-sm text-foreground/70 transition hover:border-foreground/30 hover:text-foreground"
+            >
+              Newer insights
+            </Link>
+          )}
+
+          {currentPage < totalPages && (
+            <Link
+              href={`/insights/page/${currentPage + 1}`}
               className="rounded-full border border-foreground/15 px-5 py-2 text-sm text-foreground/70 transition hover:border-foreground/30 hover:text-foreground"
             >
               Older insights
             </Link>
-          </div>
-        )}
+          )}
+        </div>
       </CinematicReveal>
     </section>
   );

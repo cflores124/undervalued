@@ -1,13 +1,12 @@
-import type { InsightData } from "@/components/insights/InsightFlipCard";
-import type { InsightData2 } from "@/components/insights/InsightFlipCard2";
-import type { WorldCupNetEloData } from "@/components/insights/WorldCupNetEloFlipCard";
+export const INSIGHTS_PER_PAGE = 3;
 
-import merabInsight from "@/data/merab_control_suppression.json";
-import calebInsight from "@/data/caleb_williams_high_leverage_execution.json";
-import worldCupNetEloInsight from "@/data/world_cup_2026_contender_net_elo.json";
+export type InsightSlug =
+  | "world-cup-contender-net-elo"
+  | "caleb-high-leverage-execution"
+  | "merab-control-suppression";
 
 export type InsightMeta = {
-  slug: string;
+  slug: InsightSlug;
   title: string;
   description: string;
   excerpt: string;
@@ -17,7 +16,6 @@ export type InsightMeta = {
   featured?: boolean;
   ctaText?: string;
   dataSource?: string;
-  cardData: InsightData | InsightData2 | WorldCupNetEloData;
 };
 
 export const insights: InsightMeta[] = [
@@ -33,9 +31,7 @@ export const insights: InsightMeta[] = [
     featured: true,
     ctaText: "Open the full breakdown",
     dataSource: "World Football Elo Ratings",
-    cardData: worldCupNetEloInsight,
   },
-
   {
     slug: "caleb-high-leverage-execution",
     title: "Disruption, Creation, Execution",
@@ -48,9 +44,7 @@ export const insights: InsightMeta[] = [
     featured: true,
     ctaText: "Open the full breakdown",
     dataSource: "nflreadr / nflfastR",
-    cardData: calebInsight,
   },
-
   {
     slug: "merab-control-suppression",
     title: "High-Paced Control Pressure",
@@ -63,6 +57,29 @@ export const insights: InsightMeta[] = [
     featured: true,
     ctaText: "Open the full breakdown",
     dataSource: "UFCStats.com",
-    cardData: merabInsight,
   },
 ];
+
+export const sortedInsights = [...insights].sort(
+  (a, b) =>
+    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+);
+
+export function getInsightBySlug(slug: string) {
+  return insights.find((insight) => insight.slug === slug);
+}
+
+export function getPaginatedInsights(page: number) {
+  const start = (page - 1) * INSIGHTS_PER_PAGE;
+  const end = start + INSIGHTS_PER_PAGE;
+
+  return sortedInsights.slice(start, end);
+}
+
+export function getTotalInsightPages() {
+  return Math.ceil(sortedInsights.length / INSIGHTS_PER_PAGE);
+}
+
+export function getAllInsightSlugs() {
+  return insights.map((insight) => insight.slug);
+}

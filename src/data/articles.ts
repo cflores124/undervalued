@@ -13,7 +13,7 @@ export const articles: ArticleMeta[] = [
     slug: "world-cup-pathways",
     title: "What actually determines who wins the World Cup?",
     description:
-      "An analytical breakdown of World Cup championship pathways, tournament pressure, and the identities shaping the 2026 contenders.",
+      "An analytical framework of World Cup championship pathways, tournament pressure, and the identities shaping the 2026 contenders.",
     category: "International Soccer Analysis",
     readTime: "10 min read",
     publishedAt: "2026-05-06T00:00:00.000Z",
