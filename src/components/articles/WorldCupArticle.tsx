@@ -183,8 +183,8 @@ export default function WorldCupArticle() {
                 Argentina, France, and Brazil represent a different type of threat. Argentina
                 remains the reigning World Cup champion and a back-to-back Copa América
                 winner, while France continues to reach the final stages of major tournaments.
-                Brazil still possesses one of the sport&apos;s highest talent ceilings. Yet all
-                three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
+                On the other hand, Brazil still possesses one of the sport&apos;s highest talent ceilings. 
+                Yet all three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
                 <strong>171-point Elo drop</strong> since the end of 2021, suggesting sustained
                 elite status rather than the rising trajectory typically associated with recent
                 champions.
@@ -236,7 +236,7 @@ export default function WorldCupArticle() {
                 contender&apos;s strengths, weaknesses, opportunities, and threats within the
                 pressure environment of its most recent continental tournament. The interactive
                 SWOT tool below highlights each contender&apos;s most viable pathway to winning
-                based on historical championship patterns, while recognizing that tournament
+                based on historical performance, while recognizing that tournament
                 conditions can still reshape outcomes.
               </p>
 
