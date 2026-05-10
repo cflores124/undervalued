@@ -98,8 +98,7 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Looking back at recent international history through the lens of Elo ratings and
-                global rankings, a clear trend surfaces. The teams that contend for the
+                Looking back at recent international history through the lens of Elo ratings, a clear trend surfaces. The teams that contend for the
                 World Cup do not arrive there by accident. Their presence is the result of a
                 sustained, multi-year effort that places them among the world&apos;s elite.
               </p>
