@@ -105,7 +105,7 @@ export default function WorldCupArticle() {
 
               <p>
                 Yet reaching that tier alone is not enough. World Cup champions must{" "}
-                <strong>peak under pressure</strong>.
+                <strong>peak</strong> under the tournament's pressure.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
