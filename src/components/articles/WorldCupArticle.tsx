@@ -174,7 +174,7 @@ export default function WorldCupArticle() {
               <p>
                 Argentina and France remain elite tournament forces, but neither follows the
                 typical historical trajectory. Argentina enters as the reigning World Cup champion
-                and a two-time Copa América winner, while France continues to consistently reach
+                and a back-to-back Copa América winner, while France continues to consistently reach
                 the final stages of major tournaments. Yet both have experienced <strong>net Elo declines</strong>{" "}
                 in recent years, suggesting sustained dominance rather than rising momentum.
               </p>
@@ -225,7 +225,7 @@ export default function WorldCupArticle() {
                 <strong>Game-State Protection</strong>. Together, these factors use
                 metrics such as shots on target per game, goals conceded per game,
                 scoring first, extra-time and penalty exposure, and match outcomes to
-                profile a team&apos;s identity under pressure. That framework was then used
+                profile a team&apos;s identity. That framework was then used
                 to identify each contender&apos;s strengths, weaknesses, opportunities, and
                 threats within the pressure environment of its most recent continental
                 tournament, which can be explored below in the interactive SWOT tool.
@@ -242,7 +242,7 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Together, these <strong>five factors</strong> show that there is no single pathway to a
+                Together, these <strong>five factors</strong> highlight that there is no single pathway to a
                 World Cup title and provide a framework for understanding how different
                 contenders can attempt to convert their potential into a championship.
               </p>
