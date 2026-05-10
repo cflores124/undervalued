@@ -90,23 +90,22 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                The FIFA World Cup is the most prestigious tournament in soccer and undeniably
-                the biggest sporting event in the world. Every four years, nations from across
-                the globe come together to determine who is truly the best
-                at the “beautiful game”. Since its inception in 1930, roughly <strong>80</strong>{" "}
-                national teams have competed to win the trophy, yet only <strong>8</strong> have ever lifted it.
+                The FIFA World Cup is the most prestigious tournament in soccer and is widely 
+                considered the biggest sporting event in the world. Since 1930, roughly{" "}
+                <strong>80</strong> national teams have competed for the trophy, yet only{" "}
+                <strong>8</strong> have ever won it.
               </p>
 
               <p>
-                Looking back at recent international history through the lens of Elo ratings, a clear trend surfaces. 
-                The teams that contend for the World Cup do not arrive there by accident. Their presence is the result 
-                of a sustained, multi-year effort that places them among the world&apos;s elite.
+                Looking back at recent international history through the lens of Elo ratings,
+                a clear trend surfaces. World Cup contenders are typically the product of{" "}
+                <strong>sustained multi-year growth</strong> that places them among the
+                world&apos;s elite.
               </p>
 
               <p>
-                Yet reaching that tier is not enough; the World Cup demands more. The difference
-                between a contender and a champion is the ability to{" "}
-                <strong>reach peak form under pressure</strong>.
+                Yet reaching that tier alone is not enough. World Cup champions must{" "}
+                <strong>peak under pressure</strong>.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -114,12 +113,12 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                To understand what World Cup winners have historically looked like, it is essential
-                to understand the World Football Elo Ratings system. Originally developed by Arpad
-                Elo for professional chess, the model was adapted for soccer to measure team strength
-                on a match-by-match basis. Ratings adjust after every match based on opponent quality,
-                match importance, home-field advantage, and goal differential, allowing the system to
-                track changes in team strength over time.
+                To understand what World Cup winners have historically looked like, it is
+                essential to understand the World Football Elo Ratings system. Originally
+                developed by Arpad Elo for chess and later adapted for soccer, the model
+                updates after every match based on opponent strength, match importance,
+                home-field advantage, and goal differential to track changes in team
+                strength over time.
               </p>
 
               <p>
@@ -177,7 +176,7 @@ export default function WorldCupArticle() {
                 steadily, with England gaining <strong>76 Elo points</strong> since 2022 and
                 Colombia gaining <strong>102</strong> since 2020. Rather than explosive
                 momentum, their profiles more closely resemble 2006 Italy: strong enough to
-                win, but dependent on reaching peak form during the tournament itself.
+                win, but dependent on reaching the next level during the tournament itself.
               </p>
 
               <p>
@@ -205,8 +204,8 @@ export default function WorldCupArticle() {
                 International soccer operates in a uniquely constrained environment that shapes
                 the FIFA World Cup. Unlike club teams, national teams assemble intermittently
                 with limited preparation time, yet are expected to perform in high-stakes
-                tournaments held only every two to four years. Within a single cycle, managers
-                change, players age, rosters evolve, and tactical approaches shift, creating
+                tournaments held only every <strong>two to four years</strong>. Within a single cycle, 
+                managers change, players age, rosters evolve, and tactical approaches shift, creating
                 a volatile environment where consistent winning patterns are difficult to identify.
               </p>
 
