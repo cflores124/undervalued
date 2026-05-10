@@ -98,9 +98,9 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Looking back at recent international history through the lens of Elo ratings, a clear trend surfaces. The teams that contend for the
-                World Cup do not arrive there by accident. Their presence is the result of a
-                sustained, multi-year effort that places them among the world&apos;s elite.
+                Looking back at recent international history through the lens of Elo ratings, a clear trend surfaces. 
+                The teams that contend for the World Cup do not arrive there by accident. Their presence is the result 
+                of a sustained, multi-year effort that places them among the world&apos;s elite.
               </p>
 
               <p>
@@ -138,9 +138,9 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                This pattern is best illustrated by Spain in 2010, Germany in 2014, France in 2018, and
-                Argentina in 2022. Each of these teams built sustained momentum in the years leading
-                up to the tournament and converted that momentum into a peak performance under the
+                This pattern is best illustrated by the four most recent World Cup champions: 
+                Spain, Germany, France, and Argentina. Each of these teams built sustained momentum in the 
+                years leading up to the tournament and converted that momentum into a peak performance under the
                 bright lights of a global stage. Notably, all improved by roughly{" "}
                 <strong>180 to 210 Elo points</strong> during their build-up and entered the
                 tournament with Elo ratings between <strong>1975 and 2105</strong> at the end of
