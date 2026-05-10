@@ -219,23 +219,19 @@ export default function WorldCupArticle() {
 
               <p>
                 To better understand how teams navigate this environment, five core factors
-                were identified: <strong>Control/Suppression</strong>,{" "}
-                <strong>Volatility/Bursts</strong>,{" "}
-                <strong>Late-Game Execution</strong>,{" "}
-                <strong>Extended-Game Survival</strong>, and{" "}
-                <strong>Game-State Protection</strong>. Together, these factors use metrics
-                such as shots on target per game, goals conceded per game, scoring first,
-                extra-time and penalty exposure, and match outcomes to profile a team&apos;s
-                competitive identity and pathway to winning.
+                were identified: Control/Suppression, Volatility/Bursts, Late-Game
+                Execution, Extended-Game Survival, and Game-State Protection. Together,
+                these factors use situational metrics such as shots on target, goals
+                conceded, scoring first, and extra-time or penalty exposure to profile how
+                teams create, protect, and sustain winning pathways under pressure.
               </p>
 
               <p>
-                For 2026, this five-factor framework was used to identify each
-                contender&apos;s strengths, weaknesses, opportunities, and threats within the
-                pressure environment of its most recent continental tournament. The interactive
-                SWOT tool below highlights each contender&apos;s most viable pathway to winning
-                based on historical performance, while recognizing that tournament
-                conditions can still reshape outcomes.
+                For 2026, this framework was applied to each contender&apos;s most recent
+                continental tournament to identify its strengths, weaknesses, opportunities,
+                and threats within a World Cup-like environment. The interactive SWOT tool
+                below highlights each team&apos;s most viable pathway to winning while recognizing
+                that tournament conditions can still reshape outcomes.
               </p>
 
               <p>
