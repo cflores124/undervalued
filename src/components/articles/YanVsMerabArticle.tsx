@@ -257,7 +257,7 @@ export default function YanVsMerabArticle() {
           </CinematicReveal>
 
           <CinematicReveal
-            className="mx-auto mt-6 max-w-3xl space-y-4 text-center"
+            className="mx-auto mt-6 max-w-3xl space-y-6 text-center"
             delay={0.4}
             y={10}
             duration={0.55}
@@ -274,31 +274,33 @@ export default function YanVsMerabArticle() {
             </p>
 
             <div className="flex flex-col items-center gap-4">
-              <p className="text-center text-sm text-foreground/70">
+              <p className="text-sm text-foreground/70">
                 Take a look at the full mathematical breakdown here.
               </p>
 
-              <a
-                href="/yan-merab-modeling.pdf"
-                download
-                className="
-                  inline-flex items-center justify-center
-                  rounded-full
-                  border border-neutral-300
-                  bg-neutral-100
-                  px-4 py-2
-                  text-sm font-medium
-                  transition
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/yan-merab-modeling.pdf"
+                  download
+                  className="
+                    inline-flex items-center justify-center
+                    rounded-full
+                    border border-neutral-300
+                    bg-neutral-100
+                    px-5 py-2.5
+                    text-sm font-medium
+                    transition
 
-                  hover:bg-neutral-200
+                    hover:bg-neutral-200
 
-                  dark:border-white/15
-                  dark:bg-white/10
-                  dark:hover:bg-white/15
-                "
-              >
-                Mathematical Modeling
-              </a>
+                    dark:border-white/15
+                    dark:bg-white/10
+                    dark:hover:bg-white/15
+                  "
+                >
+                  Mathematical Modeling
+                </a>
+              </div>
             </div>
           </CinematicReveal>
 

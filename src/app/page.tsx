@@ -107,31 +107,35 @@ export default function Home() {
 
           <div className="mt-5 grid gap-6 sm:grid-cols-2">
             <CinematicReveal delay={0.55} y={12} duration={0.55}>
-              <TiltCard href="/articles/world-cup-pathways">
+              <TiltCard href="/articles/red-bull-f1">
                 <h3 className="font-semibold tracking-tight group-hover:underline">
-                  What actually determines who wins the World Cup?
+                  How did Red Bull Turn Formula 1 into a Competitive Advantage?
                 </h3>
+
                 <p className="mt-2 text-sm text-foreground/70">
-                  An analytical breakdown of World Cup championship pathways,
-                  tournament pressure, and the identities shaping the 2026 contenders.
+                  An analytical exploration of how Formula 1&apos;s pursuit of marginal gains
+                  mirrors the strategy behind Red Bull&apos;s global brand.
                 </p>
+
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  10 min read · Soccer
+                  7 min read · Formula 1
                 </span>
               </TiltCard>
             </CinematicReveal>
 
             <CinematicReveal delay={0.65} y={12} duration={0.55}>
-              <TiltCard href="/articles/williams-bears">
+              <TiltCard href="/articles/world-cup-pathways">
                 <h3 className="font-semibold tracking-tight group-hover:underline">
-                  How did Caleb Williams and the 2025 Bears break win probability?
+                  What actually determines who wins the World Cup?
                 </h3>
+
                 <p className="mt-2 text-sm text-foreground/70">
-                  An explanatory analysis of how Caleb Williams and the 2025
-                  Bears thrived in high-volatility fourth-quarter environments.
+                  An analytical framework of World Cup championship pathways,
+                  environmental pressures, and the identities shaping the 2026 contenders.
                 </p>
+
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  8 min read · NFL
+                  10 min read · Soccer
                 </span>
               </TiltCard>
             </CinematicReveal>

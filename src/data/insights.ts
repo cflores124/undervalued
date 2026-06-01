@@ -1,9 +1,10 @@
 export const INSIGHTS_PER_PAGE = 3;
 
 export type InsightSlug =
+  | "red-bull-championship-margins"
   | "world-cup-contender-net-elo"
   | "caleb-high-leverage-execution"
-  | "merab-control-suppression"
+  | "merab-control-suppression";
 
 export type InsightMeta = {
   slug: InsightSlug;
@@ -20,6 +21,20 @@ export type InsightMeta = {
 
 export const insights: InsightMeta[] = [
   {
+    slug: "red-bull-championship-margins",
+    title: "Margins Become Championships",
+    description: "Drivers Championship Margins",
+    excerpt:
+      "Formula 1 championships often appear to be the product of outright dominance. In reality, they are decided by the accumulation of marginal gains. In 2021, Max Verstappen defeated Lewis Hamilton on the final lap of the final race, crossing the finish line just 2.256 seconds ahead and securing the Drivers’ Championship by only 8 points after 22 races. The result illustrates how small advantages in strategy, tire management, pit execution, and race pace can ultimately compound into a championship-winning edge.",
+    category: "Formula 1 Insight",
+    publishedAt: "2026-05-31",
+    relatedArticleSlug: "red-bull-f1",
+    featured: true,
+    ctaText: "Open the full breakdown",
+    dataSource: "Formula1.com",
+  },
+
+  {
     slug: "world-cup-contender-net-elo",
     title: "Peaking Under Pressure",
     description: "Contender Elo Momentum",
@@ -32,6 +47,7 @@ export const insights: InsightMeta[] = [
     ctaText: "Open the full breakdown",
     dataSource: "World Football Elo Ratings",
   },
+
   {
     slug: "caleb-high-leverage-execution",
     title: "Disruption, Creation, Execution",
@@ -45,6 +61,7 @@ export const insights: InsightMeta[] = [
     ctaText: "Open the full breakdown",
     dataSource: "nflreadr / nflfastR",
   },
+
   {
     slug: "merab-control-suppression",
     title: "High-Paced Control Pressure",

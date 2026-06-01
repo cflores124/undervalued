@@ -10,6 +10,16 @@ export type ArticleMeta = {
 
 export const articles: ArticleMeta[] = [
   {
+    slug: "red-bull-f1",
+    title: "How did Red Bull Turn Formula 1 into a Competitive Advantage?",
+    description:
+      "An analytical exploration of how Formula 1's pursuit of marginal gains mirrors the strategy behind Red Bull's global brand.",
+    category: "Formula 1 Analysis",
+    readTime: "7 min read",
+    publishedAt: "2026-05-31T00:00:00.000Z",
+    featured: true,
+  },
+  {
     slug: "world-cup-pathways",
     title: "What actually determines who wins the World Cup?",
     description:

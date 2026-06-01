@@ -1,9 +1,10 @@
 import type { ComponentType } from "react";
 import type { ArticleMeta } from "@/data/articles";
 
-import YanVsMerabArticle from "@/components/articles/YanVsMerabArticle";
-import WilliamsBearsArticle from "@/components/articles/WilliamsBearsArticle";
+import RedBullArticle from "@/components/articles/RedBullArticle";
 import WorldCupArticle from "@/components/articles/WorldCupArticle";
+import WilliamsBearsArticle from "@/components/articles/WilliamsBearsArticle";
+import YanVsMerabArticle from "@/components/articles/YanVsMerabArticle";
 
 import { articles } from "@/data/articles";
 
@@ -13,6 +14,12 @@ export type ArticleEntry = ArticleMeta & {
 
 export const articleRegistry: ArticleEntry[] = articles.map((article) => {
   switch (article.slug) {
+    case "red-bull-f1":
+      return {
+        ...article,
+        Component: RedBullArticle,
+      };
+
     case "world-cup-pathways":
       return {
         ...article,

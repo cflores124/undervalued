@@ -10,6 +10,7 @@ import {
    FULL INSIGHT PAGES
 ========================= */
 
+import RedBullChampionshipMarginsInsight from "@/components/insights/RedBullChampionshipMarginsInsight";
 import WorldCupContenderNetEloInsight from "@/components/insights/WorldCupContenderNetEloInsight";
 import BearsNetAverageWPAPerPossessionInsight from "@/components/insights/BearsNetAverageWPAPerPossessionInsight";
 import MerabControlSuppressionInsight from "@/components/insights/MerabControlSuppressionInsight";
@@ -18,6 +19,7 @@ import MerabControlSuppressionInsight from "@/components/insights/MerabControlSu
    PREVIEW CARD COMPONENTS
 ========================= */
 
+import RedBullChampionshipMarginsCard from "@/components/insights/RedBullChampionshipMarginsCard";
 import WorldCupContenderNetEloCard from "@/components/insights/WorldCupContenderNetEloCard";
 import BearsNetAverageWPAPerPossessionCard from "@/components/insights/BearsNetAverageWPAPerPossessionCard";
 import MerabControlSuppressionCard from "@/components/insights/MerabControlSuppressionCard";
@@ -26,6 +28,7 @@ import MerabControlSuppressionCard from "@/components/insights/MerabControlSuppr
    CARD DATA
 ========================= */
 
+import redBullInsight from "@/data/f1_2021_drivers_championship_margins.json";
 import worldCupNetEloInsight from "@/data/world_cup_2026_contender_net_elo.json";
 import merabInsight from "@/data/merab_control_suppression.json";
 import calebInsight from "@/data/caleb_williams_high_leverage_execution.json";
@@ -44,6 +47,18 @@ export type InsightRegistryEntry = InsightMeta & {
 ========================= */
 
 export const insightRegistry: Record<InsightSlug, InsightRegistryEntry> = {
+  "red-bull-championship-margins": {
+    ...insights.find(
+      (insight) => insight.slug === "red-bull-championship-margins"
+    )!,
+
+    FullPageComponent: RedBullChampionshipMarginsInsight,
+
+    renderPreview: () => (
+      <RedBullChampionshipMarginsCard insight={redBullInsight} />
+    ),
+  },
+
   "world-cup-contender-net-elo": {
     ...insights.find(
       (insight) => insight.slug === "world-cup-contender-net-elo"

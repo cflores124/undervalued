@@ -1,0 +1,35 @@
+{
+  "athlete": "Max Verstappen",
+  "title": "Drivers Championship Margins",
+  "xLabel": "Driver",
+  "yLabel": "Championship Points",
+  "summary": "The 2021 Drivers Championship was decided by only 8 points. Verstappen and Hamilton finished separated by one of the smallest margins in modern Formula 1, reinforcing how thin the difference can be between championship victory and second place.",
+  "metric": "Championship Points",
+  "drivers": {
+    "1": {
+      "driver": "Verstappen",
+      "team": "Red Bull",
+      "points": 395
+    },
+    "2": {
+      "driver": "Hamilton",
+      "team": "Mercedes",
+      "points": 387
+    },
+    "3": {
+      "driver": "Bottas",
+      "team": "Mercedes",
+      "points": 226
+    },
+    "4": {
+      "driver": "Pérez",
+      "team": "Red Bull",
+      "points": 190
+    },
+    "5": {
+      "driver": "Sainz Jr.",
+      "team": "Ferrari",
+      "points": 164
+    }
+  }
+}
