@@ -6,6 +6,8 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+const siteUrl = "https://www.undervaluedanalytics.com";
+
 export async function generateStaticParams() {
   return articleRegistry.map((article) => ({
     slug: article.slug,
@@ -22,9 +24,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const articleUrl = `${siteUrl}/articles/${article.slug}`;
+
   return {
     title: `${article.title} — Undervalued`,
     description: article.description,
+    alternates: {
+      canonical: articleUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: articleUrl,
+      siteName: "Undervalued",
+      type: "article",
+      images: [
+        {
+          url: article.image,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [article.image],
+    },
   };
 }
 

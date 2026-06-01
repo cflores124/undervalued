@@ -5,6 +5,7 @@ export type ArticleMeta = {
   category: string;
   readTime: string;
   publishedAt: string;
+  image: string;
   featured?: boolean;
 };
 
@@ -17,6 +18,7 @@ export const articles: ArticleMeta[] = [
     category: "Formula 1 Analysis",
     readTime: "7 min read",
     publishedAt: "2026-05-31T00:00:00.000Z",
+    image: "/red-bull-racing-1.jpg",
     featured: true,
   },
   {
@@ -27,6 +29,7 @@ export const articles: ArticleMeta[] = [
     category: "International Soccer Analysis",
     readTime: "10 min read",
     publishedAt: "2026-05-06T00:00:00.000Z",
+    image: "/worldcup.jpg",
     featured: true,
   },
   {
@@ -37,6 +40,7 @@ export const articles: ArticleMeta[] = [
     category: "NFL Analysis",
     readTime: "8 min read",
     publishedAt: "2026-04-18T00:00:00.000Z",
+    image: "/williams-bears-1.jpg",
     featured: true,
   },
   {
@@ -47,6 +51,7 @@ export const articles: ArticleMeta[] = [
     category: "UFC Analysis",
     readTime: "6 min read",
     publishedAt: "2026-03-01T00:00:00.000Z",
+    image: "/yan-merab-1.jpg",
     featured: true,
   },
 ];
