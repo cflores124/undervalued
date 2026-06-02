@@ -145,8 +145,7 @@ export default function WorldCupArticle() {
 
               <p>
                 Altogether, this reveals a clear pattern of winning through sustained growth,
-                momentum, and peaking at the right time. The focus now shifts to which 2026
-                contenders best match that profile.
+                momentum, and peaking at the right time.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -251,7 +250,7 @@ export default function WorldCupArticle() {
               <p>
                 Ultimately, there is no single formula for winning the World Cup. What matters
                 is a team&apos;s ability to build momentum over time and convert it into a
-                tournament peak, regardless of how that momentum is created.
+                tournament peak, regardless of how peak performance is executed.
               </p>
 
               <p className="mt-4 text-xs sm:text-sm text-foreground/50">
