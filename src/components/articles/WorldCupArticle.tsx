@@ -113,8 +113,8 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                To understand historical World Cup winners, it is important to understand the
-                World Football Elo Ratings system. Elo{" "}
+                To understand what World Cup winners have looked like in the past, it is 
+                important to understand the World Football Elo Ratings system. Elo{" "}
                 <strong>measures team strength</strong> and updates after every match based on
                 opponent quality, match importance, and game result, allowing teams to be
                 tracked over time.
@@ -123,7 +123,8 @@ export default function WorldCupArticle() {
               <p>
                 When tracking the Elo ratings of World Cup winners following the 2002 tournament,
                 a distinct championship profile begins to take shape. Champions enter the tournament 
-                with a strong <strong>upward momentum</strong> and reach their peak when it matters most.
+                with a strong <strong>upward momentum</strong> and reach their peak 
+                performance when it matters most.
               </p>
 
               <p>
@@ -139,13 +140,13 @@ export default function WorldCupArticle() {
                 This pattern is evident in the four most recent World Cup champions: Spain,
                 Germany, France, and Argentina. Each built sustained momentum before peaking
                 at the tournament, improving roughly{" "}
-                <strong>180&ndash;210 Elo points</strong> and entering the World Cup within a{" "}
-                <strong>1975&ndash;2105 rating range</strong>.
+                <strong>180 to 210 Elo points</strong> and entering the World Cup within a{" "}
+                <strong>1975 to 2105 rating range</strong>.
               </p>
 
               <p>
-                Altogether, this reveals a clear pattern of winning through sustained growth,
-                momentum, and peaking at the right time.
+                Altogether, this reveals a clear pattern of winning through sustained growth and
+                momentum over an extendended period of time.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
