@@ -117,7 +117,7 @@ export default function RedBullArticle() {
 
               <p>
                 Part of the answer was personal. Founder Dietrich Mateschitz
-                was a passionate fan who wanted to build a winning team. But
+                was a passionate fan who wanted to build a winning team and car. But
                 the investment is also strategic. Formula 1 places Red Bull
                 inside one of the world&apos;s most competitive and
                 technologically advanced environments, where the pursuit of
@@ -201,21 +201,20 @@ export default function RedBullArticle() {
                 Excessive heat reduces grip through{" "}
                 <strong>thermal degradation</strong>, while{" "}
                 <strong>wear degradation</strong> removes rubber over time.
-                Together, these processes reduce braking performance, cornering
+                Ultimately, these processes reduce braking performance, cornering
                 stability, and traction.
               </p>
 
               <p>
-                The Abu Dhabi Tire Degradation Simulator below estimates how
-                age, speed variation, track temperature, and fuel influence tire
-                degradation throughout a stint. Age and speed variation
-                approximate wear degradation, track temperature captures thermal
-                degradation, and fuel weight alters tire load over the course of
-                a race.
+                The Abu Dhabi Tire Degradation Simulator below estimates how age, speed
+                variation, track temperature, and fuel influence tire degradation throughout a
+                stint. Together, these four factors serve as simple proxies for thermal
+                degradation, wear degradation, and vehicle weight, helping illustrate how tire
+                performance evolves over time.
               </p>
 
               <p>
-                It then produces two outputs:{" "}
+                The model then outputs{" "}
                 <strong>Expected Pace Loss per Lap</strong>, which estimates
                 the tire-related performance penalty on a given lap, and{" "}
                 <strong>Cumulative Pace Loss</strong>, which approximates
@@ -237,9 +236,10 @@ export default function RedBullArticle() {
               </p>
 
               <p>
-                The final restart was not decided by track position alone.
-                Hamilton defended on worn hard tires while Verstappen attacked
-                on fresh softs, turning a <strong>marginal advantage into a championship</strong>.
+                While based on rough estimates of tire condition, the simulator illustrates
+                that the final restart was not decided by track position alone. Hamilton
+                defended on worn hard tires while Verstappen attacked on fresh softs, turning
+                a marginal advantage into a championship-winning edge.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
