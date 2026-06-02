@@ -6,7 +6,7 @@ const description = (
   <>
     An <strong>explanatory analysis</strong> of how Caleb Williams and the 2025
     Bears thrived in <strong>high-volatility fourth-quarter environments</strong>. 
-    Scroll to the bottom for an interactive visualization of the Bears&apos; defining 
+    Scroll to the bottom for an <strong>interactive visualization</strong> of the Bears&apos; defining 
     fourth-quarter drive.
   </>
 );

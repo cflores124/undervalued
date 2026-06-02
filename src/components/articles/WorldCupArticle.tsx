@@ -113,12 +113,11 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                To understand what World Cup winners have historically looked like, it is
-                essential to understand the World Football Elo Ratings system. Originally
-                developed by Arpad Elo for chess and later adapted for soccer, the model
-                updates after every match based on opponent strength, match importance,
-                home-field advantage, and goal differential to track changes in team
-                strength over time.
+                To understand historical World Cup winners, it is important to understand the
+                World Football Elo Ratings system. Elo{" "}
+                <strong>measures team strength</strong> and updates after every match based on
+                opponent quality, match importance, and game result, allowing teams to be
+                tracked over time.
               </p>
 
               <p>
@@ -128,22 +127,20 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                These momentum periods can be understood as build-up phases: extended
-                stretches in which a national team experiences sustained long-term growth
-                despite short-term fluctuations in form, environment, or results. Some develop
-                gradually over nearly a decade, like Germany from{" "}
-                <strong>2003 to 2013</strong>, while others accelerate rapidly within a
-                single cycle, like Argentina from <strong>2018 to 2021</strong>.
+                These momentum periods can be viewed as <strong>build-up phases</strong>:
+                extended stretches of sustained growth despite short-term fluctuations in form
+                or results. Some develop gradually over nearly a decade, like{" "}
+                <strong>Germany from 2003 to 2013</strong>, while others accelerate rapidly
+                within a single cycle, like{" "}
+                <strong>Argentina from 2018 to 2021</strong>.
               </p>
 
               <p>
-                This pattern is best illustrated by the four most recent World Cup champions:
-                Spain, Germany, France, and Argentina. Each built sustained momentum before
-                converting it into a tournament peak. Notably, all improved by roughly{" "}
-                <strong>180 to 210 Elo points</strong> during their build-up phase and entered
-                the tournament with Elo ratings between <strong>1975 and 2105</strong> at the
-                end of the preceding year, establishing a consistent range associated with
-                recent champions.
+                This pattern is evident in the four most recent World Cup champions: Spain,
+                Germany, France, and Argentina. Each built sustained momentum before peaking
+                at the tournament, improving roughly{" "}
+                <strong>180&ndash;210 Elo points</strong> and entering the World Cup within a{" "}
+                <strong>1975&ndash;2105 rating range</strong>.
               </p>
 
               <p>
@@ -171,29 +168,24 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                England and Colombia occupy a different tier of contender. Both reached the
-                final of their continental championship in 2024 and have continued to rise
-                steadily, with England gaining <strong>76 Elo points</strong> since 2022 and
-                Colombia gaining <strong>102</strong> since 2020. Rather than explosive
-                momentum, their profiles more closely resemble 2006 Italy: strong enough to
-                win, but dependent on reaching the next level during the tournament itself.
+                England and Colombia represent a different contender profile. Both reached
+                their continental finals in 2024 and continue to trend upward, with England
+                gaining <strong>76 Elo points</strong> since 2022 and Colombia gaining{" "}
+                <strong>102</strong> since 2020. Like Italy in 2006, they appear
+                strong enough to win, but need to reach another level during the tournament
+                itself.
               </p>
 
               <p>
-                Argentina, France, and Brazil represent a different type of threat. Argentina
-                remains the reigning World Cup champion and a back-to-back Copa América winner,
-                France continues to consistently reach the final stages of major tournaments,
-                and Brazil still possesses one of the sport&apos;s highest talent ceilings. Yet
-                all three enter 2026 with declining momentum profiles, including Brazil&apos;s{" "}
-                <strong>171-point Elo drop</strong> since the end of 2021, suggesting sustained
-                elite status rather than the rising trajectory typically associated with recent
-                champions.
+                Argentina, France, and Brazil remain <strong>elite contenders</strong>, but
+                their profiles differ from recent champions. Rather than entering with rising
+                momentum, all three carry declining or flatter Elo trajectories, including{" "}
+                <strong>Brazil&apos;s 171-point drop</strong> since the end of 2021.
               </p>
 
               <p>
                 In the end, positioning heading into the tournament sets the stage, but converting
-                form into tournament success is what defines a champion. The question is how that
-                conversion actually happens.
+                form into tournament success is what defines a champion.
               </p>
 
               <h2 className="mt-12 mb-3 text-2xl font-semibold tracking-tight text-foreground">
@@ -201,30 +193,27 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                International soccer operates in a uniquely constrained environment that
-                shapes the FIFA World Cup. National teams assemble intermittently with
-                limited preparation time while managers, players, and tactical systems
-                constantly change, creating a volatile environment where consistent winning
-                patterns are difficult to identify.
+                International soccer exists in a uniquely constrained environment. National teams 
+                assemble intermittently with limited preparation time, while managers, players, and
+                tactical systems constantly change, making consistent winning patterns
+                difficult to identify.
               </p>
 
               <p>
-                Looking back, recent World Cup champions have reached the same outcome through
-                fundamentally different competitive pathways. Italy won in 2006 through
-                adaptability, combining control, late-game execution, extra-time separation,
-                and penalty resilience. France in 2018 created separation through short,
-                decisive bursts, while Argentina in 2022 built early leads before repeatedly
-                surviving high-leverage breakdowns through extra time and penalties.
+                Recent World Cup champions have reached the same outcome through different
+                pathways. Italy combined adaptability, control, and penalty resilience in
+                2006, France created separation through short bursts in 2018, and Argentina
+                built leads before repeatedly surviving high-leverage moments in 2022.
               </p>
 
               <p>
-                To better understand how teams navigate this environment, five core factors
-                were identified: <strong>Control/Suppression</strong>,{" "}
-                <strong>Volatility/Bursts</strong>, <strong>Late-Game Execution</strong>,{" "} 
-                <strong>Extended-Game Survival</strong>, and <strong>Game-State Protection</strong>. 
-                Together, these factors use situational metrics such as shots on target, goals
-                conceded, scoring first, and extra-time or penalty exposure to profile how
-                teams create, protect, and sustain winning pathways under pressure.
+                To better understand how teams navigate the World Cup environment, five
+                factors were identified: <strong>Control/Suppression</strong>,{" "}
+                <strong>Volatility/Bursts</strong>, <strong>Late-Game Execution</strong>,{" "}
+                <strong>Extended-Game Survival</strong>, and{" "}
+                <strong>Game-State Protection</strong>. Built from situational match metrics,
+                they capture how teams create, protect, and sustain winning pathways under
+                pressure.
               </p>
 
               <p>
@@ -260,9 +249,9 @@ export default function WorldCupArticle() {
               </p>
 
               <p>
-                Ultimately, the team that wins the World Cup is not determined by a
-                universal formula, but by its ability to turn its unique pathway 
-                into <strong>peak form under pressure</strong>.
+                Ultimately, there is no single formula for winning the World Cup. What matters
+                is a team&apos;s ability to build momentum over time and convert it into a
+                tournament peak, regardless of how that momentum is created.
               </p>
 
               <p className="mt-4 text-xs sm:text-sm text-foreground/50">

@@ -6,7 +6,7 @@ const description = (
   <>
     An <strong>analytical exploration</strong> of how Formula 1&apos;s pursuit
     of marginal gains mirrors the strategy behind Red Bull&apos;s global brand.
-    Scroll to explore the interactive tire degradation simulator.
+    Scroll to explore the <strong>interactive tire degradation simulator</strong>.
   </>
 );
 
