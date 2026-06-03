@@ -5,7 +5,7 @@ import WilliamsBearsInteractive from "@/components/features/WilliamsBearsInterac
 const description = (
   <>
     An <strong>explanatory analysis</strong> of how Caleb Williams and the 2025
-    Bears thrived in <strong>high-volatility fourth-quarter environments</strong>. 
+    Bears thrived in high-volatility fourth-quarter environments. 
     Scroll to the bottom for an <strong>interactive visualization</strong> of the Bears&apos; defining 
     fourth-quarter drive.
   </>
@@ -126,9 +126,9 @@ export default function WilliamsBearsArticle() {
                 <strong>live in it</strong>. In 2025, their average{" "}
                 <strong>absolute WPA per possession</strong> in the fourth quarter was{" "}
                 <strong>13.97%</strong>, well above the league average of{" "}
-                <strong>8.57%</strong>, reflecting the magnitude of win probability swings on each possession. 
-                Despite that volatility, they also produced results, averaging a{" "}
-                <strong>net WPA of 6.42%</strong> per possession, ranking{" "}
+                <strong>8.57%</strong>, reflecting the magnitude of win probability swings on each 
+                possession regardless of direction. Despite that volatility, they also produced results, 
+                averaging a <strong>net WPA of 6.42%</strong> per possession, ranking{" "}
                 <strong>2nd</strong> in execution and consistently turning those swings in their favor.
               </p>
 

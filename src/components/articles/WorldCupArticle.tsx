@@ -193,7 +193,7 @@ export default function WorldCupArticle() {
               </h2>
 
               <p>
-                International soccer exists in a uniquely constrained environment. National teams 
+                International soccer exists within a uniquely constrained environment. National teams 
                 assemble intermittently with limited preparation time, while managers, players, and
                 tactical systems constantly change, making consistent winning patterns
                 difficult to identify.
