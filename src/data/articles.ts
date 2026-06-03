@@ -16,7 +16,7 @@ export const articles: ArticleMeta[] = [
     description:
       "An analytical exploration of how Formula 1's pursuit of marginal gains mirrors the strategy behind Red Bull's global brand.",
     category: "Formula 1 Analysis",
-    readTime: "7 min read",
+    readTime: "8 min read",
     publishedAt: "2026-05-31T00:00:00.000Z",
     image: "/red-bull-racing-1.jpg",
     featured: true,

@@ -118,7 +118,7 @@ export default function Home() {
                 </p>
 
                 <span className="mt-3 inline-block text-xs text-foreground/60">
-                  7 min read · Formula 1
+                  8 min read · Formula 1
                 </span>
               </TiltCard>
             </CinematicReveal>
